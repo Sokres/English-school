@@ -1,0 +1,81 @@
+{
+  "name": "Online_curse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Проект онлайн курса английского языка",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^9.8.6",
+    "chrome-launcher": "^0.13.4",
+    "es6-promise": "^4.2.8",
+    "eslint": "^7.8.1",
+    "eslint-config-htmlacademy": "^0.5.2",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-html-minimizer": "^2.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-sass": "^4.1.0",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-w3c-html-validator": "^2.0.1",
+    "gulp-webp": "^4.0.1",
+    "lighthouse": "^6.3.0",
+    "node-sass": "^4.14.1",
+    "posthtml-include": "^1.4.3",
+    "stylelint": "^10.1.0",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "webpack-dev-server --mode development --open",
+    "start": "gulp start",
+    "eslint-fix": "eslint ./src/js/** --fix",
+    "prod_build": "webpack --mode production"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.16"
+  },
+  "dependencies": {
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "circular-dependency-plugin": "^5.2.0",
+    "del": "^5.1.0",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "normalize.css": "^8.0.1",
+    "webpack-stream": "^6.1.0"
+  }
+}
