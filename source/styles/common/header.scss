@@ -1,0 +1,57 @@
+// переменные
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gray:#CFCFCF;
+$white:#FFFFFF;
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__logo{
+    width: 200px;
+    height: 50px;
+  }
+  &__nav{
+    justify-self:end;
+  }
+}
+
+.main-nav__list{
+  display: none;
+}
+
+// Кнопочка для меню, оформление
+
+.main-nav__btn{
+  position: relative;
+  background: transparent;
+  border:none;
+  width: 50px;
+  height: 50px;
+  // top: 7px;
+
+  &--line, &--line::before, &--line::after{
+    position: absolute;
+    width:30px;
+    height: 2px;
+    background-color: black;
+  }
+  &--line{
+    display: block;
+    left: 10px;
+    &::before{
+      content:" ";
+      display: block;
+      bottom: -8px;
+      left: 0;
+    }
+    &::after{
+      content:" ";
+      display: block;
+      top: -8px;
+      left: 0;
+    }
+  }
+}

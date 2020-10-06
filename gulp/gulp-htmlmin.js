@@ -10,7 +10,11 @@ module.exports = function minifyHTML() {
   return gulp.src("source/pages/*.html")
     .pipe(plumber())
     .pipe(posthtml([
-      include() ]))
+      include()
+    ]))
+    // .pipe(htmlmin({
+    //     collapseWhitespace: true
+    //   }))
     .pipe(htmlValidator())
     .pipe(gulp.dest("build"));
 }

@@ -21,9 +21,9 @@ function setMode(isProduction = false) {
   }
 }
 
-const dev = gulp.parallel(htmlmin, styles, script, copy, images, webp, sprite)
+const dev = gulp.parallel(htmlmin, styles, script, copy, images, webp,)
 
-const build = gulp.series(del, dev)
+const build = gulp.series(del,sprite, dev)
 
 module.exports.start = gulp.series(setMode(), build, server)
 module.exports.build = gulp.series(setMode(true), build)
