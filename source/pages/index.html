@@ -6,66 +6,73 @@
   <link rel="stylesheet" href="css/styles.min.css">
   <title>Document</title>
 </head>
-<body>
-<div class="wraper">
-
+<body class="bd close">
+<div class="head-wraper">
   <header class="header">
-
-
-      <img class="logo header__logo" src="/img/Logo.svg" alt="Логотип Anglofan" >
-
-
-    <nav class="header__nav main-nav">
+    <img class="logo header__logo" src="/img/Logo.svg" alt="Логотип Anglofan" >
+    <nav class="header__nav">
       <button class="main-nav__btn">
         <span class="main-nav__btn--line"></span>
       </button>
-      <ul class="site-list main-nav__list">
-        <li class="site-list__item site-list__item--active "><a>Главная</a></li>
-        <li class="site-list__item">Курсы
-          <ul>
-            <li class="stile-list__item stile-list__item--insid">
-              <a href="#">Телеграмм-club</a>
+        <div class="site-list">
+          <ul class=" main-nav__list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Главная</a>
             </li>
-            <li class="stile-list__item stile-list__item--insid">
-              <a href="#">Anglofan</a>
+            <li class="site-list__item site-list__item--down site-list__item--down-open">
+              <a class="site-list__link site-list__link-subdmenu">Курсы</a>
+
+               <ul class="site-list__item-podmenu">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Телеграмм-club</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Anglofan</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Speaking-club</a>
+                </li>
+            </ul>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Уникальность</a>
             </li>
-            <li class="stile-list__item stile-list__item--insid">
-              <a href="#">Speaking-club</a>
             </li>
+
           </ul>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Уникальность</a></li>
-      </ul>
+        </div>
     </nav>
-
   </header>
-
-  <main class="page-main">
-    <section class="welcome-info">
-      <h1 class="welcome-info__title ">Оналайн-курсы английского</h1>
-      <h2 class="welcome-info__subtitle ">Для тех, кто ценит свое время</h2>
-      <p class="welcome-info__indent ">Не знаешь, какой курс тебе подходит? Оставь заявку, и мы предложим тебе оптимальный вариант</p>
-      <a href="#" class="btn button_bot-vk">Вконтаке</a>
-      <a href="#" class="btn button_bot-teleg">Телеграм</a>
-    </section>
+  <section class="welcome-info">
+    <div class="welcome-info__wraper">
+      <h1 class="welcome-info__title ">Онлайн-курсы английского</h1>
+      <h2 class="welcome-info__subtitle ">Для тех, <br> кто ценит свое время</h2>
+      <p class="welcome-info__indent ">Не знаешь, какой курс тебе подходит?<br> Оставь заявку, и мы предложим тебе оптимальный вариант</p>
+      <div class="btn-bot">
+        <a href="#" class="button-link btn-bot__vk" tabindex="0">Вконтаке</a>
+        <a href="#" class="button-link btn-bot__teleg">Телеграм</a>
+      </div>
+    </div>
+  </section>
+</div>
     <section class="social">
       <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
-      <a href="#"><svg class="social__facebook" width="50" height="50">
+      <a class="social__facebook" href="#"><svg class="social__facebook--inline" width="30" height="30">
         <use xlink:href="#Facebook"></use>
       </svg></a>
-      <a href="#"><svg class="social__insta" width="50" height="50">
-        <use xlink:href="#Insta"></use>
+      <a class="social__insta" href="#"><svg class="social__insta--inline" width="30" height="30">
+        <use xlink:href="#insta"></use>
       </svg></a>
-      <a href="#"><svg class="social__vk" width="50" height="50">
-        <use xlink:href="#VK"></use>
-      </svg></a>
-      <a href="#"><svg class="social__youtube" width="50" height="50">
+      <a class="social__youtube" href="#"><svg class="social__youtube--inline" width="30" height="30">
         <use xlink:href="#Youtube"></use>
       </svg></a>
+      <a class="social__vk" href="#"><svg class="social__vk--inline" width="30" height="30">
+        <use xlink:href="#VK"></use>
+      </svg></a>
     </section>
+
   <section class="course">
-    <div class="course-item telegram-club-course">
+    <h2 class="curse__title">Наши курсы</h2>
+    <article class="course-item telegram-club-course">
       <h2 class="course-item__caption">Telegram Club </h2>
       <img class="course-item__image" width="150"  height="150" src="/img/telegrm-cours-prev.svg" alt="Телеграм клуб">
       <p class="course-item__indent">Полный курс английского, разложенный на мини-уроки в закрытом канале Telegram</p>
@@ -78,8 +85,8 @@
       </ul>
       <a href="#" class="course-item__link">Подробнее</a>
 
-    </div>
-    <div class="course-item anglofan-course">
+    </article>
+    <article class="course-item anglofan-course">
       <h2 class="course-item__caption">Anglofan</h2>
       <img class="course-item__image" width="150"  height="150" src="/img/chart-anglofan-prev.svg" alt="Курсы англофан">
       <p class="course-item__indent">Обучение на специализированной образовательной платформе с обратной связью гарантия возврата стоимости курса в течение первых 10 дней</p>
@@ -89,8 +96,8 @@
       </ul>
       <a href="#" class="course-item__link">Подробнее</a>
 
-    </div>
-    <div class="course-item spaeckng-club-course">
+    </article>
+    <article class="course-item spaeckng-club-course">
       <h2 class="course-item__caption">Speaking Club</h2>
       <img class="course-item__image" width="150"  height="150" src="/img/rupor-speaking-prev.svg" alt="Speaking Club">
       <p class="course-item__indent">Вишенка на торте идеальное дополнение к любому из курсов говорим вживую с поддержкой преподавателя</p>
@@ -101,7 +108,7 @@
       </ul>
       <a href="#" class="course-item__link">Подробнее</a>
 
-      <div class="course-item it-anglofan-course">
+      <article class="course-item it-anglofan-course">
         <h2 class="course-item__caption">IT Anglofan</h2>
         <img class="course-item__image" width="150"  height="150" src="/img/dis-it-prev.svg" alt="Курсы для IT">
         <p class="course-item__indent">Интенсивный курс для IT-специалистов</p>
@@ -110,13 +117,14 @@
           <li class="course-item__list"><span class="course-item__list--cash">940-1590 руб/неделя</span></li>
         </ul>
         <a href="#" class="course-item__link">Подробнее</a>
-    </div>
+    </article>
   </section>
 
-  </main>
-  </div>
+
+
   <div class="visually-hidden">
     <include src="build/img/sprite.svg"> </include>
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

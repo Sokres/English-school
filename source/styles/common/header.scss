@@ -2,56 +2,338 @@
 $top-color:#57ACFF;
 $text-color:#182F52;
 $text-add:#646F87;
-$gren:#00C1A4;
+$green:#00C1A4;
 $gray:#CFCFCF;
 $white:#FFFFFF;
+
 
 .header{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 5px;
+
   &__logo{
     width: 200px;
     height: 50px;
+    padding-left: 10px;
   }
   &__nav{
     justify-self:end;
+    padding-right: 10px;
   }
 }
-
-.main-nav__list{
-  display: none;
-}
+@media (max-width:768px){
 
 // Кнопочка для меню, оформление
 
 .main-nav__btn{
   position: relative;
-  background: transparent;
-  border:none;
-  width: 50px;
-  height: 50px;
-  // top: 7px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
 
-  &--line, &--line::before, &--line::after{
+  background-color: transparent;
+  padding: 0px;
+  border-width: 0px;
+  z-index: 30;
+  &--line,
+  &--line::before,
+  &--line::after{
     position: absolute;
-    width:30px;
+    width: 25px;
     height: 2px;
-    background-color: black;
+    background-color: #ffffff;
+    border-radius: 50px;
   }
   &--line{
-    display: block;
     left: 10px;
-    &::before{
+    transition: transform .1s linear;
+    &::before,&::after{
       content:" ";
-      display: block;
-      bottom: -8px;
       left: 0;
+    }
+    &::before{
+      top: -7px;
+      transition: top .1s .2s linear;
     }
     &::after{
-      content:" ";
-      display: block;
-      top: -8px;
-      left: 0;
+      bottom: -7px;
+      transition: bottom .1s .2s linear,transform .1s linear;
     }
+  }
+}
+//Кнопка в состоянии открытого меню
+
+.open{
+  .main-nav__btn{
+
+    &--line{
+    transition: transform .1s .2s linear;
+    transform: rotate(45deg);
+    }
+    &--line::before{
+      top: 0;
+      transition: top .1s linear,opacity .1s .2s linear;
+      opacity: 0;
+    }
+    &--line::after{
+      bottom: 0;
+      transition: bottom .1s linear,transform .1s .2s linear;
+      transform: rotate(-90deg);
+    }
+  }
+}
+//Кнопка без js
+.nojs{
+  .main-nav__btn{
+    display: none;
+  }
+}
+
+.main-nav__list,
+.site-list__item-podmenu{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+// Меню без JS
+  .nojs .header__nav{
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    padding-right: 0;
+    width: 100%;
+    .site-list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      background-color: $text-color;
+      min-height: 350px;
+      &__item{
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 10px;
+        padding-left: 20%;
+      }
+
+      &__link{
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        color: $white;
+      }
+    }
+    .site-list__link-subdmenu{
+      position: relative;
+      &::after{
+        content: " ";
+        position: absolute;
+        top: 5px;
+        left: 80px;
+        width: 10px;
+        height: 10px;
+        border-left: solid 2px $white;
+        border-bottom: solid 2px $white;
+        transform: rotate(315deg);
+        transition: transform .2s linear;
+      }
+    }
+    .site-list__item-podmenu{
+
+      .site-list__item{
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+        .site-list__link{
+          font-size: 16px;
+        }
+    }
+  }
+//Меню в закртытом состоянии
+.close{
+  .site-list{
+    display: none;
+  }
+}
+// Меню в открытом состоянии
+.open{
+  overflow: hidden;
+  // overflow-y: scroll;
+  .site-list{
+    position: fixed;
+    top: 0;
+    right: -10px;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+    background-color: #3391ED;
+    box-shadow: -5px 5px 25px 1px $text-color;
+    transform: skewX(10deg) translateX(30px);
+    // &::before{
+    //   content: '';
+    //   position: absolute;
+    //   width: 0;
+    //   height: 0;
+    //   left: -50px;
+    //   border-right: 50px solid  #1F3E6D;
+    //   border-bottom: 350px solid transparent;
+    // }
+
+    &__item{
+      padding: 15px;
+    }
+    &__item:first-child{
+      margin-top: 50px;
+    }
+    &__item:last-child{
+      margin-bottom: 50px;
+    }
+    &__link{
+      width: 100%;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 20px;
+      color: $white;
+    }
+  }
+  .main-nav__list{
+    transform: skewX(-10deg);
+  }
+  .site-list__item--down-close{
+
+
+  .site-list__link-subdmenu{
+    &::after{
+      top: 6px;
+      transform: rotate(135deg);
+    }
+  }
+}
+    .site-list__link-subdmenu{
+      position: relative;
+      &::after{
+        content: " ";
+        position: absolute;
+        top: 7px;
+        left: 75px;
+        width: 10px;
+        height: 10px;
+        border-left: solid 2px $white;
+        border-bottom: solid 2px $white;
+        transform: rotate(315deg);
+        transition: transform .2s linear;
+      }
+    }
+
+  .site-list__item-podmenu{
+    padding-left: 20px;
+    .site-list__link{
+      font-size: 18px;
+    }
+    .site-list__item{
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+  .site-list__item--down-close{
+    .site-list__item-podmenu{
+      display: none;
+    }
+  }
+}
+
+
+
+}
+@media (min-width: 769px) {
+  .header{
+    grid-template-columns: 1fr 3fr;
+
+    &__nav{
+      width: 600px;
+    }
+  }
+  .main-nav{
+    &__btn{
+      display: none;
+    }
+    &__list{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .site-list{
+    &__item {
+      list-style-type: none;
+      margin-left: 20px;
+      position: relative;
+      color: $white;
+      // text-decoration: none;
+      cursor: pointer;
+      &:hover::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 5px;
+        background-color: $white;
+      }
+      &:hover .site-list__item-podmenu,
+      &:focus .site-list__item-podmenu{
+        display: block;
+      }
+      // &:focus,&:active{
+      //   background-color: #fff;
+      // }
+      &--down{
+        position: relative;
+        padding: 0;
+        color: $white;
+
+        &::before{
+          content: "";
+          position: absolute;
+          top: 10px;
+          left:65px;
+          display: block;
+          width: 0;
+          height: 0;
+          border-width: 7px 4px 0;
+          border-style: solid;
+          border-color:$white transparent transparent;
+        }
+      }
+      &-podmenu{
+        display: none;
+        position: absolute;
+        width: 200px;
+        box-sizing:border-box;
+        padding: 5px 0 0 10px;
+        list-style-type: none;
+        .site-list__item{
+          display: inline-block;
+          margin: 0;
+        }
+       }
+      }
+
+      &__link{
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  .site-list__link-subdmenu{
+    margin-right: 20px;
   }
 }

@@ -1,6 +1,166 @@
-.page-main{
-  background-image: url(../img/bgc-main.svg);
+// переменные
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gray:#CFCFCF;
+$white:#FFFFFF;
+$top-color__hover:#52A1F0;
+$top-color__active:#4C95DE;
+
+.head-wraper{
+  padding-bottom: 50px;
+  background-image: url(/img/bgc-main.svg);
   background-repeat: no-repeat;
-  // background-size:auto auto;
-  background-position: auto -50%;
+  background-size:cover;
+  background-position: 40%;
+  background-color: #ffffff;
+  color:#182F52;
+}
+.welcome-info{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 20px 0 20px ;
+  &__title{
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height:36px;
+    text-align: center;
+
+  }
+  &__subtitle{
+    color: $top-color;
+
+    text-align: center;
+    font-weight: 500;
+    font-size:20px;
+  }
+  &__indent{
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+.button-link{
+  width: clamp(150px, 100%, 200px);
+  border-radius: 7px;
+  background-color: $top-color;
+  border:solid $white 1px;
+  transition: all 0.15s ease-in;
+  &:hover{
+    background-color: $top-color__hover;
+    border:solid $white 1px;
+  }
+  &:active{
+    background-color: $top-color__active;
+    border:solid $top-color 1px;
+  }
+}
+.btn-bot{
+  display: flex;
+  justify-content:center;
+  margin-top: 50px;
+  &__vk,
+  &__teleg{
+    // margin:0 10px 0 10px;
+    // padding: 2px 0.7em;
+    color: $white;
+    text-decoration: none;
+    }
+
+  &__vk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      &::after{
+        content:"";
+        width: 40px;
+        height: 40px;
+        background-image: url(/img/ico-vk-btn.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: right 10px;
+      }
+  }
+  &__teleg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      &::after{
+        content:"";
+        width: 40px;
+        height: 40px;
+        background-image: url(/img/ico-teleg-btn.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: right 7px;
+      }
+  }
+}
+@media (min-width: 768px) {
+  .welcome-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    text-align: left;
+    &__title,
+    &__subtitle,
+    &__indent{
+      text-align: left;
+    }
+  }
+  .btn-bot__vk{
+    margin-left: 0;
+  }
+}
+.social{
+  display: none;
+}
+@media (min-width: 768px) {
+  .btn-bot{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .social{
+    display: grid;
+    row-gap: 30px;
+    position: fixed;
+    margin-right: 60px;
+    padding: 40px 5px 40px 5px;
+    border: solid 2px $top-color;
+    border-radius: 33px;
+    top: 35vh;
+    left: 5px;
+    &__facebook,
+    &__insta,
+    &__vk,
+    &__youtube {
+      width: 24px;
+      height: 24px;
+      fill: $gray;
+      transition: all 0.15s ease-in;
+      &--inline{
+        width: 24px;
+        height: 24px;
+      }
+      &:hover{
+        fill: $top-color
+      }
+      &:active{
+        fill: $top-color__active;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome-info{
+    grid-template-columns:1.2fr 2fr;
+  }
+  .social{
+   margin-left: 5vw;
+  }
+}
+
+.course{
+  display: grid;
 }
