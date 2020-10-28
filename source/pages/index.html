@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,12 @@
         <span class="main-nav__btn--line"></span>
       </button>
         <div class="site-list">
-          <ul class=" main-nav__list">
+          <ul class="main-nav__list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active">Главная</a>
             </li>
             <li class="site-list__item site-list__item--down site-list__item--down-open">
-              <a class="site-list__link site-list__link-subdmenu">Курсы</a>
-
+              <a class="site-list__link site-list__link-subdmenu" tabindex="0">Курсы</a>
                <ul class="site-list__item-podmenu">
                 <li class="site-list__item">
                   <a class="site-list__link" href="#">Телеграмм-club</a>
@@ -37,7 +36,6 @@
               <a class="site-list__link" href="#">Уникальность</a>
             </li>
             </li>
-
           </ul>
         </div>
     </nav>
@@ -46,9 +44,9 @@
     <div class="welcome-info__wraper">
       <h1 class="welcome-info__title ">Онлайн-курсы английского</h1>
       <h2 class="welcome-info__subtitle ">Для тех, <br> кто ценит свое время</h2>
-      <p class="welcome-info__indent ">Не знаешь, какой курс тебе подходит?<br> Оставь заявку, и мы предложим тебе оптимальный вариант</p>
+      <p class="welcome-info__indent ind">Не знаешь, какой курс тебе подходит?<br> Оставь заявку, и мы предложим тебе оптимальный вариант</p>
       <div class="btn-bot">
-        <a href="#" class="button-link btn-bot__vk" tabindex="0">Вконтаке</a>
+        <a href="#" class="button-link btn-bot__vk">Вконтаке</a>
         <a href="#" class="button-link btn-bot__teleg">Телеграм</a>
       </div>
     </div>
@@ -71,56 +69,123 @@
     </section>
 
   <section class="course">
-    <h2 class="curse__title">Наши курсы</h2>
+    <h2 class="course__title">Наши курсы</h2>
+
     <article class="course-item telegram-club-course">
-      <h2 class="course-item__caption">Telegram Club </h2>
+      <h3 class="course-item__caption">Telegram Club </h3>
       <img class="course-item__image" width="150"  height="150" src="/img/telegrm-cours-prev.svg" alt="Телеграм клуб">
       <p class="course-item__indent">Полный курс английского, разложенный на мини-уроки в закрытом канале Telegram</p>
-      <ul>
+      <ul class="course-items">
         <li class="course-item__list">10-15 минут в день</li>
         <li class="course-item__list">очень дешево</li>
-        <li class="course-item__list"><span class="course-item__list--cash">140-190 руб./неделя</span> за неделю
-          без обратной связи первые 7 дней бесплатно, пробуйте, а потом платите
-          </li>
+        <li class="course-item__list"><span class="course-item__list--cash">140-190 руб./неделя</span> за неделю без обратной связи первые 7 дней бесплатно, попробуйте, а потом платите</li>
       </ul>
-      <a href="#" class="course-item__link">Подробнее</a>
-
+      <a href="#" class="course-item__link button-link">Подробнее</a>
     </article>
+
     <article class="course-item anglofan-course">
-      <h2 class="course-item__caption">Anglofan</h2>
+      <h3 class="course-item__caption">Anglofan</h3>
       <img class="course-item__image" width="150"  height="150" src="/img/chart-anglofan-prev.svg" alt="Курсы англофан">
       <p class="course-item__indent">Обучение на специализированной образовательной платформе с обратной связью гарантия возврата стоимости курса в течение первых 10 дней</p>
-      <ul>
+      <ul class="course-items">
         <li class="course-item__list">25-30 минут в день</li>
         <li class="course-item__list"><span class="course-item__list--cash">640-1250 руб/неделя</span></li>
       </ul>
-      <a href="#" class="course-item__link">Подробнее</a>
+      <a href="#" class="course-item__link  button-link">Подробнее</a>
 
     </article>
     <article class="course-item spaeckng-club-course">
-      <h2 class="course-item__caption">Speaking Club</h2>
+      <h3 class="course-item__caption">Speaking Club</h3>
       <img class="course-item__image" width="150"  height="150" src="/img/rupor-speaking-prev.svg" alt="Speaking Club">
       <p class="course-item__indent">Вишенка на торте идеальное дополнение к любому из курсов говорим вживую с поддержкой преподавателя</p>
-      <ul>
-        <li class="course-item__list"><b  class="course-item__list--black">10-15 минут</b> в день в любое удобное для вас время
+      <ul class="course-items">
+        <li class="course-item__list">10-15 минут в день в любое удобное для вас время
           смотрим, слушаем, обсуждаем </li>
         <li class="course-item__list"><span class="course-item__list--cash">от 450 руб/неделя</span></li>
       </ul>
-      <a href="#" class="course-item__link">Подробнее</a>
-
+      <a href="#" class="course-item__link button-link">Подробнее</a>
+    </article>
       <article class="course-item it-anglofan-course">
-        <h2 class="course-item__caption">IT Anglofan</h2>
+        <h3 class="course-item__caption">IT Anglofan</h3>
         <img class="course-item__image" width="150"  height="150" src="/img/dis-it-prev.svg" alt="Курсы для IT">
         <p class="course-item__indent">Интенсивный курс для IT-специалистов</p>
-        <ul>
-          <li class="course-item__list"><b class="course-item__list--black">25-30 минут</b> в день</li>
+        <ul class="course-items">
+          <li class="course-item__list"> 25-30 мину в день</li>
           <li class="course-item__list"><span class="course-item__list--cash">940-1590 руб/неделя</span></li>
         </ul>
-        <a href="#" class="course-item__link">Подробнее</a>
+        <a href="#" class="course-item__link button-link">Подробнее</a>
     </article>
   </section>
-
-
+<section class="about-course">
+  <h2 class="about-course__title">О курсах Anglofan</h2>
+  <div class="about-course--bgc-video">
+    <div class="about-course__video">
+      <div class="video-hello">
+        <iframe class="video-hello__embed" width="515" height="288"
+         src="https://www.youtube.com/embed/tUQsvi4xFOE">
+           </iframe>
+      </div>
+    </div>
+  </div>
+  <div class="about-course__karina">
+    <h3 class="about-course__caprion">I’m Karina.  Nice to meet you!</h3>
+    <div class="about-course__karina--wraper">
+      <p class="about-course__text ind">Уже 10 лет я учусь искусству преподавания и учу вас английскому.
+        5 лет я руковожу офлайн школой английского Follow English.
+        В марте 2020 года я запустила супер эффективный и доступный проект Telegram club, а в сентябре 2020 курс для тех, кто любит учиться интенсивно.
+        Если вы ищете марафон, то вам не ко мне. Если же вы хотите раз и навсегда выучить английский и каждую секунду чувствовать себя уверенно, то добро пожаловать в английский!
+        Каждый мой курс – это классический курс со всей нужной грамматикой, лексикой, работой с произношением, говорением и пониманием на слух. Но кроме этого - видео с Youtube, чтение соцсетей носителей, песни, мультфильмы и сериалы. Идеальное сочетание, которое работает для каждого!
+        I help you. That’s what I do.
+        </p>
+        <img class="about-course__myphoto" src="/img/photo_carina.png" alt="Мое фотография смотри на лево">
+    </div>
+  </div>
+</section>
+<section class="how-learn">
+  <h2 class="how-learn__title">Как мы учимся?</h2>
+  <ul class="how-learn__items">
+    <li class="how-learn__list">
+      <img src="/img/how-learn__plus.svg" width="90" height="90" alt="Мотивация" class="how-learn__image">
+      <h3 class="how-learn__subtitle">Получаем мотивацию</h3>
+      <p class="how-learn__info">очень важно видеть главную цель и идти к ней. Все мы имеем право на «я устал», поэтому очень важно поддерживать интерес к языку</p>
+    </li>
+    <li class="how-learn__list">
+      <img src="/img/how-learn__tick.svg" width="90" height="90" alt="Галочка" class="how-learn__image">
+      <h3 class="how-learn__subtitle">Учим все по порядку</h3>
+      <p class="how-learn__info">любой наш курс отличается системностью и логичностью, никаких вырванных из контекста тем</p>
+    </li>
+    <li class="how-learn__list">
+      <img src="/img/how-learn__abc.svg" width="90" height="90" alt="Буквы ABC" class="how-learn__image">
+      <h3 class="how-learn__subtitle">Подробно разбираем</h3>
+      <p class="how-learn__info">все видео максимально подробны. За 10 лет практики, я научилась доносить до каждого студента самое главное. Будет понятно, я обещаю.</p>
+    </li>
+    <li class="how-learn__list">
+      <img src="/img/how-learn__like.svg" width="90" height="90" alt="Качество" class="how-learn__image">
+      <h3 class="how-learn__subtitle">Качественно запоминаем</h3>
+      <p class="how-learn__info">от знакомства с новой информацией (слова, правила, нюансы) до выведения в речь. Если вы раньше безуспешно учились, значит, пропускали один или несколько этапов усвоения информации. У нас вы ничего не упустите.</p>
+    </li>
+    <li class="how-learn__list">
+      <img src="/img/how-learn__recrs.svg" width="90" height="90" alt="Рекурсия" class="how-learn__image">
+      <h3 class="how-learn__subtitle">Регулярно повторяем</h3>
+      <p class="how-learn__info">Если не повторять, то все забывается. Наверняка, вы это знаете! Сколько слов и правил выучено, а потом забыто? Это не потому что вы плохо учили, а потому что нужно регулярно повторять</p>
+    </li>
+    <li class="how-learn__list">
+      <img src="/img/how-learn__expand.svg" width="90" height="90" alt="Расширение" class="how-learn__image">
+      <h3 class="how-learn__subtitle">Развиваем все навыки</h3>
+      <p class="how-learn__info">Понимание на слух, чтение, письмо, говорение. У нас есть задания на любой вкус.</p>
+    </li>
+    <li class="how-learn__list">
+      <img src="/img/how-learn__play.svg" width="90" height="90" alt="Значек воспроизвести" class="how-learn__image">
+      <h3 class="how-learn__subtitle">Используем аутентичные материалы</h3>
+      <p class="how-learn__info">смотрим видео на Youtube, читаем книги в оригинале, поем песни, смотрим фильмы и сериалы, читаем соцсети на английском.</p>
+    </li>
+    <li class="how-learn__list">
+      <img src="/img/how-learn__cert.svg" width="90" height="90" alt="Сертификат" class="how-learn__image">
+      <h3 class="how-learn__subtitle">Гарантируем качество</h3>
+      <p class="how-learn__info">для Telegram-курсов у нас первые 7 дней бесплатно – пробуй, решай и только потом плати. Для Интенсивов гарантия возврата полной суммы в течение первых 14 дней обучения, если ты передумаешь.</p>
+    </li>
+  </ul>
+</section>
 
   <div class="visually-hidden">
     <include src="build/img/sprite.svg"> </include>

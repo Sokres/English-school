@@ -1,0 +1,28 @@
+// переменные
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gray:#CFCFCF;
+$white:#FFFFFF;
+$top-color__hover:#52A1F0;
+$top-color__active:#4C95DE;
+
+.how-learn{
+  padding: 0 20px;
+  text-align: center;
+}
+.how-learn__items{
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  padding: 0;
+  list-style: none;
+}
+.how-learn__image{
+  height: 80px;
+}
+.how-learn__subtitle{
+  margin: 0;
+  font-size: 20px;
+}
+

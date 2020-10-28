@@ -27,6 +27,16 @@
   font-style: normal;
 }
 
+// переменные
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gray:#CFCFCF;
+$white:#FFFFFF;
+$top-color__hover:#52A1F0;
+$top-color__active:#4C95DE;
+
 
 // скрытие элментов
 .visually-hidden {
@@ -41,7 +51,6 @@
 }
 html {
   box-sizing: border-box;
-
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -51,27 +60,85 @@ body{
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   font-family: 'Golos Text', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-weight: 400;
+  color: $text-color;
+
+
 }
 h1{
   font-weight: 700;
+  color: $text-color;
+  font-size: 27px;
+}
+h2{
+  color: $text-color;
+  font-size: 24px;
+}
+h3{
+  color: $text-color;
+  font-size: 22px;
 }
 img {
   max-width: 100%;
   height: auto;
 }
-
-
+.button-link{
+  display: inline-block;
+  min-width: 150px;
+  padding: .35em 1em;
+  border-radius: 7px;
+  background-color: $top-color;
+  border:solid $white 1px;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  text-anchor: manipulation;;
+  transition: all 0.15s ease-in;
+  &:hover,
+  &:focus{
+    background-color: $top-color__hover;
+    border:solid $white 1px;
+  }
+  &:focus{
+    outline: none;
+    border: solid 1px $gren;
+  }
+  &:active{
+    background-color: $top-color__active;
+    border:solid $top-color 1px;
+  }
+}
+@media (min-width: 426px){
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 30px;
+  }
+}
 @media (min-width: 768px) {
+      h1{
+        font-size: 42px;
+      }
+      h2{
+        font-size: 42px;
+      }
 
+      h3{
+        font-size: 28px;
+      }
 }
 @media (min-width: 1200px) {
   body{
     background-position: 130% 0;
     background-size: 70%;
+    font-size: 18px;
+  }
+  .ind{
+    font-weight: 500;
   }
 
 }
