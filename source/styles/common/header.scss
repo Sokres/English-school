@@ -2,11 +2,19 @@
 $top-color:#57ACFF;
 $text-color:#182F52;
 $text-add:#646F87;
-$green:#00C1A4;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
 $gray:#CFCFCF;
+$gray__hover:#acacac;
 $white:#FFFFFF;
+$top-color__hover:#c484ff;
+$top-color__active:#4C95DE;
 $focus:#E7E7E7;
 $focus-mobile:#CACACA;
+
+
+
 
 
 .header{
@@ -276,6 +284,8 @@ $focus-mobile:#CACACA;
 @media (min-width: 849px) {
   .header{
     grid-template-columns: 1fr 3fr;
+    padding-right: 50px;
+    padding-left: 50px;
 
     &__nav{
       width: 600px;

@@ -1,4 +1,5 @@
 // переменные
+$screen: 1200px;
 $top-color:#57ACFF;
 $text-color:#182F52;
 $text-add:#646F87;
@@ -9,8 +10,13 @@ $top-color__hover:#52A1F0;
 $top-color__active:#4C95DE;
 
 .how-learn{
+  margin-top: 40px;
   padding: 0 20px;
   text-align: center;
+  margin-bottom: 35px;
+}
+.how-learn__title{
+  margin-bottom: 50px;
 }
 .how-learn__items{
   // display: grid;
@@ -18,11 +24,50 @@ $top-color__active:#4C95DE;
   padding: 0;
   list-style: none;
 }
+.how-learn__list{
+  margin-bottom: 30px;
+}
 .how-learn__image{
   height: 80px;
+  margin-bottom: 15px;
 }
 .how-learn__subtitle{
   margin: 0;
   font-size: 20px;
+}
+@media (min-width: 768px) {
+  .how-learn{
+    margin-top: 60px;
+    padding: 0 50px;
+  }
+  .how-learn__title{
+    margin-bottom: 70px;
+  }
+  .how-learn__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .how-learn{
+    width: $screen;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 80px;
+  }
+  .how-learn__title{
+    margin-bottom: 70px;
+  }
+  .how-learn__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .how-learn__list{
+    width: 300px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 

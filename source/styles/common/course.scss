@@ -1,4 +1,5 @@
 // переменные
+$screen: 1200px;
 $top-color:#57ACFF;
 $text-color:#182F52;
 $text-add:#646F87;
@@ -7,6 +8,7 @@ $gray:#CFCFCF;
 $white:#FFFFFF;
 $top-color__hover:#52A1F0;
 $top-color__active:#4C95DE;
+
 
 .course{
   display: grid;
@@ -65,7 +67,7 @@ $top-color__active:#4C95DE;
 
 @media (min-width: 768px) {
   .course{
-    max-width: 960px;
+    max-width: $screen;
     margin: 0 auto;
   }
   .course__title{
@@ -144,7 +146,10 @@ $top-color__active:#4C95DE;
 }
 @media (min-width: 1200px) {
   .course{
-    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+  .course__title{
+    margin-bottom: 80px;
   }
   .course-item{
     margin-left: 0;

@@ -1,12 +1,17 @@
 // переменные
+$screen: 1200px;
 $top-color:#57ACFF;
 $text-color:#182F52;
 $text-add:#646F87;
 $gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
 $gray:#CFCFCF;
+$gray__hover:#acacac;
 $white:#FFFFFF;
-$top-color__hover:#52A1F0;
+$top-color__hover:#c484ff;
 $top-color__active:#4C95DE;
+
 
 .head-wraper{
   padding-bottom: 50px;
@@ -144,19 +149,23 @@ $top-color__active:#4C95DE;
 
 @media (min-width: 1200px) {
   .welcome-info{
-    grid-template-columns:1fr 0.5fr;
-    max-width: 960px;
+    grid-template-columns:1fr 1fr;
+    max-width: $screen;
     margin: 0 auto;
+    padding-left: 50px;
     &__wraper{
       margin-top: 120px;
       margin-bottom: 50px;
     }
   }
-  .social{
-   margin-left: 5vw;
-  }
+  // .social{
+  //  margin-left: 3%;
+  // }
 }
 
-.course{
-  display: grid;
+
+@media (min-width: 1310px) {
+  .social{
+    margin-left: 3%;
+   }
 }

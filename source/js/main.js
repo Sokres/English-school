@@ -25,3 +25,8 @@ navToggle.addEventListener('click', function() {
   }
 });
 console.log('helo');
+
+
+  //Настройки для слайдера
+
+

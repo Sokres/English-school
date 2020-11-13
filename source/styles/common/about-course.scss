@@ -1,4 +1,5 @@
 // переменные
+$screen: 1200px;
 $top-color:#57ACFF;
 $text-color:#182F52;
 $text-add:#646F87;
@@ -10,10 +11,11 @@ $top-color__active:#4C95DE;
 
 
 .about-course{
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .about-course__title{
   text-align: center;
+  margin: 0;
 }
 .about-course__video{
   width: 80%;
@@ -35,8 +37,7 @@ $top-color__active:#4C95DE;
   }
 }
 .about-course--bgc-video{
-  margin: -25px 0;
-  padding: 50px 0;
+  padding: 30px 0;
   background-image:
       url(/img/bg-about-up.svg);
   background-size: cover;
@@ -61,11 +62,15 @@ $top-color__active:#4C95DE;
   display: none;
 }
 @media (min-width: 768px) {
+  .about-course{
+    margin-top: 60px;
+  }
   .about-course--bgc-video{
+    padding-top: 50px;
     background-image:
                   url(/img/bg-about-up.svg),
                   url(/img/bg-about-down.svg) ;
-    background-position: 0 0, 100% 100%;
+    background-position: 0 10%, 100% 100%;
     background-size: 60%, 60%;
     background-repeat: no-repeat, no-repeat;
   }
@@ -78,12 +83,14 @@ $top-color__active:#4C95DE;
   }
 }
 @media (min-width:1200px) {
+  .about-course{
+    margin-top: 80px;
+  }
   .about-course__video{
    max-width: 860px;
   }
   .about-course--bgc-video{
-    padding: 100px 0;
-    margin: -50px 0;
+    padding: 70px 0;
   }
   .about-course__karina{
 
@@ -93,9 +100,8 @@ $top-color__active:#4C95DE;
   }
   .about-course__caprion,
   .about-course__karina--wraper{
-    width: 960px;
+    width: $screen;
     margin: 0 auto;
-    padding-left: 0;
   }
   .about-course__karina--wraper{
     display: grid;
