@@ -100,12 +100,11 @@ $top-color__active:#4C95DE;
     margin-left: 0;
   }
 }
-.social{
-  display: none;
-}
+
 @media (min-width: 768px) {
   .welcome-info__title{
-    margin-bottom: 2px;
+    margin-bottom: 25px;
+    line-height: 1.1;
   }
   .welcome-info__subtitle{
     font-size: 20px;
@@ -114,37 +113,7 @@ $top-color__active:#4C95DE;
     display: flex;
     justify-content: flex-start;
   }
-  .social{
-    display: grid;
-    row-gap: 30px;
-    position: fixed;
-    margin-right: 60px;
-    padding: 40px 5px 40px 5px;
-    border: solid 2px $top-color;
-    border-radius: 33px;
-    top: 35vh;
-    left: 5px;
-    &__facebook,
-    &__insta,
-    &__vk,
-    &__youtube {
-      width: 24px;
-      height: 24px;
-      fill: $gray;
-      transition: all 0.15s ease-in;
-      &--inline{
-        width: 24px;
-        height: 24px;
-      }
-      &:hover,
-      &:focus{
-        fill: $top-color;
-      }
-      &:active{
-        fill: $top-color__active;
-      }
-    }
-  }
+
 }
 
 @media (min-width: 1200px) {
@@ -163,9 +132,59 @@ $top-color__active:#4C95DE;
   // }
 }
 
+.head-wraper-telegramm{
+  background-image: url(/img/bg_header_page_telegramm__moobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 30px right -130px;
+  background-color: #ffffff;
+  color:#182F52;
+}
+// @media (min-width: 849px) {
+//   .head-wraper-telegramm{
 
-@media (min-width: 1310px) {
-  .social{
-    margin-left: 3%;
-   }
+//   }
+// }
+.welcome-telegramm{
+  .welcome-info__for-course{
+    margin: 0;
+    color: $text-add;
+    font-weight: 500;
+  }
+  .welcome-info__submenu{
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-around;
+    max-width: 90%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  .welcome-info__submenu-item{
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  .welcome-info__submenu-item a{
+    color: $top-color;
+  }
+  .btn-bot{
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .head-wraper-telegramm{
+    background-image: url(/img/bg_header_page_telegramm.svg);
+    background-repeat: no-repeat;
+    background-position:  50% -10%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  .welcome-telegramm{
+    margin-bottom: 100px;
+    .welcome-info__submenu{
+      max-width: 100%;
+      margin-top: 50px;
+    }
+  }
 }

@@ -1,0 +1,126 @@
+// переменные
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#c484ff;
+$top-color__active:#4C95DE;
+
+.time-trening{
+  padding: 0 20px;
+}
+.time-traning__title{
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.time-traning__lvl{
+  position: relative;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  list-style: none;
+  &:before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: $top-color;
+  }
+}
+.time-traning__item{
+  position: relative;
+  margin-bottom: 40px;
+  // min-height: 350px;
+}
+.time-traning__number{
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: solid 2px $top-color;
+  border-radius: 100%;
+  background-color: $white;
+  color: $top-color;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.time-traning__name{
+  // position: relative;
+  // top: 0;
+  // left: 15%;
+  // margin-bottom: 50px;
+  display: block;
+  margin-bottom: 15px;
+  margin-left: 15%;
+  color: $text-color;
+  font-size: 20px;
+  font-weight: 700;
+}
+.time-traning__name--week{
+  color: $top-color;
+  font-size: 16px;
+  font-weight: 500;
+}
+.time-traning__section{
+  // position: relative;
+  // top: auto;
+  // // left: 15%;
+  // padding-top: 20px;
+  // width: 250px;
+  // max-width: 600px;
+  margin: 0;
+  margin-left: 15%;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: $top-color;
+  color: $white;
+
+}
+@media(min-width: 768px){
+  .time-trening{
+    // max-width: 1200px;
+    // margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .time-traning__lvl{
+    margin-left: 50px;
+  }
+  .time-traning__title{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+  .time-traning__item{
+    display: flex;
+  }
+  .time-traning__name{
+    align-self: center;
+    min-width: 200px;
+    margin-bottom: 0;
+    margin-left: 10%;
+  }
+  .time-traning__section{
+    margin-left: 5%;
+    max-width: 500px;
+  }
+}
+@media(min-width: 1200px){
+  // .time-traning__name{
+  //   margin-left: 20%;
+  // }
+  .time-traning__section{
+    margin-left: 10%;
+    max-width: 700px;
+  }
+}

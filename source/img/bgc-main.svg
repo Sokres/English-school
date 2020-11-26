@@ -4,21 +4,23 @@
 	 viewBox="0 0 1828.3 676" style="enable-background:new 0 0 1828.3 676;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
-	.st1{fill:#57ACFF;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1337.2755" y1="63.8177" x2="1712.2378" y2="743.9992">
-	<stop  offset="0" style="stop-color:#57ACFF"/>
-	<stop  offset="0.2101" style="stop-color:#59ACFF"/>
-	<stop  offset="0.3325" style="stop-color:#62ABFF"/>
-	<stop  offset="0.4322" style="stop-color:#70ABFF"/>
-	<stop  offset="0.5022" style="stop-color:#7FAAFF"/>
-	<stop  offset="0.5999" style="stop-color:#83A6FF;stop-opacity:0.9216"/>
-	<stop  offset="0.6943" style="stop-color:#8E9BFF;stop-opacity:0.8457"/>
-	<stop  offset="0.7875" style="stop-color:#A289FF;stop-opacity:0.7708"/>
-	<stop  offset="0.8799" style="stop-color:#BD6FFF;stop-opacity:0.6965"/>
-	<stop  offset="0.9709" style="stop-color:#E04DFF;stop-opacity:0.6234"/>
-	<stop  offset="1" style="stop-color:#ED41FF;stop-opacity:0.6"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1279.5635" y1="-42.1078" x2="1448.0332" y2="944.0128" gradientTransform="matrix(1 0 0 1 0 -90)">
+	<stop  offset="0" style="stop-color:#CD60FF;stop-opacity:0.6292"/>
+	<stop  offset="1.309181e-02" style="stop-color:#C565FF;stop-opacity:0.6389"/>
+	<stop  offset="7.272051e-02" style="stop-color:#A37BFF;stop-opacity:0.6829"/>
+	<stop  offset="0.1367" style="stop-color:#878DFF;stop-opacity:0.7302"/>
+	<stop  offset="0.2056" style="stop-color:#729BFF;stop-opacity:0.781"/>
+	<stop  offset="0.2816" style="stop-color:#63A4FF;stop-opacity:0.8371"/>
+	<stop  offset="0.3703" style="stop-color:#5AAAFF;stop-opacity:0.9026"/>
+	<stop  offset="0.5022" style="stop-color:#57ACFF"/>
+	<stop  offset="0.5895" style="stop-color:#5BA9FF;stop-opacity:0.9284"/>
+	<stop  offset="0.6689" style="stop-color:#66A2FF;stop-opacity:0.8633"/>
+	<stop  offset="0.7453" style="stop-color:#7894FF;stop-opacity:0.8006"/>
+	<stop  offset="0.8198" style="stop-color:#9282FF;stop-opacity:0.7396"/>
+	<stop  offset="0.8929" style="stop-color:#B46AFF;stop-opacity:0.6796"/>
+	<stop  offset="0.964" style="stop-color:#DC4DFF;stop-opacity:0.6212"/>
+	<stop  offset="0.9899" style="stop-color:#ED41FF;stop-opacity:0.6"/>
 </linearGradient>
 <path class="st0" d="M776,0c262.3,233.1,355.7,443.2,416.2,676h636.1V0.2"/>
-<rect x="117" y="-98" class="st1" width="49" height="26"/>
 </svg>

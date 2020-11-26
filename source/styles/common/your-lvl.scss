@@ -1,0 +1,150 @@
+// переменные
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#c484ff;
+$top-color__active:#4C95DE;
+
+.your-lvl{
+  padding: 0 20px;
+  padding-top: 70px;
+}
+.your-lvl__btn-start{
+  position: relative;
+  border: none;
+  width: 100%;
+  min-width: 150px;
+  max-width: 500px;
+  padding: 0.6em 1em;
+  border-radius: 10px;
+  background-color: $top-color;
+  // border:solid $white 2px;
+  color: $white;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-anchor: manipulation;
+  transition: all 0.15s ease-in;
+  &:hover,
+  &:focus{
+    // border:solid $top-color 2px;
+    background-color: $top-color__hover;
+    box-shadow: -3px 3px 5px 0 #182f522f;
+  }
+  &:focus{
+    outline: none;
+    box-shadow: 0 0 0 1px $gren;
+  }
+  &:active{
+    // border:solid $top-color 1px;
+    background-color: $top-color__active;
+  }
+}
+//Описание модльного окна
+.your-lvl__modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 20vh;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+.your-lvl__test{
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid $gray__hover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: $white;
+  text-align: center;
+  animation-name: lvl-modal-open;
+  animation-duration: 0.4s
+}
+.your-lvl__header{
+  padding: 2px 16px;
+  background-color: $gren__hover;
+  color: $white;
+}
+.your-lvl__modal-title{
+  color: $white;
+}
+.your-lvl__close{
+  float: right;
+  font-size: 35px;
+  cursor: pointer;
+}
+.your-lvl__qestions{
+  padding: 20px 0;
+  font-size: 30px;
+}
+.your-lvl__btn{
+  display: block;
+	margin: 8px auto;
+	padding: 10px 25px;
+	width: 90%;
+	border: 0;
+  border-radius: 10px;
+	background: $top-color;
+	color: $white;
+	font-size: 15pt;
+	cursor: pointer;
+}
+
+.your-lvl__btn:hover{
+  background: red;
+}
+.your-lvl__btn-wrong
+{
+	background: #EB6465;
+}
+
+.your-lvl__btn-correct
+{
+	background: #5EB97D;
+}
+
+.your-lvl__btn-passive
+{
+	background: #B3B3B3;
+}
+.your-lvl__quantity{
+  padding: 10px 0;
+  font-size: 20px;
+}
+@keyframes lvl-modal-open {
+  from {top:-400px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+@media (min-width: 768px){
+  .your-lvl{
+    margin: 0 auto;
+    max-width: 500px;
+    padding-top: 100px;
+  }
+}
+@media (max-height: 550px){
+  .your-lvl__modal{
+    padding-top: 5vh;
+  }
+  .your-lvl__modal-title{
+    margin: 5px;
+    font-size: 20px;
+  }
+  .your-lvl__buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
