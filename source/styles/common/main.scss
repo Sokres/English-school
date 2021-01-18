@@ -13,103 +13,116 @@ $top-color__hover:#c484ff;
 $top-color__active:#4C95DE;
 
 
-.head-wraper{
+.head-wraper {
   padding-bottom: 50px;
   background-image: url(/img/bgc-main.svg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: 40%;
   background-color: #ffffff;
-  color:#182F52;
+  color: #182F52;
 }
-.welcome-info{
-  padding: 10px 20px 0 20px ;
-  &__title{
+
+.welcome-info {
+  padding: 10px 20px 0 20px;
+
+  &__title {
     margin-bottom: 10px;
-    line-height:36px;
+    line-height: 36px;
     // text-align: left;
   }
-  &__subtitle{
+
+  &__subtitle {
     color: $top-color;
     // text-align: center;
     font-weight: 500;
-    font-size:18px;
+    font-size: 18px;
   }
-  &__indent{
+
+  &__indent {
     margin-top: 25px;
     // text-align: center;
   }
 }
 
-.btn-bot{
+.btn-bot {
   display: flex;
   justify-content: flex-start;
   margin-top: 50px;
+
   &__vk,
-  &__teleg{
+  &__teleg {
     padding: .25em 0;
     min-width: 100px;
     width: 200px;
 
-    }
+  }
 
-  &__vk{
+  &__vk {
     display: flex;
     margin-right: 10px;
     justify-content: center;
     align-items: center;
-      &::after{
-        content:"";
-        width: 35px;
-        height: 35px;
-        background-image: url(/img/ico-vk-btn.svg);
-        background-repeat: no-repeat;
-        background-size: 70%;
-        background-position: right 10px;
-      }
+
+    &::after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      background-image: url(/img/ico-vk-btn.svg);
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: right 10px;
+    }
   }
-  &__teleg{
+
+  &__teleg {
     display: flex;
     justify-content: center;
     align-items: center;
-      &::after{
-        content:"";
-        width: 35px;
-        height: 35px;
-        background-image: url(/img/ico-teleg-btn.svg);
-        background-repeat: no-repeat;
-        background-size: 70%;
-        background-position: right 7px;
-      }
+
+    &::after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      background-image: url(/img/ico-teleg-btn.svg);
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: right 7px;
+    }
   }
 }
+
 @media (min-width: 768px) {
-  .welcome-info{
+  .welcome-info {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     margin-top: 100px;
     margin-left: 50px;
     text-align: left;
+
     &__title,
     &__subtitle,
-    &__indent{
+    &__indent {
       text-align: left;
     }
   }
-  .btn-bot__vk{
+
+  .btn-bot__vk {
     margin-left: 0;
   }
 }
 
 @media (min-width: 768px) {
-  .welcome-info__title{
+  .welcome-info__title {
     margin-bottom: 25px;
     line-height: 1.1;
   }
-  .welcome-info__subtitle{
+
+  .welcome-info__subtitle {
     font-size: 20px;
   }
-  .btn-bot{
+
+  .btn-bot {
     display: flex;
     justify-content: flex-start;
   }
@@ -117,74 +130,180 @@ $top-color__active:#4C95DE;
 }
 
 @media (min-width: 1200px) {
-  .welcome-info{
-    grid-template-columns:1fr 1fr;
+  .welcome-info {
+    grid-template-columns: 1fr 1fr;
     max-width: $screen;
     margin: 0 auto;
     padding-left: 50px;
-    &__wraper{
+
+    &__wraper {
       margin-top: 120px;
       margin-bottom: 50px;
     }
   }
+
   // .social{
   //  margin-left: 3%;
   // }
 }
 
-.head-wraper-telegramm{
+.head-wraper-telegramm {
   background-image: url(/img/bg_header_page_telegramm__moobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top 30px right -130px;
   background-color: #ffffff;
-  color:#182F52;
+  color: #182F52;
 }
-// @media (min-width: 849px) {
-//   .head-wraper-telegramm{
 
-//   }
-// }
-.welcome-telegramm{
-  .welcome-info__for-course{
-    margin: 0;
-    color: $text-add;
-    font-weight: 500;
-  }
-  .welcome-info__submenu{
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: space-around;
-    max-width: 90%;
-    margin: 0;
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
-  }
-  .welcome-info__submenu-item{
-    margin-right: 30px;
-    margin-bottom: 10px;
-  }
-  .welcome-info__submenu-item a{
-    color: $top-color;
-  }
-  .btn-bot{
-    margin-top: 20px;
+//Дублирование стилей для англофана
+.head-wraper-anglofan {
+  background-image: url(/img/bg_header_page_anglofan__moobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 30px right -130px;
+  background-color: #ffffff;
+  color: #182F52;
+}
+
+
+.welcome-info__for-course {
+  margin: 0;
+  color: $text-add;
+  font-weight: 500;
+}
+
+.welcome-info__submenu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.welcome-info__submenu-item {
+  margin-right: 30px;
+  margin-bottom: 10px;
+  z-index: 100;
+}
+
+.welcome-info__link {
+  color: $top-color;
+  z-index: 196;
+  text-decoration: none;
+  &:hover{
+    color: $top-color__hover;
   }
 }
+
+.btn-bot {
+  margin-top: 20px;
+}
+
+
+// Стили для липкого меню
+.submenu-insurance {
+  min-height: 60px;
+}
+
+.menu-stick~.section-menu {
+  padding-top: 70px;
+}
+
+.welcome-info__submenu--stick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  padding: 15px;
+  z-index: 90;
+  animation: submenu-up 0.2s;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    filter: blur(5px);
+    z-index: 90;
+  }
+}
+
+.welcome-info__submenu--active {
+  color: $top-color__hover;
+  text-decoration: none;
+}
+
+.welcome-info__submenu--open {
+  display: none;
+}
+
+.welcome-info__submenu--stick>.welcome-info__submenu--open {
+  display: inline-block;
+}
+
+// .welcome-info__submenu--stick ~.section-menu{
+//   padding-top: 50px;
+// }
+// .welcome-info__submenu--stick + .section-menu{
+//   padding-top: 50px;
+// }
+
 @media (min-width: 768px) {
-  .head-wraper-telegramm{
+  .head-wraper-telegramm {
     background-image: url(/img/bg_header_page_telegramm.svg);
     background-repeat: no-repeat;
-    background-position:  50% -10%;
+    background-position: 50% -10%;
     background-size: cover;
     background-color: #ffffff;
   }
-  .welcome-telegramm{
+
+  .welcome-telegramm {
     margin-bottom: 100px;
-    .welcome-info__submenu{
-      max-width: 100%;
-      margin-top: 50px;
-    }
+  }
+
+  .welcome-info__submenu {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+  .welcome-info__submenu--stick{
+    margin: 0;
+  }
+
+  //Дублирование стилей для англофана
+  .head-wraper-anglofan {
+    background-image: url(/img/bg_header_page_anglofan.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -10%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+
+  .welcome-anglofan {
+    margin-bottom: 100px;
+  }
+
+  .welcome-info__submenu {
+    max-width: 100%;
+  }
+}
+@keyframes submenu-up{
+  from{
+    opacity: 0;
+    top: -100px;
+    animation-timing-function: ease-out;
+  }
+  to{
+    opacity: 1;
+    top: 0;
+    animation-timing-function: ease-in;
   }
 }

@@ -1,0 +1,69 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#c484ff;
+$top-color__active:#4C95DE;
+$red: #e00083;
+$bg__price: #F3F3F3;
+
+
+.your-result{
+ padding: 20px;
+ text-align: center;
+}
+.your-result__title{
+  margin: 0;
+}
+.your-result__subtitle{
+  font-size: 10px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+
+}
+.your-result-conainer{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.your-result__item{
+  margin-bottom: 30px;
+}
+.your-result__text{
+  margin: 0;
+  margin-left: 15px;
+}
+@media(min-width: 768px){
+  .your-result{
+    padding-left: 50px;
+  }
+  .your-result-conainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .your-result__item{
+    display: flex;
+    align-items: center;
+  }
+  .your-result__image{
+    height: 100px;
+  }
+  .your-result__text{
+    text-align: left;
+  }
+}
+@media(min-width: 1200px){
+  .your-result{
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  .your-result-conainer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -116,21 +116,21 @@ $top-color__active:#4C95DE;
   &__insta,
   &__vk,
   &__youtube {
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
     margin-left: 20px;
     fill: $top-color;
     transition: all 0.15s ease-in;
     &--inline{
-      width: 34px;
-      height: 34px;
+      width: 44px;
+      height: 44px;
     }
     &:hover,
     &:focus{
-      fill: $top-color__hover;
+      transform: scale(1.2);
     }
     &:active{
-      fill: $top-color__active;
+      transform: scale(0.8);
     }
   }
 }

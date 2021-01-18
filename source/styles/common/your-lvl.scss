@@ -31,6 +31,7 @@ $top-color__active:#4C95DE;
   text-decoration: none;
   text-anchor: manipulation;
   transition: all 0.15s ease-in;
+  cursor: pointer;
   &:hover,
   &:focus{
     // border:solid $top-color 2px;
@@ -58,7 +59,7 @@ $top-color__active:#4C95DE;
   overflow: hidden;
   overflow-y: auto;
   background-color: rgba(0,0,0,0.4);
-  z-index: 1;
+  z-index: 110;
 }
 .your-lvl__test{
   position: relative;
@@ -130,9 +131,9 @@ $top-color__active:#4C95DE;
 
 @media (min-width: 768px){
   .your-lvl{
-    margin: 0 auto;
+    margin: 50px auto;
     max-width: 500px;
-    padding-top: 100px;
+    // padding-top: 100px;
   }
 }
 @media (max-height: 550px){

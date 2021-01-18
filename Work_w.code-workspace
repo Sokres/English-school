@@ -3,5 +3,13 @@
         {
             "path": "."
         }
-    ]
+    ],
+    "settings": {
+        "cSpell.language": ",ru",
+        "cSpell.words": [
+            "Telegram",
+            "club",
+            "moobile"
+        ]
+    }
 }

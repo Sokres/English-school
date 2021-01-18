@@ -85,6 +85,10 @@ $focus-mobile:#CACACA;
 //Кнопка в состоянии открытого меню
 
 .open{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
   .main-nav__btn{
 
     &--line{
@@ -406,19 +410,24 @@ $focus-mobile:#CACACA;
       opacity: 1;
       display: block;
     }
-
   }
 
 
 // Стили для Telegram-club
-.telegram-header .main-nav__btn{
+
+
+.telegram-header .main-nav__btn,
+.anglofan-header .main-nav__bt,
+.alter-header .main-nav__btn{
     &--line,
     &--line::before,
     &--line::after{
       background-color: $top-color;
     }
   }
-.open .telegram-header .main-nav__btn{
+.open .telegram-header .main-nav__btn,
+.open .anglofan-header .main-nav__btn,
+.open .alter-header .main-nav__btn{
     &--line,
     &--line::before,
     &--line::after{
@@ -426,7 +435,8 @@ $focus-mobile:#CACACA;
     }
   }
 @media (min-width: 849px) {
-  .telegram-header{
+  .telegram-header,
+  .anglofan-header{
     .site-list__link,
     .site-list__link-subdmenu{
       font-weight: 500;
@@ -449,6 +459,18 @@ $focus-mobile:#CACACA;
       visibility: visible;
       opacity: 1;
       display: block;
+    }
+  }
+  .alter-menu{
+    .site-list__link,
+    .site-list__link-subdmenu{
+      color: $top-color;
+      &:hover{
+        color: $top-color__hover;
+      }
+      &:after{
+        background-color: $top-color__hover;
+      }
     }
   }
 }

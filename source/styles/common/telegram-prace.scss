@@ -1,0 +1,151 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#c484ff;
+$top-color__active:#4C95DE;
+$red: #e00083;
+$bg__price: #F3F3F3;
+
+.telegram-prace {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  padding-bottom: 40px;
+  background-image: url(/img/bg_price_telegram_down.svg),
+    url(/img/bg_price_telegram_up.svg);
+  background-color: $bg__price;
+  background-repeat: no-repeat no-repeat;
+  background-position: top right, left bottom;
+  background-size: 50%;
+  text-align: center;
+}
+.telegram-prace__block{
+  // display: grid;
+  // justify-content: center;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px 10px 20px 10px;
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+.telegram-prace__time{
+  position: relative;
+  padding-bottom: 10px;
+}
+.telegram-prace__time::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 80%;
+  height: 2px;
+  background-color: $gray;
+  transform: translateX(-50%);
+}
+.telegram-prace__cash{
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: $top-color;
+  font-size: 26px;
+  font-weight: 700;
+  &--old{
+    position: absolute;
+    left: -10%;
+    top: -30px;
+    color: $text-color;
+    font-size: 18px;
+    font-weight: 500;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -15%;
+      width: 130%;
+      height: 2px;
+      background-color: $red;
+      transform: rotate(-7deg) translateY(-50%);
+    }
+  }
+}
+.telegram-prace__btn{
+  display: block;
+  // width: 100%;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 100px;
+  background-color: $white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 0 0 1px $text-color;
+  color: $text-color;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover,
+  &:focus{
+    box-shadow: 0 0 1px 3px $top-color;
+    color: $top-color;
+    // box-shadow: -3px 3px 5px 0 #182f522f;
+  }
+  &:focus{
+    outline: none;
+    box-shadow: 0 0 0 1px $top-color;
+  }
+  &:active{
+    color: $top-color__hover;
+    box-shadow: 0 0 1px 3px $top-color__hover;
+  }
+}
+.telegrm-prace__info{
+  margin-top: 20px;
+  font-size: 12px;
+}
+.telegram-prace__block--top{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px $top-color;
+  &::before{
+    content: "Выгодно";
+    position: absolute;
+    top: 10px;
+    right: -45px;
+    // width: 250px;
+    // height: 50px;
+    padding: 5px 50px;
+    background-color: $top-color;
+    color: $white;
+    transform: rotate(35deg);
+    }
+}
+@media(min-width: 768px){
+  .telegram-prace{
+    padding-bottom: 60px;
+    padding-right: 0;
+    background-size: contain;
+  }
+  .telegram-price__wraper{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 40px;
+    padding-right: 0;
+  }
+  .telegram-prace__containers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .telegram-prace__block{
+    max-width: 600px;
+    margin: 0 0.5rem;
+  }
+}

@@ -16,22 +16,19 @@ $top-color__active:#4C95DE;
 @media (min-width: 768px){
   .social{
     display: grid;
+    top: 35vh;
+    left: 5px;
     row-gap: 30px;
     position: fixed;
     margin-right: 60px;
     padding: 40px 2px 40px 2px;
-    border: solid 2px $top-color;
-    border-radius: 33px;
-    top: 35vh;
-    left: 5px;
-    background-color: $white;
+    // background-color: $white;
     &__facebook,
     &__insta,
     &__vk,
     &__youtube {
       width: 35px;
       height: 35px;
-      fill: $gray;
       transition: all 0.15s ease-in;
       &--inline{
         width: 35px;
