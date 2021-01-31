@@ -3,9 +3,9 @@
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1828.3 676" style="enable-background:new 0 0 1828.3 676;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:url(#SVGID_1_);}
+	.st0{fill:#57ACFF;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1279.5635" y1="-42.1078" x2="1448.0332" y2="944.0128" gradientTransform="matrix(1 0 0 1 0 -90)">
+<!-- <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1279.5635" y1="-42.1078" x2="1448.0332" y2="944.0128" gradientTransform="matrix(1 0 0 1 0 -90)">
 	<stop  offset="0" style="stop-color:#CD60FF;stop-opacity:0.6292"/>
 	<stop  offset="1.309181e-02" style="stop-color:#C565FF;stop-opacity:0.6389"/>
 	<stop  offset="7.272051e-02" style="stop-color:#A37BFF;stop-opacity:0.6829"/>
@@ -21,6 +21,6 @@
 	<stop  offset="0.8929" style="stop-color:#B46AFF;stop-opacity:0.6796"/>
 	<stop  offset="0.964" style="stop-color:#DC4DFF;stop-opacity:0.6212"/>
 	<stop  offset="0.9899" style="stop-color:#ED41FF;stop-opacity:0.6"/>
-</linearGradient>
+</linearGradient> -->
 <path class="st0" d="M776,0c262.3,233.1,355.7,443.2,416.2,676h636.1V0.2"/>
 </svg>

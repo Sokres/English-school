@@ -46,21 +46,23 @@ $top-color__active:#4C95DE;
 }
 
 .btn-bot {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  // justify-content: flex-start;
   margin-top: 50px;
+  gap: 15px;
 
   &__vk,
-  &__teleg {
+  &__teleg,
+  &__whatsapp{
     padding: .25em 0;
-    min-width: 100px;
-    width: 200px;
-
+    box-shadow: 0 0 0 1px #fff;
+    // min-width: 100px;
+    // width: 200px;
   }
 
   &__vk {
     display: flex;
-    margin-right: 10px;
+    // margin-right: 10px;
     justify-content: center;
     align-items: center;
 
@@ -88,6 +90,22 @@ $top-color__active:#4C95DE;
       background-repeat: no-repeat;
       background-size: 70%;
       background-position: right 7px;
+    }
+  }
+  &__whatsapp {
+    display: flex;
+    // margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      background-image: url(/img/whatsapp1.svg);
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: right 0px;
     }
   }
 }

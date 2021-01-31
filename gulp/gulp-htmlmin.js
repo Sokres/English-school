@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 
 // const htmlmin = require ("gulp-html-minimizer");
-// const htmlValidator = require ('gulp-w3c-html-validator' );
+const htmlValidator = require ('gulp-w3c-html-validator' );
 const posthtml = require ('gulp-posthtml');
 const plumber = require ('gulp-plumber' );
 const include = require("posthtml-include");
@@ -15,6 +15,6 @@ module.exports = function minifyHTML() {
     // .pipe(htmlmin({
     //     collapseWhitespace: true
     //   }))
-    // .pipe(htmlValidator())
+    .pipe(htmlValidator())
     .pipe(gulp.dest("build"));
 }
