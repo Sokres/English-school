@@ -7,7 +7,7 @@ const plumber = require ('gulp-plumber' );
 const include = require("posthtml-include");
 
 module.exports = function minifyHTML() {
-  return gulp.src("source/pages/*.html")
+  return gulp.src("source/pages/**/*.html")
     .pipe(plumber())
     .pipe(posthtml([
       include()
@@ -16,5 +16,5 @@ module.exports = function minifyHTML() {
     //     collapseWhitespace: true
     //   }))
     .pipe(htmlValidator())
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build/"));
 }

@@ -16,124 +16,139 @@ $top-color__active:#4C95DE;
 }
 .sing__title{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
-.sing__form{
+.sign__btn{
   display: grid;
-  margin-bottom: 30px;
-}
-.sing__name,
-.sing__email,
-.sing__tel{
-  justify-self: center;
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  padding: 0.5em 1em;
 
-  transition: 0.3s;
-  &:after{
-    content: "";
-    position: absolute;
-    right: 30px;
-    top: 15px;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.3s;
+}
+.sign__btn-link + .sign__btn-link{
+  margin-top: 15px;
+}
+// .sing__form{
+//   display: grid;
+//   margin-bottom: 30px;
+// }
+// .sing__name,
+// .sing__email,
+// .sing__tel{
+//   justify-self: center;
+//   position: relative;
+//   width: 100%;
+//   max-width: 500px;
+//   padding: 0.5em 1em;
 
-  }
-  &:hover .sing__name--input,
-  &:hover .sing__email--input,
-  &:hover .sing__tel--input{
-    border-bottom: solid 1px $gray__hover;
-  }
-}
-.sing__name:after{
-  background-image: url(/img/sing-name.svg) ;
-}
-.sing__email:after{
-  width: 26px;
-  background-image: url(/img/sing-email.svg);
-}
-.sing__tel:after{
-  background-image: url(/img/sing-tel.svg);
-}
-.sing__name:hover:after{
-  background-image: url(/img/sing-name-hover.svg) ;
-}
-.sing__email:hover:after{
-  width: 26px;
-  background-image: url(/img/sing-email-hover.svg);
-}
-.sing__tel:hover:after{
-  background-image: url(/img/sing-tel-hover.svg);
-}
+//   transition: 0.3s;
+//   &:after{
+//     content: "";
+//     position: absolute;
+//     right: 30px;
+//     top: 15px;
+//     width: 20px;
+//     height: 20px;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition: 0.3s;
 
-.sing__name--input,
-.sing__email--input,
-.sing__tel--input{
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 0.6em 2.7em 0.5em 0.5em;
-  border: none;
-  border-bottom: solid 1px $gray;
-  background-color: transparent;
-  font-size: 16px;
-  transition: 0.3s;
-}
-.sing__btn{
-  justify-self: center;
-  width: 100%;
-  max-width: 300px;
-  padding: 0.7em 1em;
-  border: none;
-  border-radius: 10px;
-  background-color: $gren;
-  font-size: 16px;
-  color: $white;
-  transition: 0.3s;
-  cursor: pointer;
-  &:hover,
-  &:focus{
-    background-color: $gren__hover;
-  }
-  &:focus{
-    outline: none;
-    box-shadow: 0 0 0 1px $top-color;
-  }
-  &:active{
-    background-color: $gren__active;
-  }
-}
+//   }
+//   &:hover .sing__name--input,
+//   &:hover .sing__email--input,
+//   &:hover .sing__tel--input{
+//     border-bottom: solid 1px $gray__hover;
+//   }
+// }
+// .sing__name:after{
+//   background-image: url(/img/sing-name.svg) ;
+// }
+// .sing__email:after{
+//   width: 26px;
+//   background-image: url(/img/sing-email.svg);
+// }
+// .sing__tel:after{
+//   background-image: url(/img/sing-tel.svg);
+// }
+// .sing__name:hover:after{
+//   background-image: url(/img/sing-name-hover.svg) ;
+// }
+// .sing__email:hover:after{
+//   width: 26px;
+//   background-image: url(/img/sing-email-hover.svg);
+// }
+// .sing__tel:hover:after{
+//   background-image: url(/img/sing-tel-hover.svg);
+// }
 
+// .sing__name--input,
+// .sing__email--input,
+// .sing__tel--input{
+//   width: 100%;
+//   margin-bottom: 20px;
+//   padding: 0.6em 2.7em 0.5em 0.5em;
+//   border: none;
+//   border-bottom: solid 1px $gray;
+//   background-color: transparent;
+//   font-size: 16px;
+//   transition: 0.3s;
+// }
+// .sing__btn{
+//   justify-self: center;
+//   width: 100%;
+//   max-width: 300px;
+//   padding: 0.7em 1em;
+//   border: none;
+//   border-radius: 10px;
+//   background-color: $gren;
+//   font-size: 16px;
+//   color: $white;
+//   transition: 0.3s;
+//   cursor: pointer;
+//   &:hover,
+//   &:focus{
+//     background-color: $gren__hover;
+//   }
+//   &:focus{
+//     outline: none;
+//     box-shadow: 0 0 0 1px $top-color;
+//   }
+//   &:active{
+//     background-color: $gren__active;
+//   }
+// }
 .social-footer{
+  margin-top: 50px;
+}
+.social-footer__title{
+  text-align: center;
+}
+.social-footer__link{
   display: flex;
   justify-content: center;
-  padding: 40px 5px 40px 5px;
-  &__facebook,
-  &__insta,
-  &__vk,
-  &__youtube {
-    width: 44px;
-    height: 44px;
-    margin-left: 20px;
-    fill: $top-color;
-    transition: all 0.15s ease-in;
-    &--inline{
-      width: 44px;
-      height: 44px;
-    }
-    &:hover,
-    &:focus{
-      transform: scale(1.2);
-    }
-    &:active{
-      transform: scale(0.8);
-    }
+  padding: 10px 5px 40px 5px;
+}
+.social-footer__element {
+  width: 44px;
+  height: 44px;
+  fill: $top-color;
+  transition: all 0.15s ease-in;
+  &:hover,
+  &:focus{
+    transform: scale(1.2);
+  }
+  &:active{
+    transform: scale(0.8);
   }
 }
+.social-footer__facebook--inline,
+.social-footer__insta--inline,
+.social-footer__youtube--inline,
+.social-footer__vk--inline{
+  width: 44px;
+  height: 44px;
+}
+.social-footer__element + .social-footer__element{
+  margin-left: 20px;
+}
+
 
 @media(min-width: 768px){
   .sing{
@@ -142,16 +157,26 @@ $top-color__active:#4C95DE;
   .sing__title{
     margin-bottom: 60px;
   }
-  .sing__form{
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 50px;
+  .sign__btn{
+    display: flex;
+    justify-content: center;
   }
-  .sing__btn{
-   max-height: 40px;
-   align-self: center;
-   margin-bottom: 15px;
-   margin-left: 40px;
+  .sign__btn-link + .sign__btn-link{
+    margin-top: 0;
+    margin-left: 20px;
+    // max-width: 250px;
+    // min-width: 250px;
   }
+  // .sing__form{
+  //   grid-template-columns: repeat(4, 1fr);
+  //   margin-bottom: 50px;
+  // }
+  // .sing__btn{
+  //  max-height: 40px;
+  //  align-self: center;
+  //  margin-bottom: 15px;
+  //  margin-left: 40px;
+  // }
 }
 @media(min-width: 1200px){
   .sing{
@@ -160,7 +185,14 @@ $top-color__active:#4C95DE;
     padding-right: 50px;
   }
   .sing__title{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
+  // .social-footer{
+  //   text-align: center;
+  // }
+  .social-footer__title{
+    font-size: 20px;
+  }
+
 }
 

@@ -39,20 +39,31 @@ $top-color__active:#4C95DE;
 .about-course--bgc-video{
   padding: 30px 0;
   background-image:
-      url(/img/bg-about-up.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  url(/img/bg-about-up.svg),
+  url(/img/bg-about-down.svg) ;
+background-position: 0 10%, 100% 100%;
+background-size: 60%, 60%;
+background-repeat: no-repeat, no-repeat;
+  // background-image:
+  //     url(/img/bg-about-up.svg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
 }
 .about-course__karina{
+  padding-top: 20px;
   padding-bottom: 20px;
   background-image:
-  url(/img/bg-about-down.svg);
-  background-position: 50% 100%;
+  url(/img/bg-about-wave-blure.jpg);
+  // background-position: 50% 100%;
   background-size: cover;
   background-repeat: no-repeat;
   &--wraper{
     padding: 0 20px;
   }
+}
+.about-course__caprion{
+  margin-top: 20px;
+  text-align: center;
 }
 
 .about-course__caprion{
@@ -79,7 +90,7 @@ $top-color__active:#4C95DE;
    padding-left: 50px;
   }
   .about-course__karina{
-    background-image: none;
+    // background-image: none;
   }
 }
 @media (min-width:1200px) {

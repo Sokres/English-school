@@ -93,7 +93,7 @@ img {
 }
 .button-link{
   display: inline-block;
-  min-width: 150px;
+  min-width: 120px;
   padding: .35em 1em;
   border-radius: 7px;
   background-color: $top-color;
@@ -151,16 +151,21 @@ margin: 0 auto;
     background-color: $gren__active;
   }
 }
-
+.seven-day__link:first-of-type{
+  margin-bottom: 30px;
+}
 
 // Медиа вырожения
 
-@media (min-width: 426px){
+@media (min-width: 479px){
   h1{
     font-size: 30px;
   }
   h2{
     font-size: 30px;
+  }
+  .button-link{
+    min-width: 120px;
   }
 }
 @media (min-width: 768px) {
@@ -173,6 +178,9 @@ margin: 0 auto;
   }
   h3{
     font-size: 28px;
+  }
+  .button-link{
+    min-width: 150px;
   }
 }
 @media (min-width: 1200px) {

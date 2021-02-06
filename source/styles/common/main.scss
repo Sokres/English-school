@@ -41,6 +41,7 @@ $top-color__active:#4C95DE;
 
   &__indent {
     margin-top: 25px;
+    font-weight:300;
     // text-align: center;
   }
 }
@@ -109,7 +110,16 @@ $top-color__active:#4C95DE;
     }
   }
 }
-
+@media (min-width: 479px){
+  .btn-bot{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    min-width: 150px;
+  }
+  .btn-bot__teleg, .btn-bot__vk, .btn-bot__whatsapp {
+    padding: .15em 0;
+  }
+}
 @media (min-width: 768px) {
   .welcome-info {
     display: grid;
@@ -164,7 +174,7 @@ $top-color__active:#4C95DE;
   //  margin-left: 3%;
   // }
 }
-
+//Стили для telegramm
 .head-wraper-telegramm {
   background-image: url(/img/bg_header_page_telegramm__moobile.svg);
   background-repeat: no-repeat;
