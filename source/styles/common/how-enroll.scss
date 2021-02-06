@@ -26,6 +26,7 @@ $top-color__active:#4C95DE;
 
 .how-enroll__list{
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
 }
 .how-enroll__image,
@@ -36,7 +37,12 @@ $top-color__active:#4C95DE;
 }
 .how-enroll__text{
   margin: 0;
+  padding: 0;
   align-self: center;
+  &--expl{
+    font-size: 10px;
+    color: $text-add;
+  }
 }
 .how-enroll--line{
   display: flex;
@@ -128,9 +134,6 @@ $top-color__active:#4C95DE;
 //Cтили для SVG
 
 
-  .how-enroll__text{
-    align-self: flex-start;
-  }
   .anglofan-enroll{
     margin-top: 80px;
     margin-bottom: 80px;

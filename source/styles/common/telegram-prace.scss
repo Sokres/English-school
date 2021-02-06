@@ -111,22 +111,37 @@ $bg__price: #F3F3F3;
   margin-top: 20px;
   font-size: 12px;
 }
-.telegram-prace__block--top{
+.telegram-prace__block--top,
+.telegram-prace__block--hit{
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 0 2px $top-color;
   &::before{
-    content: "Выгодно";
     position: absolute;
-    top: 10px;
-    right: -45px;
     // width: 250px;
     // height: 50px;
     padding: 5px 50px;
-    background-color: $top-color;
     color: $white;
     transform: rotate(35deg);
     }
+}
+.telegram-prace__block--top{
+  box-shadow: 0 0 0 2px $top-color;
+  &::before{
+    content: "Выгодно";
+    top: 10px;
+    right: -45px;
+    background-color: $top-color;
+  }
+}
+.telegram-prace__block--hit{
+  transform: scale(1.1);
+  z-index: 2;
+  &::before{
+    content: "ХИТ ПРОДАЖ";
+    top: 25px;
+    right: -55px;
+    background-color: $top-color__hover;
+  }
 }
 @media(min-width: 768px){
   .telegram-prace{
