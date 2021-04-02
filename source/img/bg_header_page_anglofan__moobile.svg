@@ -22,33 +22,45 @@
 	.st16{opacity:0.45;fill:url(#SVGID_16_);enable-background:new;}
 	@keyframes updown {
 		0% {
-			transform: translate(0px, -20px);
+			transform: translate(0px, 0px);
 		}
-		50% {
+		25% {
 			transform: translate(0px, 20px);
 		}
 
-		100% {
+		50% {
+			transform: translate(0px, 0px);
+		}
+		75% {
 			transform: translate(0px, -20px);
+		}
+		100% {
+			transform: translate(0px, 0px);
 		}
 
 	}
 	@keyframes downup {
-	0% {
-		transform: translate(0px, 20px);
-	}
-	50% {
-		transform: translate(0px, -20px);
-	}
+		0% {
+			transform: translate(0px, 0px);
+		}
+		25% {
+			transform: translate(0px, 20px);
+		}
 
-	100% {
-		transform: translate(0px, 20px);
-	}
+		50% {
+			transform: translate(0px, 0px);
+		}
+		75% {
+			transform: translate(0px, -20px);
+		}
+		100% {
+			transform: translate(0px, 0px);
+		}
 
 }
 	@keyframes raot {
 		0% {
-			transform: translate(0px, 30px);
+			transform: translate(0px, 0px);
 		}
 		8% {
 			transform: translate(-15px, 25px) ;
@@ -84,12 +96,12 @@
 			transform: translate(15px, 25px);
 		}		
 		100% {
-			transform: translate(0px, 30px);
+			transform: translate(0px, 0px);
 		}
 	}
 		@keyframes raot2 {
 		0% {
-			transform: translate(0px, 15px);
+			transform: translate(0px, 0px);
 		}
 		8% {
 			transform: translate(-5px, 10px) ;
@@ -125,7 +137,7 @@
 			transform: translate(5px, 10px);
 		}		
 		100% {
-			transform: translate(0px, 15px);
+			transform: translate(0px, 0px);
 		}
 	}
 </style>

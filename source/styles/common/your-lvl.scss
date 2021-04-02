@@ -9,86 +9,67 @@ $gray:#CFCFCF;
 $gray__hover:#acacac;
 $white:#FFFFFF;
 $top-color__hover:#c484ff;
+$top-color__test:#82bffc;
 $top-color__active:#4C95DE;
+.wraper-for-footer{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
+  .your-lvl{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  .footer{
+    margin-top: auto;
+  }
+}
+.test-title{
+  margin-top: 50px;
+  text-align: center;
+}
+.header-test{
+  background: $top-color;
+  box-shadow: 0px 10px 7px -2px rgba(43, 105, 132, 0.38);
+  color: $white;
+  z-index: 1;
+  .site-list__item-podmenu{
+    background-color: $top-color;
+  }
+}
 .your-lvl{
   padding: 0 20px;
-  padding-top: 70px;
 }
-.your-lvl__btn-start{
-  position: relative;
-  border: none;
-  width: 100%;
-  min-width: 150px;
-  max-width: 500px;
-  padding: 0.6em 1em;
-  border-radius: 10px;
-  background-color: $top-color;
-  // border:solid $white 2px;
-  color: $white;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  text-anchor: manipulation;
-  transition: all 0.15s ease-in;
-  cursor: pointer;
-  &:hover,
-  &:focus{
-    // border:solid $top-color 2px;
-    background-color: $top-color__hover;
-    box-shadow: -3px 3px 5px 0 #182f522f;
-  }
-  &:focus{
-    outline: none;
-    box-shadow: 0 0 0 1px $gren;
-  }
-  &:active{
-    // border:solid $top-color 1px;
-    background-color: $top-color__active;
-  }
-}
-//Описание модльного окна
-.your-lvl__modal{
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  padding-top: 20vh;
-  overflow: hidden;
-  overflow-y: auto;
-  background-color: rgba(0,0,0,0.4);
-  z-index: 110;
-}
+
 .your-lvl__test{
   position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  border: 1px solid $gray__hover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  // border: 1px solid $gray__hover;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   background-color: $white;
   text-align: center;
-  animation-name: lvl-modal-open;
-  animation-duration: 0.4s
+  border-radius: 10px;
+  // animation-name: lvl-modal-open;
+  // animation-duration: 0.4s
 }
 .your-lvl__header{
   padding: 2px 16px;
   background-color: $gren__hover;
   color: $white;
 }
-.your-lvl__modal-title{
-  color: $white;
-}
-.your-lvl__close{
-  float: right;
-  font-size: 35px;
-  cursor: pointer;
+.your-lvl__box{
+  display: block;
+  width: auto;
+  height: 3px;
+
 }
 .your-lvl__qestions{
-  padding: 20px 0;
-  font-size: 30px;
+  padding: 20px 20px;
+  font-size: 20px;
 }
+
 .your-lvl__btn{
   display: block;
 	margin: 8px auto;
@@ -100,19 +81,21 @@ $top-color__active:#4C95DE;
 	color: $white;
 	font-size: 15pt;
 	cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 
 .your-lvl__btn:hover{
-  background: red;
+  box-shadow: 0 0 0 1px $text-add;
+  transition: all 0.1s ease-in-out;
 }
 .your-lvl__btn-wrong
 {
-	background: #EB6465;
-}
+	background: #c25d5d;
+ }
 
 .your-lvl__btn-correct
 {
-	background: #5EB97D;
+	background: #2ebb5d;
 }
 
 .your-lvl__btn-passive
@@ -123,29 +106,46 @@ $top-color__active:#4C95DE;
   padding: 10px 0;
   font-size: 20px;
 }
-@keyframes lvl-modal-open {
-  from {top:-400px; opacity:0}
-  to {top:0; opacity:1}
+.test-lvl-audio{
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.your-lvl__gray .your-lvl__btn-wrong{
+  background: #B3B3B3;
 }
 
 
 @media (min-width: 768px){
   .your-lvl{
-    margin: 50px auto;
-    max-width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    // margin-left: 50px;
+    // margin-top: 50px;
+    // margin-right: 50px;
+    // margin-bottom: 50px;
     // padding-top: 100px;
   }
-}
-@media (max-height: 550px){
-  .your-lvl__modal{
-    padding-top: 5vh;
-  }
-  .your-lvl__modal-title{
-    margin: 5px;
-    font-size: 20px;
-  }
-  .your-lvl__buttons{
+  .your-lvl__container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+  }
+  .your-lvl__test{
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 }
+// @media (max-height: 550px){
+//   .your-lvl__modal{
+//     padding-top: 5vh;
+//   }
+//   .your-lvl__modal-title{
+//     margin: 5px;
+//     font-size: 20px;
+//   }
+//   .your-lvl__buttons{
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }

@@ -37,7 +37,7 @@ $gren__active:#06c100;
 $gray:#CFCFCF;
 $gray__hover:#acacac;
 $white:#FFFFFF;
-$top-color__hover:#c484ff;
+$top-color__hover:#18c26d;
 $top-color__active:#4C95DE;
 $red: #e00083;
 
@@ -102,12 +102,13 @@ img {
   text-align: center;
   text-decoration: none;
   text-anchor: manipulation;
-  transition: all 0.15s ease-in;
+  transition: all 0.2s ease-in;
   &:hover,
   &:focus{
     // border:solid $top-color 2px;
     background-color: $top-color__hover;
-    box-shadow: -3px 3px 5px 0 #182f522f;
+    box-shadow: -2px 2px 5px 0 #182f522f;
+    transition: all 0.2s ease-in;
   }
   &:focus{
     outline: none;
@@ -159,9 +160,13 @@ margin: 0 auto;
 
 @media (min-width: 479px){
   h1{
+    margin: 0;
+    padding: 0;
     font-size: 30px;
   }
   h2{
+    margin: 0;
+    padding: 0;
     font-size: 30px;
   }
   .button-link{
@@ -170,13 +175,17 @@ margin: 0 auto;
 }
 @media (min-width: 768px) {
   h1{
+    margin: 0;
     font-size: 42px;
   }
   h2{
+    margin: 0;
     font-size: 42px;
     line-height: 1.3;
   }
   h3{
+    margin: 0;
+    padding: 0;
     font-size: 28px;
   }
   .button-link{
@@ -208,16 +217,7 @@ margin: 0 auto;
   border-radius: 60px;
   text-align: center;
 }
-.gift{
-  margin: 70px auto;
-  max-width: 800px;
-  padding: 0 20px;
-}
-.gift__title{
-  // margin-top: 50px;
-  padding: 10px 20px;
-  border: solid 2px $top-color__hover;
-  border-radius: 60px;
-  font-size: 20px;
-  text-align: center;
+.why-lvl{
+  margin: 40px auto;
+  max-width: 300px;
 }

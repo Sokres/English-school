@@ -51,7 +51,7 @@ background-repeat: no-repeat, no-repeat;
 }
 .about-course__karina{
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   background-image:
   url(/img/bg-about-wave-blure.jpg);
   // background-position: 50% 100%;
@@ -64,11 +64,29 @@ background-repeat: no-repeat, no-repeat;
 .about-course__caprion{
   margin-top: 20px;
   text-align: center;
-}
-
-.about-course__caprion{
   padding-left: 20px;
 }
+.about-course__text{
+  display: grid;
+  grid-gap: 1rem;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+.about-course__text-list{
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: 1.5em;
+  align-items: start;
+  line-height: 1.25;
+
+  &::before{
+    content: "✔";
+    color: $top-color;
+  }
+}
+
 .about-course__myphoto{
   display: none;
 }

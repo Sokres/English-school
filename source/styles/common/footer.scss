@@ -11,56 +11,82 @@ $top-color__hover:#c484ff;
 $top-color__active:#4C95DE;
 
 .footer{
-  background-color: rgb(235, 235, 235);
-  padding-top: 10px;
-  padding-bottom: 50px;
+  background-color: #1e1d2e;
+}
+.footer__wraper{
+
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-bottom: 30px;
   padding-left: 20px;
+  color: $white;
 }
 .footer__copirite{
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  display: block;
+  margin-bottom: 20px;
+  color: $white;
+  p{
+    margin: 0;
+    padding: 0;
+    color: $text-add;
+  }
 }
 .footer__personal,
-.footer__menu{
+.footer__menu,
+.footer__course{
   margin-bottom: 30px;
+  h4{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    color:$top-color;
+  }
   a{
     display: block;
-    margin-bottom: 7px;
+    margin-bottom: 4px;
     text-decoration: none;
-    color: $text-color;
+    color: $white;
   }
   a:hover,
   a:focus{
     text-decoration: underline;
-    color: $text-add;
+    color: $gray;
   }
 }
 .footer__creat{
   a{
     display: block;
-    color: $text-color;
+    color: rgba(255, 255, 255, 0.445);
     text-decoration: none;
   }
   a:focus{
     text-decoration: underline;
-    color: $text-add;
+    color: $gray;
   }
 }
 
 @media(min-width: 768px){
   .footer__wraper{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+    gap: 10px;
     padding-top: 60px;
     padding-right: 50px;
     padding-left: 50px;
   }
-  .footer__copirite{
-    margin: 0;
-  }
+  // .footer__copirite{
+  //   margin: 0;
+  // }
 }
+
 @media(min-width: 1200px){
-  .footer__wraper{
+  .footer__info{
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .footer__wraper{
+
+    padding-top: 80px;
   }
 }

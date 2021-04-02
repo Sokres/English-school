@@ -1,0 +1,177 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#18c26d;
+$top-color__active:#4C95DE;
+$red: #e00083;
+
+.event-course {
+  margin: 0 auto;
+  max-width: 500px;
+  margin-bottom: 40px;
+  // display: grid;
+  // justify-content: center;
+  padding: 10px 20px 0;
+
+}
+.event-course__title{
+  text-align: center;
+}
+.evetn-course__containet {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  // // border: solid 2px $top-color;
+  // // border-radius: 10px;
+  // // background-color:transparent;
+  text-decoration: none;
+  transition: all 0.21s ease-in-out;
+  // overflow: hidden;
+  cursor: pointer;
+  // background: rgba( 16, 255, 255, 0.50 );
+  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  // backdrop-filter: blur( 17.0px );
+  // -webkit-backdrop-filter: blur( 17.0px );
+  // border-radius: 10px;
+  // border: 1px solid rgba( 255, 255, 255, 0.18 );
+  // z-index: 2;
+}
+
+.event-course__box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 260px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(127, 182, 255, 0.5);
+  box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.21s ease-in-out;
+}
+
+.event-course__box:hover {
+  backdrop-filter: blur(0px);
+  box-shadow:  0 0 0 1px $top-color;
+}
+
+.event-course__box::after {
+  position: absolute;
+  top: 15px;
+  right: -50px;
+  display: block;
+  height: 25px;
+  width: 150px;
+  color: $white;
+  text-align: center;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.evetn-course__box--teleg::after {
+  content: "FREE";
+  background-color: $red;
+}
+
+.evetn-course__box--anglof::after {
+  content: "Хит";
+  background-color: $gren__hover;
+}
+// .evetn-course__containet::after {
+//   position: absolute;
+//   top: 15px;
+//   right: -50px;
+//   display: block;
+//   height: 25px;
+//   width: 150px;
+//   color: $white;
+//   text-align: center;
+//   transform: rotate(45deg);
+//   z-index: 2;
+// }
+
+// .evetn-course__containet--teleg::after {
+//   content: "FREE";
+//   background-color: $red;
+// }
+
+// .evetn-course__containet--anglof::after {
+//   content: "Хит";
+//   background-color: $gren__hover;
+// }
+
+.evetn-course__containet+.evetn-course__containet {
+  margin-top: 10px;
+}
+
+// .event-course__box{
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 10px;
+//   background-color: rgba(116,195,255, 0.5);
+//   filter: blur(5px);
+//   z-index: 1;
+// }
+// .evetn-course__containet:hover .event-course__box{
+//   filter: blur(0);
+//   background-color:transparent;
+// }
+// .evetn-course__containet:focus{
+//   transform: scale(1.02);
+//   outline: none;
+//   transition: all 0.21s ease-in-out;
+// }
+.event-course__img {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  z-index: -1;
+}
+
+.event-course__text {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  color: $text-color;
+  font-weight: 500;
+  text-decoration: none;
+  z-index: 2;
+}
+
+@media(min-width:768px) {
+  .event-course__wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .evetn-course__containet+.evetn-course__containet {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+}

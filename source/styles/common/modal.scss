@@ -1,0 +1,83 @@
+// переменные
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#18c26d;
+$top-color__active:#4C95DE;
+$red: #e00083;
+
+.modal-overlay{
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: visible;
+  z-index: 101;
+  transition: all 0.2s ease-in;
+}
+
+.modal{
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 550px;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 102;
+  overflow: visible;
+  transition: all 0.3s ease-in;
+}
+
+.anglofan-modal__plus{
+  width: 20px;
+  height: 20px;
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.anglofan-modal__item:last-of-type{
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+.modal-overlay.modal--active,
+.modal.modal--active{
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease-out;
+}
+.modal__container{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.anglofan-modal__title{
+  padding-top: 10px;
+  margin: 0;
+  padding: 0;
+}
+// .anglofan-modal__box{
+//   display: grid;
+// }
+.modal__link{
+  margin-top: 20px;
+  cursor: pointer;
+}

@@ -19,12 +19,8 @@ $focus-mobile:#CACACA;
 
 .header{
   // position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 5px;
+
+  // box-shadow: 0 0 0 10px $text-color;
   // overflow: hidden;
 
   &__logo,
@@ -37,6 +33,14 @@ $focus-mobile:#CACACA;
     justify-self:end;
     padding-right: 10px;
   }
+}
+.header-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 5px;
 }
 .header__link-logo{
   margin-top: 10px;
@@ -85,10 +89,10 @@ $focus-mobile:#CACACA;
 //Кнопка в состоянии открытого меню
 
 .open{
-  height: 100%;
+  // height: 100%;
+  // width: 100%;
+  // position: fixed;
   overflow: hidden;
-  width: 100%;
-  position: fixed;
   .main-nav__btn{
 
     &--line{
@@ -185,6 +189,7 @@ $focus-mobile:#CACACA;
 // Меню в закртытом состоянии
 .close{
   .site-list{
+    visibility: hidden;
     right: -450px;
     z-index: -1;
   }
@@ -376,10 +381,26 @@ $focus-mobile:#CACACA;
         }
       }
     }
-    // .site-list__link-subdmenu{
-      //   position: relative;
-      //   width: 100px;
-      // }
+    .site-list__link-subdmenu{
+      padding-right: 20px;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 48%;
+        right: 5px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-width: 6px 4px 0;
+        border-style: solid;
+        border-color: $white transparent transparent;
+      }
+      }
+    .telegram-header .site-list__link-subdmenu{
+      &::before{
+        border-color: $top-color__hover transparent transparent;
+      }
+    }
     .site-list__link{
       position: relative;
     }
@@ -392,23 +413,21 @@ $focus-mobile:#CACACA;
     }
 
       .site-list__item-podmenu{
-      opacity: 0;
-      position: absolute;
-      min-width: 200px;
-      padding-top: 5px;
-      visibility: hidden;
-      transition: all 0.5s ease;
-      padding-left: 20px;
-      left: 0;
-      display: none;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        min-width: 200px;
+        padding-left: 10px;
+        visibility: hidden;
+        display: none;
     }
     .main-nav__list .site-list__item:hover > .site-list__item-podmenu,
     .main-nav__list .site-list__item:focus-within > .site-list__item-podmenu,
     .main-nav__list .site-list__item .site-list__item-podmenu:hover,
     .main-nav__list .site-list__item .site-list__item-podmenu:focus {
+      display: block;
       visibility: visible;
       opacity: 1;
-      display: block;
     }
   }
 
