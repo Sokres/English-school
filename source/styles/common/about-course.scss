@@ -11,7 +11,7 @@ $top-color__active:#4C95DE;
 
 
 .about-course{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .about-course__title{
   text-align: center;
@@ -51,7 +51,6 @@ background-repeat: no-repeat, no-repeat;
 }
 .about-course__karina{
   padding-top: 20px;
-  padding-bottom: 50px;
   background-image:
   url(/img/bg-about-wave-blure.jpg);
   // background-position: 50% 100%;
@@ -67,12 +66,13 @@ background-repeat: no-repeat, no-repeat;
   padding-left: 20px;
 }
 .about-course__text{
-  display: grid;
-  grid-gap: 1rem;
   margin: 0;
-  margin-top: 50px;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-gap: 1rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .about-course__text-list{
   display: grid;

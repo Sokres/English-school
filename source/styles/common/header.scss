@@ -58,7 +58,7 @@ $focus-mobile:#CACACA;
   background-color: transparent;
   padding: 0px;
   border-width: 0px;
-  z-index: 30;
+  z-index: 501;
   &--line,
   &--line::before,
   &--line::after{
@@ -208,7 +208,7 @@ $focus-mobile:#CACACA;
   justify-items: start;
   justify-content: end;
   align-content: start;
-  z-index: 20;
+  z-index: 500;
   transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
   &__item{

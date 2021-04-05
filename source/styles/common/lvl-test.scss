@@ -12,6 +12,7 @@ $top-color__active:#4C95DE;
 $red: #e00083;
 
 .test-main{
+  padding-top: 30px;
   background-color: $top-color;
 }
 .test-main__wraper{
@@ -22,6 +23,7 @@ $red: #e00083;
   padding-left: 20px;
 }
 .test-main__heading{
+  padding-top: 10px;
   color: $white;
   line-height: 1.2;
 }
@@ -54,7 +56,7 @@ $red: #e00083;
   color: $top-color;
 }
 .test-advantage{
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
   padding-right: 20px;
   padding-left: 20px;
@@ -135,6 +137,15 @@ $red: #e00083;
 .test-advantage__res{
   margin-top: 40px;
 }
+//кнопки в саомом тесте
+.your-choice__wrap{
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+.your-choice__link{
+  max-width: 200px;
+}
 @media(min-width: 576px){
   .test-advantage__item{
     display: grid;
@@ -156,15 +167,20 @@ $red: #e00083;
   }
 }
 @media(min-width:768px){
+
   .test-main__wraper{
     display: grid;
     grid-template-columns: 1fr 0.5fr;
+
     padding-left: 50px;
   }
+  .test-main__heading{
+    padding-top: 50px;}
   .test-advantage__title{
     margin-bottom: 70px;
   }
   .test-main__image{
+    padding-top: 50px;
     background-image: url(../img/test-man.svg);
     background-repeat: no-repeat;
     background-size: cover;
