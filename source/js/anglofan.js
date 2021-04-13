@@ -6,7 +6,7 @@
 for (let i = 0; i < radioLen; i++) {
 document.Price_s.price_lvl_s[i].addEventListener('click',
     function() {
-      btnPricePayS.name = this.value;
+      btnPricePayS.dataset.modal = this.value;
     }
 );
 }})();
@@ -18,7 +18,7 @@ radioLen = document.Price_m.price_lvl_m.length;
 for (let i = 0; i < radioLen; i++) {
 document.Price_m.price_lvl_m[i].addEventListener('click',
     function() {
-      btnPricePayM.name = this.value;
+      btnPricePayM.dataset.modal = this.value;
     }
 );
 }})();
@@ -30,7 +30,7 @@ radioLen = document.Price_xl.price_lvl_xl.length;
 for (let i = 0; i < radioLen; i++) {
 document.Price_xl.price_lvl_xl[i].addEventListener('click',
     function() {
-      btnPricePayXL.name = this.value;
+      btnPricePayXL.dataset.modal = this.value;
     }
 );
 }})();
@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         e.preventDefault();
 
-        var modalId = this.getAttribute('name'),
-            modalElem = document.querySelector('.modal[name="' + modalId + '"]');
+        var modalId = this.getAttribute('data-modal'),
+            modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 
 
         modalElem.classList.add('modal--active');

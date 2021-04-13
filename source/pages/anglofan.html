@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/styles.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <title>Anglofan онлайн курс</title>
+  <title>Курс Anglofan — Онлайн 💂 курсы английского Anglofan</title>
   <meta name="description"
-    content="Курсы для всех. Интерактивные задания помогут освоить веб-технологии и создать сайт, а интенсивные курсы подготовят к старту карьеры в IT.">
+    content="Эффективное изучение английского языка на наших онлайн-курсах, поможет сэкономить вам время и деньги.   ">
   <meta name="keywords"
-    content="курсы html, курсы html5, курсы css, курсы css3, курсы верстки, онлайн-курсы html, онлайн-курсы css, онлайн-курсы верстки, учить html, учить css, учить верстку">
+    content="">
   <meta name="theme-color" content="#57ACFF">
   <link rel="icon" href="favicon.svg">
   <link rel="mask-icon" href="mask-icon.svg" color="#57ACFF">
@@ -31,7 +31,7 @@
         <a href="index.html" class="header__link-logo"> <img class="logo" src="/img/Logo.svg" height="50"
             alt="Логотип Anglofan"></a>
         <nav class="header__nav">
-          <button class="main-nav__btn">
+          <button type="button" aria-label="Открыть меню" class="main-nav__btn">
             <span class="main-nav__btn--line"></span>
           </button>
           <div class="site-list">
@@ -69,11 +69,10 @@
         <h1 class="welcome-info__title ">Anglofan</h1>
         <p class="welcome-info__subtitle">сделай рывок в английском за 16 недель</p>
         <p class="welcome-info__indent ind">Хочешь преобрести этот курс, <br> но возникли вопросы? Свяжись с нами.</p>
-        <div class="btn-bot">
-          <a href="#" class="button-link btn-bot__whatsapp">WhatsApp</a>
-          <a href="#" class="button-link btn-bot__teleg">Telegram</a>
-          <a href="#" class="button-link btn-bot__vk">Вконтаке</a>
-        </div>
+
+        <!-- Подключение кнопок обратной связи -->
+        <include src="build/@_btn-bot.html"> </include>
+
         <div class="submenu-insurance">
           <ul id="stickSubmenu" class="welcome-info__submenu">
             <li class="welcome-info__submenu-item welcome-info__submenu--open">
@@ -105,23 +104,11 @@
       </p>
     </section>
   </div>
-  <section class="social">
-    <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
-    <a class="social__facebook" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social__facebook--inline" width="30" height="30">
-        <use xlink:href="#Facebook"></use>
-      </svg></a>
-    <a class="social__insta" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social__insta--inline" width="30" height="30">
-        <use xlink:href="#insta"></use>
-      </svg></a>
-    <a class="social__youtube" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social__youtube--inline" width="30" height="30">
-        <use xlink:href="#Youtube"></use>
-      </svg></a>
-    <a class="social__vk" href="https://vk.com/anglofanru" target="_blank"><svg class="social__vk--inline" width="30" height="30">
-        <use xlink:href="#VK"></use>
-      </svg></a>
-  </section>
 
-  <section id="aboutCourse" class="suit-you">
+   <!-- Подключение панели кнопок социальных сетей -->
+   <include src="build/@_social.html"> </include>
+
+  <section  class="suit-you">
     <h2 class="suit-you__title">Вам подойдет курс ANGLOFAN, если</h2>
     <ul class="suit-you__lists">
       <li class="suit-you__item">
@@ -145,10 +132,10 @@
   <section id="aboutCourse" class="about-anglofan section-menu">
     <div class="about-anglofan__wraper">
       <h2 class="about-anglofan__title">О курсе</h2>
-      <div class="about-anglofan__video">
+      <!-- <div class="about-anglofan__video">
         <div class="video-hello"><iframe class="video-hello__embed" width="515" height="288"
             src="https://www.youtube.com/embed/tUQsvi4xFOE"></iframe></div>
-      </div>
+      </div> -->
       <ul class="about-anglofan-info">
         <li class="about-anglofan-info__item">
           <img src="/img/about_tick.svg" width="100" height="100" alt="Галочка" class="about-anglofan-info__tick">
@@ -175,102 +162,68 @@
   </section>
   <section id="feadback"  class="feadback section-menu">
     <div class="feadback__wraper">
-      <h2 class="feadback__title">Отзывы</h2>
+      <p class="feadback__pretitle">98 из 100 студентов рекомендуют наши онлайн курсы своим знакомым</p>
+      <h2 class="feadback__title">ОТЗЫВЫ</h2>
       <div class="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="feadback__container">
-              <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <a class="fedback__source" href="#">vk.com</a>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p>
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_anglofan_1.webp">
+                <source  data-srcset="img/feadback/feadbck_general_1.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_1.jpg" alt="Отзывы о нас">
+              </picture>
+
             </div>
           </div>
           <div class="swiper-slide">
             <div class="feadback__container">
-              <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <div class="fedback__source">vk.com</div>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p>
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_anglofan_2.webp">
+                <source  data-srcset="img/feadback/feadbck_telegram_2.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_telegram_2.jpg" alt="Отзывы о нас">
+              </picture>
+
             </div>
           </div>
           <div class="swiper-slide">
             <div class="feadback__container">
-              <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <div class="fedback__source">vk.com</div>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p>
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_2.webp">
+                <source  data-srcset="img/feadback/feadbck_general_2.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_2.jpg" alt="Отзывы о нас">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="feadback__container">
-              <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <div class="fedback__source">vk.com</div>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p>
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_3.webp">
+                <source  data-srcset="img/feadback/feadbck_general_3.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_3.jpg" alt="Отзывы о нас">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="feadback__container">
-              <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <div class="fedback__source">vk.com</div>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p>
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_4.webp">
+                <source  data-srcset="img/feadback/feadbck_general_4.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_4.jpg" alt="Отзывы о нас">
+              </picture>
+
             </div>
           </div>
+
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
+
   <section class="good-course">
     <h2 class="good-course__title">Преимущества курса</h2>
     <ul class="good-course__container">
@@ -321,7 +274,8 @@
     </ul>
   </section>
   <section class="why-lvl">
-    <a class="button-link why-lvl__btn" href="#">Определи свой уровень</a>
+    <h2 class="visually-hidden">Кнопка перехода на тестирование</h2>
+    <a class="button-link why-lvl__btn" href="/lvl-test.html">Определи свой уровень</a>
   </section>
   <section class="programm">
     <h2 class="programm__title">Программа каждого уровня </h2>
@@ -548,7 +502,7 @@
           </ul>
 
           <div class="anglofan-price__cost"><span>11900₽</span>9900₽</div>
-          <h3 class="anglofan-price__title-form">Выбери свой уровень </h3>
+          <h4 class="anglofan-price__title-form">Выбери свой уровень </h4>
           <div class="anglofan-price__lvl">
             <form class="Price_s" name="Price_s">
               <label for="lvl_a1_s">
@@ -565,7 +519,7 @@
               B1</label>
           </form>
           </div>
-          <button id="btnPricePayS" class="btn-modal anglofan-price__pay" name="choice">Оплатить</button>
+          <button id="btnPricePayS" class="btn-modal anglofan-price__pay" data-modal="choice">Оплатить</button>
 
         </div>
         <div class="anglofan-price__container">
@@ -588,7 +542,7 @@
             <li class="anglofan-price__advantage-item anglofan-price__advantage-item--dot">Speaking club на 16 недель (закрытая мини-группа в Telegram для ежедневного общения под контролем куратора)</li>
           </ul>
           <div class="anglofan-price__cost"><span>23900₽</span>20900₽</div>
-          <h3 class="anglofan-price__title-form">Выбери свой уровень </h3>
+          <h4 class="anglofan-price__title-form">Выбери свой уровень </h4>
           <div class="anglofan-price__lvl">
             <form name="Price_m">
               <label for="lvl_a1_m">
@@ -605,7 +559,7 @@
               B1</label>
             </form>
           </div>
-          <button  name="choice" id="btnPricePayM" class="btn-modal anglofan-price__pay">Оплатить</button>
+          <button  data-modal="choice" id="btnPricePayM" class="btn-modal anglofan-price__pay">Оплатить</button>
         </div>
         <div class="anglofan-price__container">
           <h3 class="anglofan-price__title">Тариф XL</h3>
@@ -635,7 +589,7 @@
             </li>
           </ul>
           <div class="anglofan-price__cost"><span>39900₽</span>34900₽</div>
-          <h3 class="anglofan-price__title-form">Выбери свой уровень </h3>
+          <h4 class="anglofan-price__title-form">Выбери свой уровень </h4>
           <div class="anglofan-price__lvl">
             <form name="Price_xl">
               <label for="lvl_a1_xl">
@@ -652,13 +606,13 @@
               B1</label>
           </form>
           </div>
-          <button name="choice" id="btnPricePayXL" class="btn-modal anglofan-price__pay">Оплатить</button>
+          <button data-modal="choice" id="btnPricePayXL" class="btn-modal anglofan-price__pay">Оплатить</button>
         </div>
       </div>
     </div>
   </section>
   <div class="modal-overlay modal-js-overlay">   </div>
-    <div class="modal"  name="choice">
+    <div class="modal"  data-modal="choice">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <div class="modal__container">
         <h3 class="anglofan-modal__title">Вы не выбрали свой уровень</h3>
@@ -669,7 +623,7 @@
         </div>
       </div>
     </div>
-    <div class="modal" name="lvl_a1_s">
+    <div class="modal" data-modal="lvl_a1_s">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -679,7 +633,7 @@
         <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
       </ul>
     </div>
-    <div class="modal" name="lvl_a2_s">
+    <div class="modal" data-modal="lvl_a2_s">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -689,7 +643,7 @@
         <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
       </ul>
     </div>
-    <div class="modal" name="lvl_b1_s">
+    <div class="modal" data-modal="lvl_b1_s">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -699,7 +653,7 @@
         <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
       </ul>
     </div>
-    <div class="modal" name="lvl_a1_m">
+    <div class="modal" data-modal="lvl_a1_m">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -709,7 +663,7 @@
         <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
       </ul>
     </div>
-    <div class="modal" name="lvl_a2_m">
+    <div class="modal" data-modal="lvl_a2_m">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -719,7 +673,7 @@
         <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
       </ul>
     </div>
-    <div class="modal" name="lvl_b1_m">
+    <div class="modal" data-modal="lvl_b1_m">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -729,7 +683,7 @@
         <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
       </ul>
     </div>
-    <div class="modal" name="lvl_a1_xl">
+    <div class="modal" data-modal="lvl_a1_xl">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -739,7 +693,7 @@
         <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
       </ul>
     </div>
-    <div class="modal" name="lvl_a2_xl">
+    <div class="modal" data-modal="lvl_a2_xl">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -749,7 +703,7 @@
         <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
       </ul>
     </div>
-    <div class="modal" name="lvl_b1_xl">
+    <div class="modal" data-modal="lvl_b1_xl">
       <div class="anglofan-modal__plus modal-js-close">+</div>
       <ul class="modal__container">
         <li class="anglofan-modal__item">
@@ -795,61 +749,17 @@
     </ul>
   </section>
 
-  <section class="sing">
-    <h2 class="sing__title">Есть вопросы? <br> Оставь заявку и мы свяжемся с тобой
-    </h2>
-    <div class="sign__btn">
-      <a href="#" class="sign__btn-link button-link btn-bot__whatsapp">WhatsApp</a>
-      <a href="#" class="sign__btn-link button-link btn-bot__teleg">Telegram</a>
-      <a href="#" class="sign__btn-link button-link btn-bot__vk">Вконтаке</a>
-    </div>
-  </section>
-  <section class="social-footer">
-    <h2 class="social-footer__title ">Учи английский онлайн с нами в соцсетях</h2>
-    <div class="social-footer__link">
-      <a class="social-footer__element" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social-footer__facebook--inline" width="30" height="30">
-          <use xlink:href="#Facebook"></use>
-        </svg></a>
-      <a class="social-footer__element" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social-footer__insta--inline" width="30" height="30">
-          <use xlink:href="#insta"></use>
-        </svg></a>
-      <a class="social-footer__element" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social-footer__youtube--inline" width="30" height="30">
-          <use xlink:href="#Youtube"></use>
-        </svg></a>
-      <a class="social-footer__element" href="https://vk.com/anglofanru" target="_blank"><svg class="social-footer__vk--inline" width="30" height="30">
-          <use xlink:href="#VK"></use>
-        </svg></a>
-    </div>
-  </section>
-</div>
-<footer class="footer">
-  <div class="footer__info">
-   <div class="footer__wraper">
-      <div class="footer__copirite">
-        <img src="img/logo_fin_white.svg" alt="Логотип англофан" width="200" height="50">
-        <p>онлайн-школа английского языка</p>
-        <span>© 2021 </span>
-      </div>
-      <div class="footer__personal">
-        <h4>Оплата</h4>
-        <a href="/oferta.html">Публичная оферта</a>
-        <a href="/politika.html">Пользовательское соглашение</a>
-        <a href="/user-agre.html">Политика конфиденциальности</a>
-      </div>
-      <nav class="footer__menu">
-        <h4>Меню</h4>
-        <a href="/index.html">Главная</a>
-        <a href="/lvl-test.html">Тестирование</a>
-        <a href="/about-my.html">О нас</a>
-      </nav>
-      <nav class="footer__course">
-        <h4>Курсы</h4>
-        <a href="/anglofan.html">Anglofan</a>
-        <a href="/telegram-club.html">Telegram</a>
-      </nav>
-    </div>
+  <!-- Подключение социальных кнопок -->
+  <include src="build/@_sign.html"> </include>
+  <!-- Подключение социальных кнопок -->
+  <include src="build/@_social_footer.html"> </include>
+
   </div>
-</footer>
+    <!-- Подключение footer -->
+  <include src="build/@_footer.html"> </include>
+
+  <div class="visually-hidden">
+    <include src="build/img/sprite.svg"> </include>
   <div class="visually-hidden">
     <include src="build/img/sprite.svg"> </include>
   </div>
@@ -858,8 +768,8 @@
   <script src="../js/anglofan.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
+var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.5,
       spaceBetween: 50,
       // init: false,
       pagination: {
@@ -867,12 +777,12 @@
         clickable: true,
       },
       breakpoints: {
-        // 768: {
-        //   slidesPerView: 2,
-        //   spaceBetween: 20,
-        // },
-        1024: {
+        768: {
           slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
           spaceBetween: 20,
         },
       }

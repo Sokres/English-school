@@ -75,8 +75,8 @@ $top-color__active:#4C95DE;
    list-style: none;
    margin: 0;
    padding: 0;
-   padding-top: 50px;
-   padding-bottom: 100px;
+  //  padding-top: 50px;
+  //  padding-bottom: 100px;
  }
 .about-anglofan-info__item{
   display: flex;
@@ -97,7 +97,7 @@ $top-color__active:#4C95DE;
 @media(min-width: 768px){
   .about-anglofan-info{
     padding-left: 40px;
-    padding-bottom: 150px;
+    // padding-bottom: 150px;
   }
   .about-anglofan-info__item{
     align-items: center;

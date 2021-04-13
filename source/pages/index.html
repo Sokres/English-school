@@ -19,7 +19,7 @@
   <link rel="icon" href="favicon.svg">
   <link rel="mask-icon" href="mask-icon.svg" color="#57ACFF">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="/manifest.json">
   <meta name="application-name" content="Anglofan">
   <meta name="apple-mobile-web-app-title" content="Anglofan">
   <link rel="canonical" href="https://anglofan.ru">
@@ -72,11 +72,22 @@
         <h1 class="welcome-info__title ">Курсы английского языка онлайн</h1>
         <h2 class="welcome-info__subtitle ">Для тех, <br> кто ценит свое время</h2>
         <h3 class="welcome-info-sloagn">Just learn it</h3>
-        <include src="build/a_btn-bot.html"> </include>
+
+        <!-- Подключение кнопок обратной связи -->
+        <include src="build/@_btn-bot.html"> </include>
+
       </div>
+      <picture class="welcom-info__picture">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/bg_header-karina_desctop.webp, img/webp/bg_header-karina_desctop_x2.webp">
+        <source type="image/webp" srcset="img/webp/bg_header-karina_mobile.webp, img/webp/bg_header-karina_mobile_x2.webp">
+        <source  media="(min-width: 768px)" srcset="img/bg_header-karina_desctop.png, img/bg_header-karina_desctop_x2.png">
+        <img class="welcom-info__image" src="img/bg_header-karina_mobile.png" srcset="img/bg_header-karina_mobile_x2.png" alt="Основатель курсов Карина Латипова">
+      </picture>
     </section>
   </div>
-  <include src="build/a_social.html"> </include>
+
+  <!-- Подключение панели кнопок социальных сетей -->
+  <include src="build/@_social.html"> </include>
 
   <section class="course">
     <h2 class="course__title">Наши курсы</h2>
@@ -125,24 +136,25 @@
       <ul class="course__button">
         <li class="course-item__link"></li>
         <li class="course-item__link course-item__link--btn">
-          <a href="#" class="course-item__link--color">Подробнее</a>
+          <a href="/anglofan.html" class="course-item__link--color">Подробнее</a>
         </li>
         <li class="course-item__link course-item__link--btn">
-          <a href="#" class="course-item__link--color">Подробнее</a>
+          <a href="/telegram-club.html" class="course-item__link--color">Подробнее</a>
         </li>
       </ul>
     </div>
   </section>
   <section class="about-course">
     <h2 class="about-course__title">О курсах Anglofan</h2>
-    <div class="about-course--bgc-video">
+    <!-- Видео -->
+    <!-- <div class="about-course--bgc-video">
       <div class="about-course__video">
         <div class="video-hello">
           <iframe class="video-hello__embed" width="515" height="288" src="https://www.youtube.com/embed/tUQsvi4xFOE">
           </iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="about-course__karina">
       <h3 class="about-course__caprion">Hi! My name’s Karina. Nice to meet you!</h3>
       <div class="about-course__karina--wraper">
@@ -163,8 +175,16 @@
           <li class="about-course__text-list">“1 уровень за 30 дней” – это не про мои онлайн курсы. Для меня всегда в приоритете высокое качество
             обучения.</li>
         </ul>
+
+        <picture class="lazy about-course__picture">
+          <source type="image/webp" media="(min-width: 768px)" data-srcset="/img/webp/bg_about-karina_desctop.webp, /img/webp/bg_about-karina_desctop.webp_x2.webp">
+          <source media="(min-width: 768px)" class="about-course__image" data-srcset="/img/bg_about-karina_desctop.png" data-srcset="/img/bg_about-karina_desctop_x2.png">
+          <img media="(min-width: 768px)" class="about-course__image" data-srcset="/img/bg_about-karina_desctop.png" data-srcset="/img/bg_about-karina_desctop_x2.png" alt="Основатель курсов Карина Латипова">
+        </picture>
         <!-- <img class="about-course__myphoto" src="/img/photo_carina.png" width="600" alt="Мое фотография смотри на лево"> -->
       </div>
+
+
     </div>
   </section>
 
@@ -244,92 +264,60 @@
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="feadback__container">
-              <img src="../img/feadback.jpg" alt="отзыв" class="feadback__image">
-              <!-- <div class="feadback__image"></div> -->
-              <!-- <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <a class="fedback__source" href="#">vk.com</a>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p> -->
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_1.webp">
+                <source  data-srcset="img/feadback/feadbck_general_1.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_1.jpg" alt="Отзывы о нас">
+              </picture>
+
             </div>
           </div>
           <div class="swiper-slide">
             <div class="feadback__container">
-              <img src="../img/feadback.jpg" alt="отзыв" class="feadback__image">
-              <!-- <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <div class="fedback__source">vk.com</div>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p> -->
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_telegram_2.webp">
+                <source  data-srcset="img/feadback/feadbck_telegram_2.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_telegram_2.jpg" alt="Отзывы о нас">
+              </picture>
+
             </div>
           </div>
           <div class="swiper-slide">
             <div class="feadback__container">
-              <img src="../img/feadback.jpg" alt="отзыв" class="feadback__image">
-              <!-- <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <div class="fedback__source">vk.com</div>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p> -->
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_2.webp">
+                <source  data-srcset="img/feadback/feadbck_general_2.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_2.jpg" alt="Отзывы о нас">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="feadback__container">
-              <img src="../img/feadback.jpg" alt="отзыв" class="feadback__image">
-              <!-- <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <div class="fedback__source">vk.com</div>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p> -->
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_3.webp">
+                <source  data-srcset="img/feadback/feadbck_general_3.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_3.jpg" alt="Отзывы о нас">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="feadback__container">
-              <img src="../img/feadback.jpg" alt="отзыв" class="feadback__image">
-              <!-- <div class="feadback__image"></div>
-              <h3 class="fedback__name-user">Катерина Онисимова</h3>
-              <div class="fedback__source">vk.com</div>
-              <div class="feadback__rating">
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-                <span class="fedback__rating--span"></span>
-              </div>
-              <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-                следует, однако забывать, что постоянный количественный рост и сфера</p> -->
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_4.webp">
+                <source  data-srcset="img/feadback/feadbck_general_4.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_4.jpg" alt="Отзывы о нас">
+              </picture>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="feadback__container">
+              <picture class=" lazy feadback__image">
+                <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_5.webp">
+                <source  data-srcset="img/feadback/feadbck_general_5.jpg">
+                <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_5.jpg" alt="Отзывы о нас">
+              </picture>
+
             </div>
           </div>
         </div>
@@ -343,14 +331,14 @@
     <section class="event-course">
       <h2 class="event-course__title">Выбери свой курс</h2>
       <div class="event-course__wrap">
-        <a href="#" tabindex="0" class="evetn-course__containet">
+        <a href="/telegram-club.html" tabindex="0" class="evetn-course__containet">
           <div class="event-course__box evetn-course__box--teleg">
             <p class="event-course__text">Telegram Club <br> 7 дней БЕСПЛАТНО
           </div>
           </p>
           <img src="/img/evetn__teleg.svg" width="50" height="50" alt="" class="event-course__img">
         </a>
-        <a href="#" tabindex="0" class="evetn-course__containet ">
+        <a href="/anglofan.html" tabindex="0" class="evetn-course__containet ">
           <div class="event-course__box evetn-course__box--anglof">
             <p class="event-course__text">Anglofan <br> ранний тариф до 3 мая
             </p>
@@ -431,13 +419,12 @@
 
 
   <!-- Подключение социальных кнопок -->
-  <include src="build/a_sign.html"> </include>
+  <include src="build/@_sign.html"> </include>
   <!-- Подключение социальных кнопок -->
-  <include src="build/a_social_footer.html"> </include>
+  <include src="build/@_social_footer.html"> </include>
 
-  </div>
     <!-- Подключение footer -->
-  <include src="build/a_footer.html"> </include>
+  <include src="build/@_footer.html"> </include>
 
   <div class="visually-hidden">
     <include src="build/img/sprite.svg"> </include>

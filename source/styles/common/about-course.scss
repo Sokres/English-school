@@ -87,7 +87,7 @@ background-repeat: no-repeat, no-repeat;
   }
 }
 
-.about-course__myphoto{
+.about-course__picture{
   display: none;
 }
 @media (min-width: 768px) {
@@ -105,11 +105,19 @@ background-repeat: no-repeat, no-repeat;
   }
   .about-course__caprion,
   .about-course__karina--wraper{
-   padding-left: 50px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .about-course__karina{
     // background-image: none;
   }
+  .about-course__picture{
+    display: grid;
+    justify-self: end;
+    align-self:  end;
+  }
+
 }
 @media (min-width:1200px) {
   .about-course{

@@ -3,7 +3,7 @@ const imagemin = require("gulp-imagemin");
 
 
 module.exports = function images() {
-  return gulp.src('source/img/*.{gif,png,jpg,svg}')
+  return gulp.src('source/img/**/*.{gif,png,jpg,svg}')
   .pipe(imagemin([imagemin.optipng({
     optimizationLevel: 3
   }),

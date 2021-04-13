@@ -1,0 +1,15 @@
+# GoAll 1: Scan
+User-agent: *
+Allow: /
+
+# Stop 1: oferta
+User-agent: *
+Disallow: /oferta.html
+
+# Stop 2: politika
+User-agent: *
+Disallow: /politika.html
+
+# Stop 3: user-agre
+User-agent: *
+Disallow: /user-agre.html

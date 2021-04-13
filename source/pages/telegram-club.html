@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/styles.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <title>Telegramm-club онлайн курс</title>
+  <title>Telegramm-club — Онлайн 💂 курсы английского Anglofan</title>
   <meta name="description"
-    content="Курсы английского всегда твоем Telegram. ">
+    content="Курсы английского всегда твоем Telegram. ✅ Учи английский в любое время и в любом месте. Первая неделя бесплатно!">
   <meta name="keywords"
-    content="курсы html, курсы html5, курсы css, курсы css3, курсы верстки, онлайн-курсы html, онлайн-курсы css, онлайн-курсы верстки, учить html, учить css, учить верстку">
+    content="">
   <meta name="theme-color" content="#57ACFF">
   <link rel="icon" href="favicon.svg">
   <link rel="mask-icon" href="mask-icon.svg" color="#57ACFF">
@@ -27,9 +27,9 @@
   <div id="stick" class="head-wraper-telegramm">
     <header id="home" class="header telegram-header">
      <div class="header-container">
-      <a href="index.html" class="header__link-logo"> <img class="logo" src="/img/Logo.svg" height="50" alt="Логотип Anglofan"></a>
+      <a href="index.html" class="header__link-logo"> <img class="logo" src="/img/Logo.svg" width="200" height="50" alt="Логотип Anglofan"></a>
       <nav class="header__nav">
-        <button class="main-nav__btn">
+        <button type="button" aria-label="Открыть меню" class="main-nav__btn">
           <span class="main-nav__btn--line"></span>
         </button>
         <div class="site-list">
@@ -64,12 +64,11 @@
         <p class="welcome-info__subtitle">Понятный английский для <br> самостоятельных и экономных</p>
         <h1 class="welcome-info__title ">Telegram club</h1>
         <p class="welcome-info__indent ind">Хочешь приобрести этот курс,<br> но возникли вопросы? Свяжись с нами</p>
-        <div class="btn-bot">
-          <a href="#" class="button-link btn-bot__whatsapp">WhatsApp</a>
-          <a href="#" class="button-link btn-bot__teleg">Telegram</a>
-          <a href="#" class="button-link btn-bot__vk">Вконтаке</a>
-        </div>
-          <div class="submenu-insurance">
+
+        <!-- Подключение кнопок обратной связи -->
+        <include src="build/@_btn-bot.html"> </include>
+
+        <div class="submenu-insurance">
             <ul id="stickSubmenu" class="welcome-info__submenu">
               <li class="welcome-info__submenu-item welcome-info__submenu--open">
                 <a class="welcome-info__link welcome-info__submenu--active" href="#home">Вверх</a>
@@ -99,53 +98,43 @@
         </p>
     </section>
   </div>
-  <section class="social">
-    <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
-    <a class="social__facebook" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social__facebook--inline" width="30" height="30">
-        <use xlink:href="#Facebook"></use>
-      </svg></a>
-    <a class="social__insta" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social__insta--inline" width="30" height="30">
-        <use xlink:href="#insta"></use>
-      </svg></a>
-    <a class="social__youtube" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social__youtube--inline" width="30" height="30">
-        <use xlink:href="#Youtube"></use>
-      </svg></a>
-    <a class="social__vk" href="https://vk.com/anglofanru" target="_blank"><svg class="social__vk--inline" width="30" height="30">
-        <use xlink:href="#VK"></use>
-      </svg></a>
-  </section>
+    <!-- Подключение панели кнопок социальных сетей -->
+  <include src="build/@_social.html"> </include>
+
 <section class="seven-day-free">
   <h2 class="visually-hidden">Кнопка 7 дней бесплатно</h2>
-  <a href="#" class="seven-day__link">Получи 7 дней БЕСПЛАТНО</a>
+  <button data-modal="free" class="btn-modal seven-day__link">Получи 7 дней БЕСПЛАТНО</button>
 </section>
 <section class="suit-you">
   <h2 class="suit-you__title">Вам подходит Telegram Club, если вы</h2>
   <ul class="suit-you__lists">
     <li class="suit-you__item">
-      <img src="/img/suits-you__micro.svg" alt="Грамматика" width="100" class="suit-you__image">
+      <img src="/img/suits-you__micro.svg" alt="Грамматика" width="100" height="100" class="suit-you__image">
       <p class="suit-you__article">устали начинать каждый раз с <br> Present Simple и тратить время в приложениях</p>
     </li>
     <li class="suit-you__item">
-      <img src="/img/suits-you__time.svg" alt="Не трать много времени" width="100" class="suit-you__image">
+      <img src="/img/suits-you__time.svg" alt="Не трать много времени" width="100" height="100" class="suit-you__image">
       <p class="suit-you__article">хотите тратить не больше 10-15 минут в день</p>
     </li>
     <li class="suit-you__item">
-      <img src="/img/suits-you__target-t.svg" alt="Качественное обучение" width="100" class="suit-you__image">
+      <img src="/img/suits-you__target-t.svg" alt="Качественное обучение" width="100" height="100" class="suit-you__image">
       <p class="suit-you__article">ищете настоящее обучение, а не марафоны</p>
     </li>
     <li class="suit-you__item">
-      <img src="/img/suits-you__coffe.svg" alt="Английский по цене двух чашек кофе" width="100" class="suit-you__image">
+      <img src="/img/suits-you__coffe.svg" alt="Английский по цене двух чашек кофе" width="100" height="100" class="suit-you__image">
       <p class="suit-you__article">готовы променять три чашки кофе на месяц английского</p>
     </li>
   </ul>
 </section>
+
+
 <section id="aboutCourse" class="about-telelgram section-menu">
   <div class="about-telegram__wraper">
     <h2 class="about-telelgram__title">О курсе</h2>
-    <div class="about-telelgram__video">
+    <!-- <div class="about-telelgram__video">
       <div class="video-hello"><iframe class="video-hello__embed" width="515" height="288"
           src="https://www.youtube.com/embed/tUQsvi4xFOE"></iframe></div>
-    </div>
+    </div> -->
     <ul class="about-telelgram__info">
       <li class="about-telelgram__item">
         <span class="about-telegram__number">01</span>
@@ -193,96 +182,70 @@
     </ul>
   </div>
 </section>
-<section id="feadback" class="feadback section-menu">
+<section class="feadback">
   <div class="feadback__wraper">
-    <h2 class="feadback__title">Отзывы</h2>
+    <p class="feadback__pretitle">98 из 100 студентов рекомендуют наши онлайн курсы своим знакомым</p>
+    <h2 class="feadback__title">ОТЗЫВЫ</h2>
     <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
           <div class="feadback__container">
-            <div class="feadback__image"></div>
-            <h3 class="fedback__name-user">Катерина Онисимова</h3>
-            <a class="fedback__source" href="#">vk.com</a>
-            <div class="feadback__rating">
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-            </div>
-            <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-              процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-              следует, однако забывать, что постоянный количественный рост и сфера</p>
+            <picture class=" lazy feadback__image">
+              <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_1.webp">
+              <source  data-srcset="img/feadback/feadbck_telegram_1.jpg">
+              <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_1.jpg" alt="Отзывы о нас">
+            </picture>
+
           </div>
         </div>
         <div class="swiper-slide">
           <div class="feadback__container">
-            <div class="feadback__image"></div>
-            <h3 class="fedback__name-user">Катерина Онисимова</h3>
-            <div class="fedback__source">vk.com</div>
-            <div class="feadback__rating">
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-            </div>
-            <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-              процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-              следует, однако забывать, что постоянный количественный рост и сфера</p>
+            <picture class=" lazy feadback__image">
+              <source type="image/webp" data-srcset="img/webp/feadback/feadbck_telegram_2.webp">
+              <source  data-srcset="img/feadback/feadbck_telegram_1(1).jpg">
+              <img class="feadback__image--pic" data-src="img/feadback/feadbck_telegram_2.jpg" alt="Отзывы о нас">
+            </picture>
+
           </div>
         </div>
         <div class="swiper-slide">
           <div class="feadback__container">
-            <div class="feadback__image"></div>
-            <h3 class="fedback__name-user">Катерина Онисимова</h3>
-            <div class="fedback__source">vk.com</div>
-            <div class="feadback__rating">
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-            </div>
-            <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-              процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-              следует, однако забывать, что постоянный количественный рост и сфера</p>
+            <picture class=" lazy feadback__image">
+              <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_2.webp">
+              <source  data-srcset="img/feadback/feadbck_telegram_2.jpg">
+              <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_2.jpg" alt="Отзывы о нас">
+            </picture>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="feadback__container">
-            <div class="feadback__image"></div>
-            <h3 class="fedback__name-user">Катерина Онисимова</h3>
-            <div class="fedback__source">vk.com</div>
-            <div class="feadback__rating">
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-            </div>
-            <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-              процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-              следует, однако забывать, что постоянный количественный рост и сфера</p>
+            <picture class=" lazy feadback__image">
+              <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_3.webp">
+              <source  data-srcset="img/feadback/feadbck_telegram_3.jpg">
+              <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_3.jpg" alt="Отзывы о нас">
+            </picture>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="feadback__container">
-            <div class="feadback__image"></div>
-            <h3 class="fedback__name-user">Катерина Онисимова</h3>
-            <div class="fedback__source">vk.com</div>
-            <div class="feadback__rating">
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-              <span class="fedback__rating--span"></span>
-            </div>
-            <p class="feadback__text">Не следует, однако забывать, что рамки и место обучения кадров влечет за собой
-              процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не
-              следует, однако забывать, что постоянный количественный рост и сфера</p>
+            <picture class=" lazy feadback__image">
+              <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_4.webp">
+              <source  data-srcset="img/feadback/feadbck_telegram_4.jpg">
+              <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_4.jpg" alt="Отзывы о нас">
+            </picture>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feadback__container">
+            <picture class=" lazy feadback__image">
+              <source type="image/webp" data-srcset="img/webp/feadback/feadbck_general_5.webp">
+              <source  data-srcset="img/feadback/feadbck_general_5.jpg">
+              <img class="feadback__image--pic" data-src="img/feadback/feadbck_general_5.jpg" alt="Отзывы о нас">
+            </picture>
+
           </div>
         </div>
       </div>
@@ -294,10 +257,10 @@
 
 <section class="seven-day-free">
   <h2 class="visually-hidden">Кнопка 7 дней бесплатно</h2>
-  <a href="#" class="seven-day__link">Получи 7 дней БЕСПЛАТНО</a>
+  <button data-modal="free" class="btn-modal seven-day__link">Получи 7 дней БЕСПЛАТНО</button>
 </section>
 
-<section class="programm">
+<section id="program-telegram" class="programm">
   <h2 class="programm__title">Программа каждого уровня </h2>
   <div class="programm__wrap">
     <button id="programmStarter" class="programm__btn">Программа уровня ELEMENTARY / A1</button>
@@ -503,7 +466,7 @@
 </section>
 <section class="seven-day-free">
   <h2 class="visually-hidden">Кнопка 7 дней бесплатно</h2>
-  <a href="#" class="seven-day__link">Получи 7 дней БЕСПЛАТНО</a>
+  <button data-modal="free" class="btn-modal seven-day__link">Получи 7 дней БЕСПЛАТНО</button>
 </section>
 <section class="how-enroll">
   <h2 class="how-enroll__title">Как записатья?</h2>
@@ -535,7 +498,10 @@
     <span class="how-enroll--line-four"></span>
   </div>
 </section>
-
+<section class="why-lvl">
+  <h2 class="visually-hidden">Кнопка перехода на тестирование</h2>
+  <a class="button-link why-lvl__btn" href="/lvl-test.html">Определи свой уровень</a>
+</section>
 <section id="price" class="telegram-prace section-menu">
 <div class="telegram-price__wraper">
   <h2 class="telegram-prace__title">Стоимость</h2>
@@ -564,7 +530,7 @@
           B1</label>
       </form>
       </div>
-      <button name="choice" id="btnPricePayS" class="btn-modal telegram-prace__btn">Оплатить</button>
+      <button data-modal="choice" id="btnPricePayS" class="btn-modal telegram-prace__btn">Оплатить</button>
     </div>
     <div class="telegram-prace__block telegram-prace__block--hit">
       <h3 class="telegram-prace__time">12 недель</h3>
@@ -590,7 +556,7 @@
           B1</label>
       </form>
       </div>
-      <button name="choice" id="btnPricePayM" class="btn-modal telegram-prace__btn">Оплатить</button>
+      <button data-modal="choice" id="btnPricePayM" class="btn-modal telegram-prace__btn">Оплатить</button>
     </div>
     <div class="telegram-prace__block telegram-prace__block--top">
       <h3 class="telegram-prace__time">24 недели</h3>
@@ -616,7 +582,7 @@
           B1</label>
       </form>
       </div>
-      <button name="choice" id="btnPricePayXL" class="btn-modal telegram-prace__btn">Оплатить</button>
+      <button data-modal="choice" id="btnPricePayXL" class="btn-modal telegram-prace__btn">Оплатить</button>
     </div>
   </div>
   <p class="telegrm-prace__info">
@@ -626,8 +592,11 @@
     </p>
 </div>
 </section>
+
+
 <div class="modal-overlay modal-js-overlay "></div>
-<div class="modal"  name="choice">
+<!-- Модальное окно для кнопки 7 дней бесплатно -->
+<div class="modal"  data-modal="free">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <div class="modal__container">
     <h3 class="anglofan-modal__title">Вы не выбрали свой уровень</h3>
@@ -638,8 +607,20 @@
     </div>
   </div>
 </div>
- <!-- Модальные окна для второго блока оплаты -->
-<div class="modal" name="lvl_a0_s">
+
+<!-- Модальные окна для второго блока оплаты -->
+<div class="modal"  data-modal="choice">
+  <div class="anglofan-modal__plus modal-js-close">+</div>
+  <div class="modal__container">
+    <h3 class="anglofan-modal__title">Вы не выбрали свой уровень</h3>
+    <p class="anglofan-modal__text">Пожалуйста выберете свой уровень или пройдите наше тестирование </p>
+    <div class="anglofan-modal__box">
+      <a class="button-link modal__link" href="/lvl-test.thml">Тестирование</a>
+      <a class="button-link modal__link modal-js-close">Ok</a>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="lvl_a0_s">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -649,7 +630,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_a1_s">
+<div class="modal" data-modal="lvl_a1_s">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -659,7 +640,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_a2_s">
+<div class="modal" data-modal="lvl_a2_s">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -669,7 +650,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_b1_s">
+<div class="modal" data-modal="lvl_b1_s">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -679,10 +660,20 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-
+ <!-- Модальное окно дня 7 дней бесплатно -->
+<div class="modal" data-modal="free">
+  <div class="anglofan-modal__plus modal-js-close">+</div>
+  <ul class="modal__container">
+    <li class="anglofan-modal__item">
+      <h3 class="anglofan-modal__title">Telegram club Starter / A0 24&nbsp;недели</h3>
+      <p class="anglofan-modal__text">Расскажите о себе, и мы запишем вас на курс</p>
+    </li>
+    <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
+  </ul>
+</div>
 <!-- Модальные окна для второго блока оплаты -->
 
-<div class="modal" name="lvl_a0_m">
+<div class="modal" data-modal="lvl_a0_m">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -692,7 +683,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_a1_m">
+<div class="modal" data-modal="lvl_a1_m">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -702,7 +693,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_a2_m">
+<div class="modal" data-modal="lvl_a2_m">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -712,7 +703,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_b1_m">
+<div class="modal" data-modal="lvl_b1_m">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -725,7 +716,7 @@
 
 <!-- Модальные окна для второго блока оплаты -->
 
-<div class="modal" name="lvl_a0_xl">
+<div class="modal" data-modal="lvl_a0_xl">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -735,7 +726,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_a1_xl">
+<div class="modal" data-modal="lvl_a1_xl">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -745,7 +736,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_a2_xl">
+<div class="modal" data-modal="lvl_a2_xl">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -755,7 +746,7 @@
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
 </div>
-<div class="modal" name="lvl_b1_xl">
+<div class="modal" data-modal="lvl_b1_xl">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -795,73 +786,17 @@
     </li>
   </ul>
 </section>
-<section class="sing">
-  <h2 class="sing__title">Есть вопросы? <br> Оставь заявку и мы свяжемся с тобой
-  </h2>
-    <div class="sign__btn">
-      <a href="#" class="sign__btn-link button-link btn-bot__whatsapp">WhatsApp</a>
-      <a href="#" class="sign__btn-link button-link btn-bot__teleg">Telegram</a>
-      <a href="#" class="sign__btn-link button-link btn-bot__vk">Вконтаке</a>
-    </div>
-  <!-- <form class="sing__form">
-    <label class="sing__name">
-      <input type="text" name="sing-name" placeholder="Имя" class="sing__name--input">
-    </label>
-    <label class="sing__email">
-      <input type="email" name="sing-email" placeholder="Email" class="sing__email--input">
-    </label>
-    <label class="sing__tel">
-      <input type="tel" name="sing-tel" placeholder="Телефон" class="sing__tel--input">
-    </label>
-    <button class="sing__btn">Подпишись</button>
-  </form> -->
-</section>
-<section class="social-footer">
-  <h2 class="social-footer__title ">Учи английский онлайн с нами в соцсетях</h2>
-  <div class="social-footer__link">
-    <a class="social-footer__element" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social-footer__facebook--inline" width="30" height="30">
-        <use xlink:href="#Facebook"></use>
-      </svg></a>
-    <a class="social-footer__element" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social-footer__insta--inline" width="30" height="30">
-        <use xlink:href="#insta"></use>
-      </svg></a>
-    <a class="social-footer__element" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social-footer__youtube--inline" width="30" height="30">
-        <use xlink:href="#Youtube"></use>
-      </svg></a>
-    <a class="social-footer__element" href="https://vk.com/anglofanru" target="_blank"><svg class="social-footer__vk--inline" width="30" height="30">
-        <use xlink:href="#VK"></use>
-      </svg></a>
+
+
+  <!-- Подключение социальных кнопок -->
+  <include src="build/@_sign.html"> </include>
+  <!-- Подключение социальных кнопок -->
+  <include src="build/@_social_footer.html"> </include>
+
   </div>
-</section>
-</div>
-<footer class="footer">
-  <div class="footer__info">
-   <div class="footer__wraper">
-      <div class="footer__copirite">
-        <img src="img/logo_fin_white.svg" alt="Логотип англофан" width="200" height="50">
-        <p>онлайн-школа английского языка</p>
-        <span>© 2021 </span>
-      </div>
-      <div class="footer__personal">
-        <h4>Оплата</h4>
-        <a href="/oferta.html">Публичная оферта</a>
-        <a href="/politika.html">Пользовательское соглашение</a>
-        <a href="/user-agre.html">Политика конфиденциальности</a>
-      </div>
-      <nav class="footer__menu">
-        <h4>Меню</h4>
-        <a href="/index.html">Главная</a>
-        <a href="/lvl-test.html">Тестирование</a>
-        <a href="/about-my.html">О нас</a>
-      </nav>
-      <nav class="footer__course">
-        <h4>Курсы</h4>
-        <a href="/anglofan.html">Anglofan</a>
-        <a href="/telegram-club.html">Telegram</a>
-      </nav>
-    </div>
-  </div>
-</footer>
+    <!-- Подключение footer -->
+  <include src="build/@_footer.html"> </include>
+
   <div class="visually-hidden">
     <include src="build/img/sprite.svg"> </include>
   </div>
@@ -871,7 +806,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
+      slidesPerView: 1.5,
       spaceBetween: 50,
       // init: false,
       pagination: {
@@ -879,16 +814,17 @@
         clickable: true,
       },
       breakpoints: {
-        // 768: {
-        //   slidesPerView: 2,
-        //   spaceBetween: 20,
-        // },
-        1024: {
+        768: {
           slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
           spaceBetween: 20,
         },
       }
     });
+
 
   </script>
 </body>

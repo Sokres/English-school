@@ -86,29 +86,71 @@ console.log('helo');
   }
 })();
 
-//Модальное окно для теста определи свой уровень
-// var modalLvl = document.getElementById("lvlModal");
-
-// var openBtnLvl = document.querySelector(".btn-test, .test");
-
-// var closeLvl = document.getElementsByClassName("your-lvl__close")[0];
-
-// openBtnLvl.onclick = function() {
-//   modalLvl.style.display = "block";
-// }
-// closeLvl.onclick = function() {
-//   modalLvl.style.display = "none";
-// }
-
-// window.onclick = function(event) {
-//   if (event.target == modalLvl) {
-//     modalLvl.style.display = "none";
-//   }
-// }
+// Оптимизация изображений Lazy loading
 
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  var lazyImages =[].slice.call(
+   document.querySelectorAll(".lazy > source")
+  )
 
-//Липкое меню//
+  if ("IntersectionObserver" in window && 'IntersectionObserverEntry' in window) {
+     let lazyImageObserver =
+      new IntersectionObserver(function(entries, observer) {
+         entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+             let lazyImage = entry.target;
+             lazyImage.srcset = lazyImage.dataset.srcset;
+             lazyImage.nextElementSibling.srcset = lazyImage.dataset.srcset;
+             lazyImage.nextElementSibling.classList.add('fade-in');
+             lazyImage.parentElement.classList.remove("lazy");
+            lazyImageObserver.unobserve(lazyImage);
+           }
+        });
+       });
+
+     lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+     });
+  } else {
+
+    // Not supported, load all images immediately
+    let active = false;
+
+    const lazyLoad = function() {
+      if (active === false) {
+        active = true;
+        setTimeout(function() {
+          lazyImages.forEach(function(lazyImage) {
+            if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+              lazyImage.srcset = lazyImage.dataset.srcset;
+              lazyImage.nextElementSibling.src = lazyImage.dataset.srcset;
+              lazyImage.nextElementSibling.classList.add('fade-in');
+              lazyImage.parentElement.classList.remove("lazy");
+
+              lazyImages = lazyImages.filter(function(image) {
+                return image !== lazyImage;
+              });
+
+              if (lazyImages.length === 0) {
+                document.removeEventListener("scroll", lazyLoad);
+                window.removeEventListener("resize", lazyLoad);
+                window.removeEventListener("orientationchange", lazyLoad);
+              }
+            }
+          });
+
+          active = false;
+        }, 200);
+      }
+    };
+
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+   }
+
+ });
 
 
 

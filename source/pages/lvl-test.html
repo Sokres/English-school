@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/styles.min.css">
-  <title>Бесплатный тест на знание английского языка — онлайн-школа Anglofan</title>
+  <title>Бесплатный тест на знание английского языка — Онлайн 💂 курсы английского Anglofan</title>
   <meta name="description"
-    content="Онланй-тест на определение уровня английского языка бесплатный способ проверь свои знания онлайн.">
+    content="Онлайн-тест на определение уровня английского языка, бесплатный способ проверить свои знания онлайн.">
   <meta name="keywords"
     content="">
   <meta name="theme-color" content="#57ACFF">
@@ -31,7 +31,7 @@
         <a href="../index.html" class="header__link-logo"> <img class="logo" src="../img/logo_fin_white.svg" height="30"
             alt="Логотип Anglofan"></a>
         <nav class="header__nav">
-          <button class="main-nav__btn">
+          <button type="button" aria-label="Открыть меню" class="main-nav__btn">
             <span class="main-nav__btn--line"></span>
           </button>
           <ul class="main-nav__list site-list">
@@ -61,27 +61,16 @@
         </nav>
       </div>
     </header>
-    <section class="social">
-      <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
-      <a class="social__facebook" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social__facebook--inline" width="30" height="30">
-          <use xlink:href="#Facebook"></use>
-        </svg></a>
-      <a class="social__insta" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social__insta--inline" width="30" height="30">
-          <use xlink:href="#insta"></use>
-        </svg></a>
-      <a class="social__youtube" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social__youtube--inline" width="30" height="30">
-          <use xlink:href="#Youtube"></use>
-        </svg></a>
-      <a class="social__vk" href="https://vk.com/anglofanru" target="_blank"><svg class="social__vk--inline" width="30" height="30">
-          <use xlink:href="#VK"></use>
-        </svg></a>
-    </section>
+
+  <!-- Подключение панели кнопок социальных сетей -->
+  <include src="build/@_social.html"> </include>
+
   <section class="test-main">
   <div class="test-main__wraper">
     <div class="test-main__container">
-      <h1 class="test-main__heading">Определить уровень английского</h1>
+      <h2 class="test-main__heading">Определить уровень английского</h2>
       <p class="test-main__info">Тест на определение уровня английского языка онлайн-школы «ANGLOFAN» — это комплексная проверка грамматики, словарного запаса, восприятия речи на слух  и чтения.</p>
-      <a href="../lvl-test/test.html" class="test-main__link">НАЧАТЬ ТЕСТИРОВАНИЕ</a>
+      <a href="../test.html" class="test-main__link">НАЧАТЬ ТЕСТИРОВАНИЕ</a>
     </div>
     <div class="test-main__image"></div>
   </div>
@@ -93,70 +82,32 @@
         <li class="test-advantage__item">
           <h3 class="test-advantage__subtitle test-grid-title">Удобство</h3>
           <p class="test-advantage__text test-grid-txt"> Прохождение теста в среднем занимает 9 минут.</p>
-          <div class="test-advantage__image test-grid-img"><img src="../img/test-brain.svg" alt="Картинка мозга"></div>
+          <div class="test-advantage__image test-grid-img"><img src="../img/test-brain.svg" width="200" height="200" alt="Картинка мозга"></div>
         </li>
         <li class="test-advantage__item">
           <h3 class="test-advantage__subtitle test-grid-title">Доступность</h3>
           <p class="test-advantage__text test-grid-txt">Проверьте свой уровень английского бесплатно без регистрации. По завершении теста вы получите информацию об уровне знаний и рекомендации, на каком уровне вам стоит учиться. Тест можно пройти с любого устройства: компьютера, планшета или смартфона.
             </p>
-          <div class="test-advantage__image test-grid-img"><img src="../img/test-world.svg" alt="Картинка мира"></div>
+          <div class="test-advantage__image test-grid-img"><img src="../img/test-world.svg" width="200" height="200" alt="Картинка мира"></div>
         </li>
         <li class="test-advantage__item ">
           <h3 class="test-advantage__subtitle test-grid-title">Комплексность</h3>
           <p class="test-advantage__text test-grid-txt"> Наше тестирование оценивает не только ваши знания грамматики, но и словарного запаса, чтения и восприятия на слух. Такой подход позволяет дать более точную оценку вашим знаниям.</p>
-          <div class="test-advantage__image test-grid-img"><img src="../img/test-board.svg" alt="Картинка доски"></div>
+          <div class="test-advantage__image test-grid-img"><img src="../img/test-board.svg" width="200" height="200" alt="Картинка доски"></div>
         </li>
       </ol>
       <p class="test-advantage__info">После прохождения теста вы будете знать, с какого уровня вам желательно продолжить изучение английского языка.</p>
-      <a href="../lvl-test/test.html" class="test-advantage__link test-link">НАЧАТЬ ТЕСТ</a>
+      <a href="../test.html" class="test-advantage__link test-link">НАЧАТЬ ТЕСТ</a>
       <p class="test-advantage__res">Узнай свой уровень английского языка онлайн прямо сейчас</p>
     </div>
   </section>
-  <section class="social-footer">
-    <h2 class="social-footer__title ">Учи английский онлайн с нами в соцсетях</h2>
-    <div class="social-footer__link">
-      <a class="social-footer__element" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social-footer__facebook--inline" width="30" height="30">
-          <use xlink:href="#Facebook"></use>
-        </svg></a>
-      <a class="social-footer__element" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social-footer__insta--inline" width="30" height="30">
-          <use xlink:href="#insta"></use>
-        </svg></a>
-      <a class="social-footer__element" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social-footer__youtube--inline" width="30" height="30">
-          <use xlink:href="#Youtube"></use>
-        </svg></a>
-      <a class="social-footer__element" href="https://vk.com/anglofanru" target="_blank"><svg class="social-footer__vk--inline" width="30" height="30">
-          <use xlink:href="#VK"></use>
-        </svg></a>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="footer__info">
-     <div class="footer__wraper">
-        <div class="footer__copirite">
-          <img src="img/logo_fin_white.svg" alt="Логотип англофан" width="200" height="50">
-          <p>онлайн-школа английского языка</p>
-          <span>© 2021 </span>
-        </div>
-        <div class="footer__personal">
-          <h4>Оплата</h4>
-          <a href="/oferta.html">Публичная оферта</a>
-          <a href="/politika.html">Пользовательское соглашение</a>
-          <a href="/user-agre.html">Политика конфиденциальности</a>
-        </div>
-        <nav class="footer__menu">
-          <h4>Меню</h4>
-          <a href="/index.html">Главная</a>
-          <a href="/lvl-test.html">Тестирование</a>
-          <a href="/about-my.html">О нас</a>
-        </nav>
-        <nav class="footer__course">
-          <h4>Курсы</h4>
-          <a href="/anglofan.html">Anglofan</a>
-          <a href="/telegram-club.html">Telegram</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
+  <include src="build/@_sign.html"> </include>
+  <!-- Подключение социальных кнопок -->
+  <include src="build/@_social_footer.html"> </include>
+
+  </div>
+    <!-- Подключение footer -->
+  <include src="build/@_footer.html"> </include>
   </div>
   <div class="visually-hidden">
     <include src="build/img/sprite.svg"> </include>

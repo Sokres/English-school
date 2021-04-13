@@ -26,10 +26,7 @@ $top-color__active:#4C95DE;
   margin-top: 15px;
 }
 
-.social-footer{
-  margin-top: 50px;
 
-}
 .social-footer__title{
   font-size: 20px;
   text-align: center;
@@ -67,6 +64,8 @@ $top-color__active:#4C95DE;
 
 @media(min-width: 768px){
   .sing{
+    margin-top: 20px;
+    margin-bottom: 20px;
    padding-left: 50px;
   }
   .sing__title{
@@ -88,6 +87,8 @@ $top-color__active:#4C95DE;
   .sing{
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding-right: 50px;
   }
   .sing__title{

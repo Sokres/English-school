@@ -412,14 +412,15 @@ $focus-mobile:#CACACA;
       }
     }
 
-      .site-list__item-podmenu{
-        opacity: 0;
-        position: absolute;
-        left: 0;
-        min-width: 200px;
-        padding-left: 10px;
-        visibility: hidden;
-        display: none;
+    .site-list__item-podmenu{
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      min-width: 200px;
+      padding-left: 10px;
+      visibility: hidden;
+      display: none;
+      z-index: 10;
     }
     .main-nav__list .site-list__item:hover > .site-list__item-podmenu,
     .main-nav__list .site-list__item:focus-within > .site-list__item-podmenu,

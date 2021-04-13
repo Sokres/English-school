@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/styles.min.css">
-  <title>Договор публичной аферты - Онлайн-курсы английского Anglofan</title>
+  <title>Договор публичной оферты - Онлайн-курсы английского Anglofan</title>
   <meta name="description"
-    content="Страница посвещена догорву публичной аферты компании Англофан">
+    content="Страница посвящена договору публичной оферта компании Anglofan">
 
   <meta name="theme-color" content="#57ACFF">
   <link rel="icon" href="favicon.svg">
@@ -59,24 +59,12 @@
         </nav>
       </div>
     </header>
-    <section class="social">
-      <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
-      <a class="social__facebook" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social__facebook--inline" width="30" height="30">
-          <use xlink:href="#Facebook"></use>
-        </svg></a>
-      <a class="social__insta" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social__insta--inline" width="30" height="30">
-          <use xlink:href="#insta"></use>
-        </svg></a>
-      <a class="social__youtube" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social__youtube--inline" width="30" height="30">
-          <use xlink:href="#Youtube"></use>
-        </svg></a>
-      <a class="social__vk" href="https://vk.com/anglofanru" target="_blank"><svg class="social__vk--inline" width="30" height="30">
-          <use xlink:href="#VK"></use>
-        </svg></a>
-    </section>
+  <!-- Подключение панели кнопок социальных сетей -->
+  <include src="build/@_social.html"> </include>
+
     <section class="oferta-text">
       <p class="oferta-text__info">
-        <h1 class="heading-oferta">Публичная аферта</h1>
+        <h1 class="heading-oferta">Публичная оферта</h1>
         <h2> Публичный договор оферта о предоставлении информационно-консультационных услуг ИП Латипова К.Н.</h2>
 
         <br>г. Москва
@@ -379,7 +367,7 @@
 <br>
 <br>для Исполнителя: anglofan@yandex.ru
 <br>
-<br>для Заказчика: адрес электронной почты, указанный при покупке Услуги.
+<br> для Заказчика: адрес электронной почты, указанный при покупке Услуги.
 <br>
 <br>12.8. Стороны обязуются обеспечивать конфиденциальность сведений и информации, необходимых для доступа к уполномоченным адресам электронной почты и Личному кабинету Заказчика, не допускать разглашение такой информации и передачу третьим лицам. Стороны самостоятельно определяют порядок ограничения доступа к такой информации.
 <br>
@@ -398,51 +386,12 @@
 <br>ИНН   503018910313
       </p>
     </section>
-    <section class="social-footer">
-      <h2 class="social-footer__title ">Учи английский онлайн с нами в соцсетях</h2>
-      <div class="social-footer__link">
-        <a class="social-footer__element" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social-footer__facebook--inline" width="30" height="30">
-            <use xlink:href="#Facebook"></use>
-          </svg></a>
-        <a class="social-footer__element" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social-footer__insta--inline" width="30" height="30">
-            <use xlink:href="#insta"></use>
-          </svg></a>
-        <a class="social-footer__element" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social-footer__youtube--inline" width="30" height="30">
-            <use xlink:href="#Youtube"></use>
-          </svg></a>
-        <a class="social-footer__element" href="https://vk.com/anglofanru" target="_blank"><svg class="social-footer__vk--inline" width="30" height="30">
-            <use xlink:href="#VK"></use>
-          </svg></a>
-      </div>
-    </section>
-  <footer class="footer">
-    <div class="footer__info">
-     <div class="footer__wraper">
-        <div class="footer__copirite">
-          <img src="img/logo_fin_white.svg" alt="Логотип англофан" width="200" height="50">
-          <p>онлайн-школа английского языка</p>
-          <span>© 2021 </span>
-        </div>
-        <div class="footer__personal">
-          <h4>Оплата</h4>
-          <a href="/oferta.html">Публичная оферта</a>
-          <a href="/politika.html">Пользовательское соглашение</a>
-          <a href="/user-agre.html">Политика конфиденциальности</a>
-        </div>
-        <nav class="footer__menu">
-          <h4>Меню</h4>
-          <a href="/index.html">Главная</a>
-          <a href="/lvl-test.html">Тестирование</a>
-          <a href="/about-my.html">О нас</a>
-        </nav>
-        <nav class="footer__course">
-          <h4>Курсы</h4>
-          <a href="/anglofan.html">Anglofan</a>
-          <a href="/telegram-club.html">Telegram</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
+    <include src="build/@_sign.html"> </include>
+    <!-- Подключение социальных кнопок -->
+    <include src="build/@_social_footer.html"> </include>
+
+      <!-- Подключение footer -->
+    <include src="build/@_footer.html"> </include>
   </div>
   <div class="visually-hidden">
     <include src="build/img/sprite.svg"> </include>

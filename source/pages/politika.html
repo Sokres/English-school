@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css/styles.min.css">
   <title>Политика конфиденциальности - Онлайн-курсы английского Anglofan</title>
   <meta name="description"
-    content="Данная станица отображает политику конфиденциальности персональных данных компании Англофан">
+    content="Данная станица отображает политику конфиденциальности персональных данных компании Anglofan">
 
   <meta name="theme-color" content="#57ACFF">
   <link rel="icon" href="favicon.svg">
@@ -59,21 +59,7 @@
         </nav>
       </div>
     </header>
-    <section class="social">
-      <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
-      <a class="social__facebook" href="https://www.facebook.com/anglofanru"><svg class="social__facebook--inline" width="30" height="30">
-          <use xlink:href="#Facebook"></use>
-        </svg></a>
-      <a class="social__insta" href="https://www.instagram.com/anglofan/"><svg class="social__insta--inline" width="30" height="30">
-          <use xlink:href="#insta"></use>
-        </svg></a>
-      <a class="social__youtube" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA"><svg class="social__youtube--inline" width="30" height="30">
-          <use xlink:href="#Youtube"></use>
-        </svg></a>
-      <a class="social__vk" href="https://vk.com/anglofanru"><svg class="social__vk--inline" width="30" height="30">
-          <use xlink:href="#VK"></use>
-        </svg></a>
-    </section>
+    <include src="build/@_social.html"> </include>
     <section class="oferta-text">
       <h1 class="heading-oferta">Политика конфиденциальности персональных данных</h1>
       <p class="oferta-text__info">
@@ -259,51 +245,12 @@
         <br>г. Наро-Фоминск, ИП Латипова К.Н. ОГРН 316503000056512
       </p>
     </section>
-    <section class="social-footer">
-      <h2 class="social-footer__title ">Учи английский онлайн с нами в соцсетях</h2>
-      <div class="social-footer__link">
-        <a class="social-footer__element" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social-footer__facebook--inline" width="30" height="30">
-            <use xlink:href="#Facebook"></use>
-          </svg></a>
-        <a class="social-footer__element" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social-footer__insta--inline" width="30" height="30">
-            <use xlink:href="#insta"></use>
-          </svg></a>
-        <a class="social-footer__element" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social-footer__youtube--inline" width="30" height="30">
-            <use xlink:href="#Youtube"></use>
-          </svg></a>
-        <a class="social-footer__element" href="https://vk.com/anglofanru" target="_blank"><svg class="social-footer__vk--inline" width="30" height="30">
-            <use xlink:href="#VK"></use>
-          </svg></a>
-      </div>
-    </section>
-  <footer class="footer">
-    <div class="footer__info">
-     <div class="footer__wraper">
-        <div class="footer__copirite">
-          <img src="img/logo_fin_white.svg" alt="Логотип англофан" width="200" height="50">
-          <p>онлайн-школа английского языка</p>
-          <span>© 2021 </span>
-        </div>
-        <div class="footer__personal">
-          <h4>Оплата</h4>
-          <a href="/oferta.html">Публичная оферта</a>
-          <a href="/politika.html">Пользовательское соглашение</a>
-          <a href="/user-agre.html">Политика конфиденциальности</a>
-        </div>
-        <nav class="footer__menu">
-          <h4>Меню</h4>
-          <a href="/index.html">Главная</a>
-          <a href="/lvl-test.html">Тестирование</a>
-          <a href="/about-my.html">О нас</a>
-        </nav>
-        <nav class="footer__course">
-          <h4>Курсы</h4>
-          <a href="/anglofan.html">Anglofan</a>
-          <a href="/telegram-club.html">Telegram</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
+    <include src="build/@_sign.html"> </include>
+    <!-- Подключение социальных кнопок -->
+    <include src="build/@_social_footer.html"> </include>
+
+      <!-- Подключение footer -->
+    <include src="build/@_footer.html"> </include>
   </div>
   <div class="visually-hidden">
     <include src="build/img/sprite.svg"> </include>

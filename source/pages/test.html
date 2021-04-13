@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/styles.min.css">
-  <title>Тестирование на знание английского — онлайн-школа Anglofan</title>
+  <title>Тестирование на знание английского — Онлайн 💂 курсы английского Anglofan</title>
   <meta name="description"
     content="Онлайн тестирование на определение уровня владения английским языком">
   <meta name="keywords"
@@ -59,21 +59,10 @@
         </nav>
       </div>
     </header>
-    <section class="social">
-      <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
-      <a class="social__facebook" href="https://www.facebook.com/anglofanru" target="_blank"><svg class="social__facebook--inline" width="30" height="30">
-          <use xlink:href="#Facebook"></use>
-        </svg></a>
-      <a class="social__insta" href="https://www.instagram.com/anglofan/" target="_blank"><svg class="social__insta--inline" width="30" height="30">
-          <use xlink:href="#insta"></use>
-        </svg></a>
-      <a class="social__youtube" href="https://www.youtube.com/channel/UCVDHowF5QXjUdpVP-geU_EA" target="_blank"><svg class="social__youtube--inline" width="30" height="30">
-          <use xlink:href="#Youtube"></use>
-        </svg></a>
-      <a class="social__vk" href="https://vk.com/anglofanru" target="_blank"><svg class="social__vk--inline" width="30" height="30">
-          <use xlink:href="#VK"></use>
-        </svg></a>
-    </section>
+
+  <!-- Подключение панели кнопок социальных сетей -->
+  <include src="build/@_social.html"> </include>
+
     <h1 class="test-title">Пройти тест на знание английского</h1>
     <section class="your-lvl">
       <h2 class="visually-hidden">Тест на определение уровня английского языка</h2>
@@ -92,13 +81,13 @@
       </div>
     </section>
 
-    <include src="build/a_sign.html"> </include>
+    <include src="build/@_sign.html"> </include>
     <!-- Подключение социальных кнопок -->
-    <include src="build/a_social_footer.html"> </include>
+    <include src="build/@_social_footer.html"> </include>
 
-    </div>
-      <!-- Подключение footer -->
-    <include src="build/a_footer.html"> </include>
+  </div>
+  <!-- Подключение footer -->
+  <include src="build/@_footer.html"> </include>
 
   </div>
   <div class="visually-hidden">
