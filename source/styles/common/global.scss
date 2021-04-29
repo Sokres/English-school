@@ -56,7 +56,7 @@ $red: #e00083;
   clip: rect(0 0 0 0);
 }
 html {
-
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -132,44 +132,7 @@ img {
     background-color: $top-color__active;
   }
 }
-// Кнопка 7 дней бесплатно
-.seven-day-free{
-  max-width: 500px;
-  padding: 0 20px;
-  margin: 0 auto;
-  padding-top: 30px;
 
-}
-.seven-day__link{
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  padding: .57em 1em;
-  border: none;
-  border-radius: 10px;
-  background-color: $gren;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  color: $white;
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover,
-  &:focus{
-    background-color: $top-color__hover;
-    box-shadow: -3px 3px 5px 0 #182f522f;
-  }
-  &:focus{
-    outline: none;
-    box-shadow: 0 0 0 1px $top-color;
-  }
-  &:active{
-    background-color: $gren__active;
-  }
-}
-.seven-day__link:first-of-type{
-  margin-bottom: 30px;
-}
 
 // Медиа вырожения
 
@@ -233,8 +196,41 @@ img {
 .why-lvl{
   margin: 40px auto;
   max-width: 300px;
+  padding-left: 40px;
+  padding-bottom: 70px;
 }
 
+.section-menu{
+  padding-top: 60px;
+  margin-top: -60px;
+}
+//Кнопка хочу
+.want{
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.want__btn{
+  display: block;
+  width: 100%;
+  padding: .57em 1em;
+  border: none;
+  background-color: $top-color;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: $white;
+  cursor: pointer;
+  transition: 0.3s;
+    &:hover,
+    &:focus{
+      background-color: $top-color__hover;
+      box-shadow: -3px 3px 5px 0 #182f522f;
+    }
+    &:active{
+      background-color: $gren__active;
+    }
+}
 @keyframes fade-in {
   from {opacity: 0;}
   to {opacity: 1;}

@@ -89,3 +89,87 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 })();
+
+// Кнопка 7 дней бесплатно
+
+(function(){
+    const toggle = document.getElementById('seven-link_one')
+    const content = document.getElementById('seven-content_one')
+
+  const show = () => {
+    toggle.setAttribute('aria-expanded', true)
+    content.setAttribute('aria-hidden', false)
+
+  }
+
+  const hide = () => {
+    toggle.setAttribute('aria-expanded', false)
+    content.setAttribute('aria-hidden', true)
+
+  }
+  toggle.addEventListener('click', event => {
+    event.stopPropagation()
+    JSON.parse(toggle.getAttribute('aria-expanded')) ? hide() : show()
+  })
+
+  const handleClosure = event => !content.contains(event.target) && hide()
+
+
+  window.addEventListener('click', handleClosure)
+  window.addEventListener('focusin', handleClosure)
+
+})();
+
+(function(){
+    const toggleTwo = document.getElementById('seven-link_two')
+    const contentTwo = document.getElementById('seven-content_two')
+
+  const show = () => {
+    toggleTwo.setAttribute('aria-expanded', true)
+    contentTwo.setAttribute('aria-hidden', false)
+  }
+
+  const hide = () => {
+
+    toggleTwo.setAttribute('aria-expanded', false)
+    contentTwo.setAttribute('aria-hidden', true)
+
+  }
+
+
+  toggleTwo.addEventListener('click', event => {
+    event.stopPropagation()
+    JSON.parse(toggleTwo.getAttribute('aria-expanded')) ? hide() : show()
+  })
+
+  const handleClosureTwo = event => !contentTwo.contains(event.target) && hide()
+
+
+
+  window.addEventListener('click', handleClosureTwo)
+  window.addEventListener('focusin', handleClosureTwo)
+})();
+(function(){
+
+    const toggleThree = document.getElementById('seven-link_three')
+    const contentThree = document.getElementById('seven-content_three')
+
+  const show = () => {
+    toggleThree.setAttribute('aria-expanded', true)
+    contentThree.setAttribute('aria-hidden', false)
+  }
+
+  const hide = () => {
+    toggleThree.setAttribute('aria-expanded', false)
+    contentThree.setAttribute('aria-hidden', true)
+  }
+  toggleThree.addEventListener('click', event => {
+    event.stopPropagation()
+    JSON.parse(toggleThree.getAttribute('aria-expanded')) ? hide() : show()
+  })
+
+  const handleClosureThree = event => !contentThree.contains(event.target) && hide()
+
+  window.addEventListener('click', handleClosureThree)
+  window.addEventListener('focusin', handleClosureThree)
+})();

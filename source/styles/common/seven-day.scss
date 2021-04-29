@@ -1,0 +1,136 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#18c26d;
+$top-color__active:#4C95DE;
+$red: #e00083;
+
+// Кнопка 7 дней бесплатно
+.seven-day{
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 30px;
+}
+
+.seven-day__btn{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: .57em 1em;
+  border: none;
+
+  background-color: $gren;
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: $white;
+  cursor: pointer;
+  transition: 0.3s;
+    &:hover,
+    &:focus{
+      background-color: $top-color__hover;
+      box-shadow: -3px 3px 5px 0 #182f522f;
+    }
+    &:active{
+      background-color: $gren__active;
+    }
+}
+.seven-day__btn[aria-expanded="false"]{
+  border-radius: 10px;
+}
+.seven-day__btn[aria-expanded="true"]{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.seven-day__btn::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px $white;
+  border-left: solid 2px $white;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+
+.seven-day__btn[aria-expanded="false"]::after{
+  transform: translateY(-50%) rotate(-225deg);
+}
+.seven-day__btn[aria-expanded="true"]::after{
+  transform: translateY(-50%) rotate(-135deg);
+}
+.seven-day__wrap{
+  position: relative;
+}
+.seven-day__lists{
+  position: absolute;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 0 1px $gray;
+  background-color: #F5F5F5;
+}
+.seven-day__lists ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.seven-day__link{
+  display: block;
+  width: 100%;
+  padding: 0.9em 1em;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: $text-color;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover,
+  &:focus{
+    background-color: $gray;
+    box-shadow: -3px 3px 5px 0 #182f522f;
+  }
+  &:active{
+    background-color: $gray__hover;
+  }
+}
+.seven-day__lists ul li{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.seven-day__lists ul li:nth-of-type(n+2):before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  text-align: center;
+  background-color: $gray;
+}
+
+.seven-day__lists[aria-hidden="true"]{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+.seven-day__lists[aria-hidden="false"]{
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}

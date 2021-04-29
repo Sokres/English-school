@@ -16,6 +16,7 @@ $top-color__active:#4C95DE;
 .about-course__title{
   text-align: center;
   margin: 0;
+  padding-bottom: 30px;
 }
 .about-course__video{
   width: 80%;
@@ -83,7 +84,7 @@ background-repeat: no-repeat, no-repeat;
 
   &::before{
     content: "✔";
-    color: $top-color;
+    color: #C38983;
   }
 }
 
@@ -93,6 +94,9 @@ background-repeat: no-repeat, no-repeat;
 @media (min-width: 768px) {
   .about-course{
     margin-top: 60px;
+  }
+  .about-course__title{
+    padding-bottom: 40px;
   }
   .about-course--bgc-video{
     padding-top: 50px;

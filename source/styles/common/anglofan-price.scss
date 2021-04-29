@@ -206,6 +206,17 @@ background-size: 50%;
     transition: transform 0.2s ease-in-out;
   }
 }
+.anglofan-price__place{
+  padding: 10px;
+  box-shadow: 0 0 0 1.5px $red;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  span{
+    padding-left: 10px;
+  }
+}
+
 @media(min-width: 768px){
   .anglofan-price{
     padding-right: 0;
