@@ -81,11 +81,6 @@
       <div class="welcome-info__wraper">
         <p class="welcome-info__subtitle">Понятный английский для <br> самостоятельных и экономных</p>
         <h1 class="welcome-info__title ">Telegram club</h1>
-
-
-        <!-- Подключение кнопок обратной связи -->
-        <include src="build/@_btn-bot.html"> </include>
-
         <div class="submenu-insurance">
             <ul id="stickSubmenu" class="welcome-info__submenu">
               <li class="welcome-info__submenu-item welcome-info__submenu--open">
@@ -110,38 +105,41 @@
           </div>
       </div>
     </section>
+
+    <section class="seven-day btn-welcom">
+      <div class="seven-day__wrap">
+        <button id="seven-link_one" class="seven-day__btn" tabindex="0" type="button" aria-expanded="false" aria-controls="seven-content">Записаться на бесплатную неделю
+        </button>
+        <div id="seven-content_one" class="seven-day__lists" aria-hidden="true" aria-labelledby="nav-toggle">
+          <ul>
+            <li> <button data-modal="free1" class="btn-modal seven-day__link">Уровень Starter/A0</button></li>
+            <li> <button data-modal="free2" class="btn-modal seven-day__link">Уровень Elementary/A1</button></li>
+            <li> <button data-modal="free3" class="btn-modal seven-day__link">Уровень Pre-intermediate/A2</button></li>
+            <li> <button data-modal="free4" class="btn-modal seven-day__link">Уровень Intermediate/B1</button></li>
+            <li> <a class="seven-day__link seven-day__link--test" href="lvl-test.html">Определи свой уровень, если не уверен</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="start-course">
       <h2 class="visually-hidden">Старт курса</h2>
-      <p class="start-course__text">Старт 11-го потока 24 мая<br> Гарантия возврата полной суммы в первые 10 дней обучения
-        </p>
+      <p class="start-course__text">Старт 11-го потока 24 мая<br> Первые 7 дней БЕСПЛАТНО с 24 по 30 мая
+      </p>
     </section>
   </div>
     <!-- Подключение панели кнопок социальных сетей -->
   <include src="build/@_social1.html"> </include>
-<section class="seven-day">
-  <div class="seven-day__wrap">
-    <button id="seven-link_one" class="seven-day__btn" tabindex="0" type="button" aria-expanded="false" aria-controls="seven-content">Получи 7 дней БЕСПЛАТНО
-    </button>
-    <div id="seven-content_one" class="seven-day__lists" aria-hidden="true" aria-labelledby="nav-toggle">
-      <ul>
-        <li> <button data-modal="free1" class="btn-modal seven-day__link">Уровень Starter/A0</button></li>
-        <li> <button data-modal="free2" class="btn-modal seven-day__link">Уровень Elementary/A1</button></li>
-        <li> <button data-modal="free3" class="btn-modal seven-day__link">Уровень Pre-intermediate/A2</button></li>
-        <li> <button data-modal="free4" class="btn-modal seven-day__link">Уровень Intermediate/B1</button></li>
-      </ul>
-    </div>
-  </div>
-</section>
+
 <!-- <section class="seven-day">
   <h2 class="visually-hidden">Кнопка 7 дней бесплатно</h2>
-  <button data-modal="free" class="btn-modal seven-day__link">Получи 7 дней БЕСПЛАТНО</button>
+  <button data-modal="free" class="btn-modal seven-day__link">Записаться на бесплатную неделю</button>
 </section> -->
 <section class="suit-you">
   <h2 class="suit-you__title">Вам подходит Telegram Club, если вы</h2>
   <ul class="suit-you__lists">
     <li class="suit-you__item">
       <img src="/img/suits-you__micro.svg" alt="Грамматика" width="100" height="100" class="suit-you__image">
-      <p class="suit-you__article">устали начинать <br> каждый раз&nbsp;с  Present Simple и тратить время в приложениях</p>
+      <p class="suit-you__article">устали начинать <br> каждый раз с&nbsp;Present Simple и терять время в приложениях</p>
     </li>
     <li class="suit-you__item">
       <img src="/img/suits-you__time.svg" alt="Не трать много времени" width="100" height="100" class="suit-you__image">
@@ -184,11 +182,11 @@
       </li>
       <li class="about-telelgram__item">
         <span class="about-telegram__number">04</span>
-        <p class="about-telegram__text"> Новый урок в Telegram по нечетным числам (видео с объяснениями + задания) </p>
+        <p class="about-telegram__text">Новый урок в Telegram по пн, ср и пт (видео с объяснениями + задания)</p>
       </li>
       <li class="about-telelgram__item">
         <span class="about-telegram__number">05</span>
-        <p class="about-telegram__text"> Без обратной связи (проверяете себя самостоятельно) </p>
+        <p class="about-telegram__text">Без обратной связи (самопроверка по ответам в следующем уроке)</p>
       </li>
       <li class="about-telelgram__item">
         <span class="about-telegram__number">06</span>
@@ -200,7 +198,7 @@
       </li> -->
       <li class="about-telelgram__item">
         <span class="about-telegram__number">07</span>
-        <p class="about-telegram__text"> Для каждого уровня свой закрытый канал </p>
+        <p class="about-telegram__text">Для каждого уровня свой закрытый канал Telegram</p>
       </li>
       <li class="about-telelgram__item">
         <span class="about-telegram__number">08</span>
@@ -296,9 +294,9 @@
   </div>
 </section>
 
-<section class="seven-day">
+<section class="seven-day daybox">
   <div class="seven-day__wrap">
-    <button id="seven-link_two" class="seven-day__btn" tabindex="0" type="button" aria-expanded="false" aria-controls="seven-content">Получи 7 дней БЕСПЛАТНО
+    <button id="seven-link_two" class="seven-day__btn" tabindex="0" type="button" aria-expanded="false" aria-controls="seven-content">Записаться на бесплатную неделю
     </button>
     <div id="seven-content_two" class="seven-day__lists" aria-hidden="true" aria-labelledby="nav-toggle">
       <ul>
@@ -306,6 +304,8 @@
         <li> <button data-modal="free2" class="btn-modal seven-day__link">Уровень Elementary/A1</button></li>
         <li> <button data-modal="free3" class="btn-modal seven-day__link">Уровень Pre-intermediate/A2</button></li>
         <li> <button data-modal="free4" class="btn-modal seven-day__link">Уровень Intermediate/B1</button></li>
+        <li> <a class="seven-day__link seven-day__link--test" href="lvl-test.html">Определи свой уровень, если не уверен</a></li>
+
       </ul>
     </div>
   </div>
@@ -470,15 +470,15 @@
 
 
         <b>БОНУС</b>
-        <br> 8 вдохновляющих песен
-        <br> 8 Youtube видео
+        <br> 6 вдохновляющих песен
+        <br> 6 Youtube видео
         <br> 1 книга для чтения
-        <br> 8 серий сериала Friends <br><br>
+        <br> 6 серий сериала Friends <br><br>
         </p>
     </div>
   </div>
   <div class="programm__wrap">
-    <button class="programm__btn">Программа уровня INTERMEDIATE / B2</button>
+    <button class="programm__btn">Программа уровня INTERMEDIATE / B1</button>
     <div class="programm__tab">
       <p class="programm__content">
          <b> ГРАММАТИКА</b>
@@ -538,42 +538,43 @@
     <li class="time-traning__item">
       <div class="time-traning__number">A0</div>
       <div class="time-traning__name">Starter <br> <span class="time-traning__name--week">3 месяца/ 13 недель</span></div>
-      <p class="time-traning__section">Для тех, кто когда-то учил английский, но все или почти все забыл</p>
+      <p class="time-traning__section">Для тех, кто никогда не учил английский</p>
     </li>
     <li class="time-traning__item">
       <div class="time-traning__number">A1</div>
-      <div class="time-traning__name">Elementary <br> <span class="time-traning__name--week">8 месяцев/ 37 недели</span></div>
+      <div class="time-traning__name">Elementary <br> <span class="time-traning__name--week">8 месяцев/ 37 недель</span></div>
       <p class="time-traning__section">Для тех, кто когда-то учил английский, но все или почти все забыл </p>
     </li>
     <li class="time-traning__item">
       <div class="time-traning__number">A2</div>
-      <div class="time-traning__name">Pre-Intermediate <br><span class="time-traning__name--week">8 месяцев/ 37 недели
+      <div class="time-traning__name">Pre-Intermediate <br><span class="time-traning__name--week">8 месяцев/ 37 недель
       </span></div>
       <p class="time-traning__section">Для тех, кто может поддерживать простой разговор на бытовые темы и понимать, что ему говорят </p>
     </li>
     <li class="time-traning__item">
       <div class="time-traning__number">B1</div>
-      <div class="time-traning__name">Intermediate <br><span class="time-traning__name--week">11 месяцев/ 49 неделя</span></div>
-      <p class="time-traning__section">Для тех, кто уверенно продолжает изучать английский и уже освоил уровень Pre-Intermediate определи свой уровень за 7 минут</p>
+      <div class="time-traning__name">Intermediate <br><span class="time-traning__name--week">11 месяцев/ 49 недель</span></div>
+      <p class="time-traning__section">Для тех, кто уверенно продолжает изучать английский и уже освоил уровень Pre-Intermediate</p>
     </li>
   </ul>
 </section>
 <section class="seven-day">
   <div class="seven-day__wrap">
-    <button id="seven-link_three" class="seven-day__btn" tabindex="0" type="button" aria-expanded="false" aria-controls="seven-content">Получи 7 дней БЕСПЛАТНО
+    <button id="seven-link_three" class="seven-day__btn" tabindex="0" type="button" aria-expanded="false" aria-controls="seven-content">Записаться на бесплатную неделю
     </button>
     <div id="seven-content_three" class="seven-day__lists" aria-hidden="true" aria-labelledby="nav-toggle">
       <ul>
         <li> <button data-modal="free1" class="btn-modal seven-day__link">Уровень Starter/A0</button></li>
         <li> <button data-modal="free2" class="btn-modal seven-day__link">Уровень Elementary/A1</button></li>
-        <li> <button data-modal="free3" class="btn-modal seven-day__link">Уровень Pre-intermediate/A2</button></li>
+        <li> <button data-modal="free3" class="btn-modal seven-day__link">Уровень Pre-Intermediate/A2</button></li>
         <li> <button data-modal="free4" class="btn-modal seven-day__link">Уровень Intermediate/B1</button></li>
+        <li> <a class="seven-day__link seven-day__link--test" href="lvl-test.html">Определи свой уровень, если не уверен</a></li>
       </ul>
     </div>
   </div>
 </section>
 <section class="how-enroll">
-  <h2 class="how-enroll__title">Как записатья?</h2>
+  <h2 class="how-enroll__title">Как записаться?</h2>
   <ul class="how-enroll__items">
     <li class="how-enroll__list">
       <img src="/img/how-enroll_one.svg" width="100" height="100" alt="Определи свой уровень" class="how-enroll__image">
@@ -584,15 +585,15 @@
     </li>
     <li class="how-enroll__list">
       <img src="/img/how-enroll_two.svg" width="100" height="100" alt="Беслатная неделя" class="how-enroll__image">
-      <p class="how-enroll__text">Запишитесь на бесплатную неделю <span class="how-enroll__text--expl">нажав на кнопку ЗАПИСАТЬСЯ</span></p>
+      <p class="how-enroll__text">Запишитесь на бесплатную неделю<span class="how-enroll__text--expl"></span></p>
     </li>
     <li class="how-enroll__list">
       <img src="/img/how-enroll_three.svg" width="100" height="100" alt="Телеграм канал" class="how-enroll__image">
-      <p class="how-enroll__text">Мы подключим вас к закрытому Telegram-каналу - В течение 24 часов вам на почту придет ссылка для подключения к Telegram-каналу</p>
+      <p class="how-enroll__text">В течение 24 часов вам на почту придет ссылка для подключения к Telegram-каналу</p>
     </li>
     <li class="how-enroll__list">
       <img src="/img/how-enroll_four.svg" width="100" height="100" alt="Оплати и учись" class="how-enroll__image">
-      <p class="how-enroll__text">В течение бесплатной недели оплатите любой тариф и продолжайте обучение </p>
+      <p class="how-enroll__text">В течение бесплатной недели оплатите любой срок 4/12/24 недели и продолжайте обучение </p>
     </li>
   </ul>
   <div class="how-enroll--line">
@@ -645,7 +646,7 @@
           <label for="lvl_a0_m">
           <input class="visually-hidden" type="radio" name="price_lvl_m" id="lvl_a0_m" value="lvl_a0_m">
           <span></span>
-          A1</label>
+          A0</label>
           <label for="lvl_a1_m">
           <input class="visually-hidden" type="radio" name="price_lvl_m" id="lvl_a1_m" value="lvl_a1_m">
           <span></span>
@@ -671,7 +672,7 @@
           <label for="lvl_a0_xl">
           <input class="visually-hidden" type="radio" name="price_lvl_xl" id="lvl_a0_xl" value="lvl_a0_xl">
           <span></span>
-          A1</label>
+          A0</label>
           <label for="lvl_a1_xl">
           <input class="visually-hidden" type="radio" name="price_lvl_xl" id="lvl_a1_xl" value="lvl_a1_xl">
           <span></span>
@@ -712,11 +713,11 @@
     </li>
     <li class="your-result__item">
       <img src="/img/your-result-word.svg" width="100" height="100"  alt="Увеличение словарного запаса" class="your-result__image">
-      <p class="your-result__text">Расширите словарны запас</p>
+      <p class="your-result__text">Расширите словарный запас</p>
     </li>
     <li class="your-result__item">
       <img src="/img/your-result-speaker.svg" width="100" height="100"  alt="Говори понятнее" class="your-result__image">
-      <p class="your-result__text">Заговоришь понятнее</p>
+      <p class="your-result__text">Заговорите понятнее</p>
     </li>
     <li class="your-result__item">
       <img src="/img/your-result-title.svg" width="100" height="100"  alt="Учи грамматику" class="your-result__image">
@@ -746,47 +747,55 @@
 <div class="modal-overlay modal-js-overlay "></div>
 <!-- Модальное окно для кнопки 7 дней бесплатно -->
 <!-- A0 -->
-<div class="modal" data-modal="free">
+<div class="modal" data-modal="free1">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
-      <h3 class="anglofan-modal__title">Telegram club Starter / A0 4&nbsp;недели</h3>
+      <h3 class="anglofan-modal__title">Telegram club Starter / A0 бесплатная неделя</h3>
 
     </li>
-    <li class="anglofan-modal__item anglofan-modal__item--tel"><script async>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"765664",hash:"b49b9da7e1d8ae58c527785439423379",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_765664" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1618938557"></script></li>
+    <li class="anglofan-modal__item anglofan-modal__item--tel">
+      <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"765664",hash:"b49b9da7e1d8ae58c527785439423379",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_765664" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1619693737"></script>
+   </li>
   </ul>
 </div>
 <!-- A1 -->
-<div class="modal" data-modal="free">
+<div class="modal" data-modal="free2">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
-      <h3 class="anglofan-modal__title">Telegram club Starter / A0 4&nbsp;недели</h3>
+      <h3 class="anglofan-modal__title">Telegram club Elementary / A1 бесплатная неделя</h3>
 
     </li>
-    <li class="anglofan-modal__item anglofan-modal__item--tel"><script async>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"765664",hash:"b49b9da7e1d8ae58c527785439423379",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_765664" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1618938557"></script></li>
+    <li class="anglofan-modal__item anglofan-modal__item--tel">
+      <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"775261",hash:"b1b4c62e9ba43eab7e7f7395f0a209cc",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_775261" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1619693759"></script>
+   </li>
   </ul>
 </div>
 <!-- A2 -->
-<div class="modal" data-modal="free">
+<div class="modal" data-modal="free3">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
-      <h3 class="anglofan-modal__title">Telegram club Starter / A0 4&nbsp;недели</h3>
+      <h3 class="anglofan-modal__title">Telegram club Pre-intermediate / A2 бесплатная неделя</h3>
 
     </li>
-    <li class="anglofan-modal__item anglofan-modal__item--tel"><script async>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"765664",hash:"b49b9da7e1d8ae58c527785439423379",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_765664" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1618938557"></script></li>
+    <li class="anglofan-modal__item anglofan-modal__item--tel">
+      <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"775270",hash:"48246d40524c64c2482d4e63ffef2b23",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_775270" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1619693779"></script>
+    </li>
   </ul>
 </div>
 <!-- B1 -->
-<div class="modal" data-modal="free">
+<div class="modal" data-modal="free4">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
-      <h3 class="anglofan-modal__title">Telegram club Starter / A0 4&nbsp;недели</h3>
+      <h3 class="anglofan-modal__title">Telegram club Intermediate/ B1 бесплатная неделя</h3>
 
     </li>
-    <li class="anglofan-modal__item anglofan-modal__item--tel"><script async>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"765664",hash:"b49b9da7e1d8ae58c527785439423379",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_765664" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1618938557"></script></li>
+    <li class="anglofan-modal__item anglofan-modal__item--tel">
+      <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"775327",hash:"a76a502fb9e431e6531d32f48505bb5c",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_775327" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1619693808"></script>
+      </script></li>
   </ul>
 </div>
 
@@ -797,19 +806,17 @@
     <h3 class="anglofan-modal__title">Вы не выбрали свой уровень</h3>
     <p class="anglofan-modal__text">Пожалуйста выберете свой уровень или пройдите наше тестирование </p>
     <div class="anglofan-modal__box">
-      <a class="button-link modal__link" href="/lvl-test.thml">Тестирование</a>
+      <a class="button-link modal__link" href="lvl-test.thml">Тестирование</a>
       <a class="button-link modal__link modal-js-close">Ok</a>
     </div>
   </div>
 </div>
-<div class="modal" data-modal="lvl_a0_s">
+<!-- <div class="modal" data-modal="lvl_a0_s">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
       <h3 class="anglofan-modal__title">Telegram club Starter / A0 4&nbsp;недели</h3>
-
     </li>
-    <!-- <li class="anglofan-modal__item anglofan-modal__item--tel"><script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"765664",hash:"b49b9da7e1d8ae58c527785439423379",locale:"ru"})}(window,0,"amo_forms_","params","load");</script><script id="amoforms_script_765664" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1618938557"></script></li> -->
   </ul>
 </div>
 <div class="modal" data-modal="lvl_a1_s">
@@ -841,9 +848,9 @@
     </li>
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
-</div>
+</div> -->
  <!-- Модальное окно дня 7 дней бесплатно -->
-<div class="modal" data-modal="free">
+<!-- <div class="modal" data-modal="free">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -852,10 +859,10 @@
     </li>
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
-</div>
+</div> -->
 <!-- Модальные окна для второго блока оплаты -->
 
-<div class="modal" data-modal="lvl_a0_m">
+<!-- <div class="modal" data-modal="lvl_a0_m">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -894,11 +901,11 @@
     </li>
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
-</div>
+</div> -->
 
 <!-- Модальные окна для второго блока оплаты -->
 
-<div class="modal" data-modal="lvl_a0_xl">
+<!-- <div class="modal" data-modal="lvl_a0_xl">
   <div class="anglofan-modal__plus modal-js-close">+</div>
   <ul class="modal__container">
     <li class="anglofan-modal__item">
@@ -937,7 +944,7 @@
     </li>
     <li class="anglofan-modal__item"><script id="0de7b1f1be8371847077bd82d0bc5e1ca29e5a1f" src="http://get.anglofan.ru/pl/lite/widget/script?id=363071"></script></li>
   </ul>
-</div>
+</div> -->
   <script src="js/main.js"></script>
   <script src="js/anglofan.js"></script>
   <script src="js/scroll_submenu.js"></script>

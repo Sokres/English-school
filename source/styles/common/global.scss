@@ -231,6 +231,20 @@ img {
       background-color: $gren__active;
     }
 }
+.thanks{
+  max-width: 600px;
+  margin: 0 auto;
+}
+.thanks__title{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  text-align: center;
+}
+.thanks__inst{
+  text-align: center;
+}
+
 @keyframes fade-in {
   from {opacity: 0;}
   to {opacity: 1;}

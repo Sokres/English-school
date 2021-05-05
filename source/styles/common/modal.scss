@@ -35,12 +35,16 @@ $red: #e00083;
   transform: translate(-50%, -50%);
   max-width: 550px;
   width: 100%;
+  margin-top: 80px;
   padding: 40px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  overflow: auto;
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
-  z-index: 102;
-  overflow: visible;
+  z-index: 999;
+
   transition: all 0.3s ease-in;
 }
 
@@ -72,16 +76,31 @@ $red: #e00083;
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
 }
 .anglofan-modal__title{
   padding-top: 10px;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
+
 // .anglofan-modal__box{
 //   display: grid;
 // }
 .modal__link{
   margin-top: 20px;
   cursor: pointer;
+}
+@media (min-height: 600px){
+  .modal{
+    padding-bottom: 40px;
+    margin-top: 0;
+  }
+  .modal__container{
+    overflow: hidden;
+    height: auto;
+  }
 }

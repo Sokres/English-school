@@ -1,32 +1,4 @@
-(function(){
-  var menuLvl = document.querySelector('.site-list__item--down');
-var menuLvlClick = document.querySelector('.site-list__link-subdmenu');
-var navMain = document.querySelector('.bd');
-var navToggle = document.querySelector('.main-nav__btn');
-/*Menu*/
-menuLvlClick.addEventListener('click', function() {
-  if (menuLvl.classList.contains('site-list__item--down-close')) {
-  menuLvl.classList.remove('site-list__item--down-close');
-  menuLvl.classList.add('site-list__item--down-open');
-} else {
-  menuLvl.classList.add('site-list__item--down-close');
-  menuLvl.classList.remove('site-list__item--down-open');
-}
-});
 
-navMain.classList.remove('header__nav--nojs');
-
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('close')) {
-    navMain.classList.remove('close');
-    navMain.classList.add('open');
-  } else {
-    navMain.classList.add('close');
-    navMain.classList.remove('open');
-  }
-});
-console.log('helo');
-})();
 
 
 const headElem = document.getElementById("lvlQestions");
@@ -35,46 +7,36 @@ const pagesElem = document.getElementById("pages");
 
 
 
-//Класс, который представляет сам тест
 class Quiz
 {
 	constructor(type, questions, results)
 	{
-		//Тип теста: 1 - классический тест с правильными ответами, 2 - тест без правильных ответов
 		this.type = type;
 
-		//Массив с вопросами
 		this.questions = questions;
 
-		//Массив с возможными результатами
 		this.results = results;
 
-		//Количество набранных очков
 		this.score = 0;
 
-		//Номер результата из массива
 		this.result = 0;
 
-		//Номер текущего вопроса
 		this.current = 0;
 	}
 
 	Click(index)
 	{
-		//Добавляем очки
 		let value = this.questions[this.current].Click(index);
 		this.score += value;
 
 		let correct = -1;
 
-		//Если было добавлено хотя одно очко, то считаем, что ответ верный
 		if(value >= 1)
 		{
 			correct = index;
 		}
 		else
 		{
-			//Иначе ищем, какой ответ может быть правильным
 			for(let i = 0; i < this.questions[this.current].answers.length; i++)
 			{
 				if(this.questions[this.current].answers[i].value >= 1)
@@ -90,7 +52,6 @@ class Quiz
 		return correct;
 	}
 
-	//Переход к следующему вопросу
 	Next()
 	{
 		this.current++;
@@ -101,7 +62,6 @@ class Quiz
 		}
 	}
 
-	//Если вопросы кончились, этот метод проверит, какой результат получил пользователь
 	End()
 	{
 		for(let i = 0; i < this.results.length; i++)
@@ -114,7 +74,6 @@ class Quiz
 	}
 }
 
-//Класс, представляющий вопрос
 class Question
 {
 	constructor(text, answers)
@@ -129,7 +88,6 @@ class Question
 	}
 }
 
-//Класс, представляющий ответ
 class Answer
 {
 	constructor(text, value)
@@ -139,7 +97,6 @@ class Answer
 	}
 }
 
-//Класс, представляющий результат
 class Result
 {
 	constructor(text, value)
@@ -148,7 +105,6 @@ class Result
 		this.value = value;
 	}
 
-	//Этот метод проверяет, достаточно ли очков набрал пользователь
 	Check(value)
 	{
 		if(this.value <= value)
@@ -162,17 +118,15 @@ class Result
 	}
 }
 
-//Массив с результатами
 const results =
 [
 	new Result("<div> от 0 до 5 баллов – у вас пока нет уровня, но все в ваших руках!Это примерные результаты. Обязательно посмотрите программу каждого уровня <a href='/telegram-club.html#program-telegram'>здесь</a>.Скорее всего вы никогда не учили английский или учили его всего несколько лет. Вам желательно начинать с самого начала – уровня Starter (если никогда не учили английский) или можно с Elementary (если учили английский раньше и можете на нем читать).</div>    <div class='your-choice'><h3>Вам подойдет </h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a></div></div>", 0),
 	new Result("от 6 до 22 баллов - вы находитесь на уровне Elementary Это примерные результаты. Обязательно посмотрите программу каждого уровня <a href='/anglofan.html#programmStarter'>здесь</a>. Наверное, вы учили английский в школе и знаете достаточно много слов, но не умеете говорить, не знаете, как правильно соединять их в предложения, не помните или не понимаете систему времен. Для обучения вам оптимально начать с уровня A1 Elementary или A2 Pre-Intermediate (ознакомьтесь с программой этих уровней).  <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 6),
-  new Result(" от 23 до 53 баллов - вы находитесь на уровне Pre-Intermediate Это примерные результаты. Обязательно посмотрите программу каждого уровня <a href='/anglofan.html#programmStarter'>здесь</a>.Самые базовые знания английского языка у вас уже есть, но их слишком мало, необходимо двигаться дальше. Для обучения вам подойдет уровень A2 Pre-Intermediate или B1 Intermediate (ознакомьтесь с программой этих уровней).   <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 23),
-  new Result("от 54 до 70 баллов – у вас уверенный уровень Pre-Intermediate Это примерные результаты. Обязательно посмотрите программу каждого уровня S<a href='/anglofan.html#programmStarter'>здесь</a>. У вас хорошая база, но для свободного общения этого недостаточно. Для обучения вам подойдет следующий уровень – B1 Intermediate.  <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 54),
+  new Result(" от 23 до 48 баллов - вы находитесь на уровне Pre-Intermediate Это примерные результаты. Обязательно посмотрите программу каждого уровня <a href='/anglofan.html#programmStarter'>здесь</a>.Самые базовые знания английского языка у вас уже есть, но их слишком мало, необходимо двигаться дальше. Для обучения вам подойдет уровень A2 Pre-Intermediate или B1 Intermediate (ознакомьтесь с программой этих уровней).   <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 23),
+  new Result("от 49 до 70 баллов – у вас уверенный уровень Pre-Intermediate Это примерные результаты. Обязательно посмотрите программу каждого уровня S<a href='/anglofan.html#programmStarter'>здесь</a>. У вас хорошая база, но для свободного общения этого недостаточно. Для обучения вам подойдет следующий уровень – B1 Intermediate.  <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 49),
   new Result("70-77 баллов – у вас уровень Intermediate. Для обучения вам подойдет следующая ступень - уровень Upper-Intermediate.  <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 71)
 ];
 
-//Массив с вопросами
 const questions =
 [
 	new Question( ('1.	We  ___ good people. ') ,
@@ -455,14 +409,14 @@ const questions =
 		new Answer("with", 0),
 		new Answer("не знаешь, нажми", 0)
 	]),
-	new Question("Thai street food is between the best in the world, and for around $5 you can eat <b>35 ______</b> filling and delicious meal. Some food stands 36 ______ little plastic seats where you can sit and eat and they cook the same dish over and over, like fried chicken on rice or Pad Thai noodles. ",
+	new Question("Thai street food is among the best in the world, and for around $5 you can eat <b>35 ______</b> filling and delicious meal. Some food stands 36 ______ little plastic seats where you can sit and eat and they cook the same dish over and over, like fried chicken on rice or Pad Thai noodles. ",
 	[
 		new Answer("a", 3),
 		new Answer("an", 0),
 		new Answer("the", 0),
 		new Answer("не знаешь, нажми", 0)
 	]),
-	new Question("Thai street food is between the best in the world, and for around $5 you can eat a filling and delicious meal. Some food stands <b>36 ______</b> little plastic seats where you can sit and eat and they cook the same dish over and over, like fried chicken on rice or Pad Thai noodles. ",
+	new Question("Thai street food is among the best in the world, and for around $5 you can eat a filling and delicious meal. Some food stands <b>36 ______</b> little plastic seats where you can sit and eat and they cook the same dish over and over, like fried chicken on rice or Pad Thai noodles. ",
 	[
 		new Answer("has", 0),
 		new Answer("have", 3),
@@ -470,25 +424,25 @@ const questions =
 		new Answer("are having", 0),
 		new Answer("не знаешь, нажми", 0)
 	]),
-	new Question(('<div class="audio">37. AUDIO 1<br><p>Speaker goes there after the office workers have left.</p><audio src="http://email.anglofan.ru/Happy-hungry-people_01.ogg" controls></audio></div>'),
+	new Question(('<div class="audio">37. AUDIO 1<br><p>Speaker goes there after the office workers have left.</p><audio controls> <source src="https://email.anglofan.ru/Happy-hungry-people_01.mp3" type="audio/mp3"> <source src="https://email.anglofan.ru/Happy-hungry-people_01.ogg"  type="audio/ogg"></audio></div>'),
 	[
 		new Answer("True", 0),
 		new Answer("False", 3),
 		new Answer("не знаешь, нажми", 0)
 	]),
-	new Question(('<div class="audio">38. AUDIO 2<br><p>Speaker says that you can buy both salad and pasta there.</p><audio src="http://email.anglofan.ru/Happy-hungry-people_02.ogg" controls></audio></div>'),
+	new Question(('<div class="audio">38. AUDIO 2<br><p>Speaker says that you can buy both salad and pasta there.</p><audio controls> <source src="https://email.anglofan.ru/Happy-hungry-people_02.mp3" type="audio/mp3"> <source src="https://email.anglofan.ru/Happy-hungry-people_02.ogg"  type="audio/ogg"></audio></div>'),
 	[
 		new Answer("True", 3),
 		new Answer("False", 0),
 		new Answer("не знаешь, нажми", 0)
 	]),
-	new Question(('<div class="audio">39. AUDIO 3<br><p>Speaker eats lunch there.</p><audio src="http://email.anglofan.ru/Happy-hungry-people_03.ogg" controls></audio></div>'),
+	new Question(('<div class="audio">39. AUDIO 3<br><p>Speaker eats lunch there.</p><audio controls> <source src="https://email.anglofan.ru/Happy-hungry-people_03.mp3" type="audio/mp3"> <source src="https://email.anglofan.ru/Happy-hungry-people_03.ogg"  type="audio/ogg"></audio></div>'),
 	[
 		new Answer("True", 0),
 		new Answer("False", 3),
 		new Answer("не знаешь, нажми", 0)
 	]),
-	new Question(('<div class="audio">40. AUDIO 4<br><p>Speaker says this place offers a variation on a traditional food.</p><audio src="http://email.anglofan.ru/Happy-hungry-people_04.ogg" controls></audio></div>'),
+	new Question(('<div class="audio">40. AUDIO 4<br><p>Speaker says this place offers a variation on a traditional food.</p><audio controls> <source src="https://email.anglofan.ru/Happy-hungry-people_04.mp3" type="audio/mp3"> <source src="https://email.anglofan.ru/Happy-hungry-people_04.ogg"  type="audio/ogg"></audio></div>'),
 	[
 		new Answer("True", 3),
 		new Answer("False", 0),
@@ -496,24 +450,20 @@ const questions =
 	])
 ];
 
-//Сам тест
+
 const quiz = new Quiz(1, questions, results);
 
 Update();
 
-//Обновление теста
 function Update()
 {
-	//Проверяем, есть ли ещё вопросы
+
 	if(quiz.current < quiz.questions.length)
 	{
-		//Если есть, меняем вопрос в заголовке
 		headElem.innerHTML = quiz.questions[quiz.current].text;
 
-		//Удаляем старые варианты ответов
 		buttonsElem.innerHTML = "";
 
-		//Создаём кнопки для новых вариантов ответов
 		for(let i = 0; i < quiz.questions[quiz.current].answers.length; i++)
 		{
 			let lvlBtn = document.createElement("your-lvl__btn");
@@ -526,15 +476,12 @@ function Update()
 			buttonsElem.appendChild(lvlBtn);
 		}
 
-		//Выводим номер текущего вопроса
 		pagesElem.innerHTML = (quiz.current + 1) + " / " + quiz.questions.length;
 
-		//Вызываем функцию, которая прикрепит события к новым кнопкам
 		Init();
 	}
 	else
 	{
-		//Если это конец, то выводим результат
 		buttonsElem.innerHTML = "";
 		headElem.innerHTML = quiz.results[quiz.result].text;
 		pagesElem.innerHTML = "Баллы: " + quiz.score;
@@ -543,33 +490,26 @@ function Update()
 
 function Init()
 {
-	//Находим все кнопки
 	let lvlBtns = document.getElementsByClassName("your-lvl__btn");
 
 	for(let i = 0; i < lvlBtns.length; i++)
 	{
-		//Прикрепляем событие для каждой отдельной кнопки
-		//При нажатии на кнопку будет вызываться функция Click()
 		lvlBtns[i].addEventListener("click", function (e) { Click(e.target.getAttribute("index")); });
 	}
 }
 
 function Click(index)
 {
-	//Получаем номер правильного ответа
 	let correct = quiz.Click(index);
 
-	//Находим все кнопки
 	let lvlBtns = document.getElementsByClassName("your-lvl__btn");
 
-	//Делаем кнопки серыми
 	for(let i = 0; i < lvlBtns.length; i++)
 	{
 		lvlBtns[i].className = "your-lvl__btn your-lvl__btn-passive";
     lvlBtns[i].setAttribute("disabled", "disabled");
 	}
 
-	//Если это тест с правильными ответами, то мы подсвечиваем правильный ответ зелёным, а неправильный - красным
 	if(quiz.type == 1)
 	{
 		if(correct >= 0)
@@ -585,11 +525,9 @@ function Click(index)
 	}
 	else
 	{
-		//Иначе просто подсвечиваем зелёным ответ пользователя
 		lvlBtns[index].className = "your-lvl__btn your-lvl__btn-correct";
 
 	}
 
-	//Ждём секунду и обновляем тест
 	setTimeout(Update, 1000);
 }

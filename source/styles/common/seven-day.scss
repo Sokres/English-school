@@ -13,20 +13,32 @@ $red: #e00083;
 
 // Кнопка 7 дней бесплатно
 .seven-day{
-  max-width: 350px;
+  // max-width: 400px;
+  padding-top: 30px;
+}
+.btn-welcom{
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 30px;
 }
-
+.daybox{
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.seven-day__wrap{
+  position: relative;
+  max-width: 380px;
+}
 .seven-day__btn{
   position: relative;
   display: block;
   width: 100%;
   padding: .57em 1em;
+  padding-right: 20px;
   border: none;
 
-  background-color: $gren;
+  background-color: #b6006a;
   text-align: left;
   text-decoration: none;
   font-size: 18px;
@@ -35,11 +47,11 @@ $red: #e00083;
   transition: 0.3s;
     &:hover,
     &:focus{
-      background-color: $top-color__hover;
+      background-color: #960057;
       box-shadow: -3px 3px 5px 0 #182f522f;
     }
     &:active{
-      background-color: $gren__active;
+      background-color: #94115d;
     }
 }
 .seven-day__btn[aria-expanded="false"]{
@@ -73,9 +85,7 @@ $red: #e00083;
 .seven-day__btn[aria-expanded="true"]::after{
   transform: translateY(-50%) rotate(-135deg);
 }
-.seven-day__wrap{
-  position: relative;
-}
+
 .seven-day__lists{
   position: absolute;
   width: 100%;
@@ -110,6 +120,20 @@ $red: #e00083;
     background-color: $gray__hover;
   }
 }
+.seven-day__link--test{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: $gren;
+  color: $white;
+  &:hover,
+  &:focus{
+    background-color: $gren__hover;
+    box-shadow: -3px 3px 5px 0 #182f522f;
+  }
+  &:active{
+    background-color: $gren__active;
+  }
+}
 .seven-day__lists ul li{
   position: relative;
   display: flex;
@@ -133,4 +157,11 @@ $red: #e00083;
   visibility: visible;
   opacity: 1;
   transition: all 0.2s ease-in;
+}
+
+@media (min-width: 768px) {
+  .btn-welcom{
+    padding-bottom: 80px;
+    padding-left: 50px;
+  }
 }

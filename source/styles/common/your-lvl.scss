@@ -45,7 +45,7 @@ $top-color__active:#4C95DE;
 .your-lvl__test{
   position: relative;
   margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   // border: 1px solid $gray__hover;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   background-color: $white;
@@ -132,7 +132,7 @@ $top-color__active:#4C95DE;
     padding-bottom: 20px;
   }
   .your-lvl__test{
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 }
