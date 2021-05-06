@@ -1,0 +1,145 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#18c26d;
+$top-color__active:#4C95DE;
+$red: #e00083;
+
+.what-trening{
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.what-trening__title{
+  text-align: center;
+}
+.what-trening__video{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 150px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: $top-color;
+  background-size: cover;
+}
+.what-trening .what-trening__video--telegram{
+  background-image: url(/img/bg-tren-video2.jpg);
+}
+.what-trening .what-trening__video--anglofan{
+  background-image: url(/img/bg-tren-video2.jpg);
+}
+.what-trening__play{
+  justify-self: center;
+  margin-top: 30px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient( rgba(43, 79, 196, 0.8) 60%, rgb(184, 184, 184) 62%);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  box-shadow: 0px 0px 25px 3px rgba(0, 89, 255, 0.8);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.what-trening__play::before{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  animation-delay: 0s;
+  animation: anim-play 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, .75);
+  top: -50%;
+  left: -50%;
+  background: rgba(198, 16, 0, 0);
+}
+.what-trening__play::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.what-trening__play:hover{
+  transform: scale(0.8);
+}
+.what-trening__play:focus{
+  transform: scale(1.1);
+}
+.what-trening__text{
+  align-self: start;
+  color: $white;
+  font-weight: 500;
+}
+.what-trening__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.what-trening__list{
+  margin-top: 30px;
+}
+.what-trening__item{
+  display: flex;
+}
+.what-trening__info{
+  align-self: center;
+  margin-left: 10px;
+}
+@media(min-width: 768px){
+  .what-trening{
+    padding: 0 50px;
+  }
+  .what-trening__video{
+    height: 200px;
+  }
+}
+@media(min-width: 1200px){
+  .what-trening{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .what-trening__video{
+    height: 250px;
+  }
+  .what-trening__item{
+    margin-top: 20px;
+  }
+}
+@keyframes anim-play {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+
+  }
+}

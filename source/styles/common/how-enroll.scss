@@ -12,6 +12,7 @@ $top-color__hover:#c484ff;
 $top-color__active:#4C95DE;
 
 .how-enroll{
+  position: relative;
   padding: 0 20px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -28,9 +29,20 @@ $top-color__active:#4C95DE;
 }
 
 .how-enroll__list{
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+.how-enroll__list::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 5px;
+  height: 120%;
+  border-radius: 10px;
+  background-color: $top-color;
 }
 .how-enroll__image,
 .how-enroll__number{
@@ -47,32 +59,39 @@ $top-color__active:#4C95DE;
     color: $text-add;
   }
 }
-.how-enroll--line{
-  display: flex;
-  margin-top: 15px;
-}
-.how-enroll--line-first,
-.how-enroll--line-two,
-.how-enroll--line-three{
-  height: 4px;
-  background-color: $top-color;
-  margin-right: 10px;
-  border-radius: 10px;
-}
-.how-enroll--line-first{
-  width: 60%;
-}
-.how-enroll--line-two{
-  width: 30%;
-}
-.how-enroll--line-three{
-  width: 10%;
-}
+// .how-enroll--line{
+//   position: absolute;
+//   top: 0;
+//   right: 5px;
+//   display: grid;
+//   margin-top: 15px;
+//   grid-template-rows: 4fr 3fr 2fr 1fr;
+//   height: 100%;
+//   width: 4px;
+//   gap: 5px;
+// }
+// .how-enroll--line-first,
+// .how-enroll--line-two,
+// .how-enroll--line-three,
+// .how-enroll--line-four{
+//   height: 100%;
+//   width: 4px;
+//   background-color: $top-color;
+//   margin-right: 10px;
+//   border-radius: 10px;
+// }
+
 .anglofan-enroll{
   margin-top: 60px;
   margin-bottom: 60px;
 }
-
+.how-enroll__image{
+  max-width: 100%;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 @media(min-width: 768px){
   .how-enroll{
     padding: 0 50px;
@@ -83,37 +102,12 @@ $top-color__active:#4C95DE;
     margin-bottom: 40px;
     text-align: center;
   }
-  .how-enroll__items,
-  .how-enroll__number{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .how-enroll__list{
-    width: 48%;
-    margin-right: 10px;
-
+  .how-enroll--line{
+    position: absolute;
+    top: 0;
+    right: 20px;
   }
 
-  .how-enroll--line-first{
-    width: 50%;
-  }
-  .how-enroll--line-two{
-    width: 25%;
-  }
-  .how-enroll--line-three{
-    width: 15%;
-  }
-  .how-enroll--line-four{
-    width: 7%;
-    height: 4px;
-    background-color: $top-color;
-    margin-right: 10px;
-    border-radius: 10px;
-  }
-  .anglofan-enroll{
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
 }
 @media(min-width: 1200px){
   .how-enroll{
@@ -126,16 +120,47 @@ $top-color__active:#4C95DE;
     margin-bottom: 70px;
   }
   .how-enroll__list{
-    width: 25%;
-    margin: 0;
+    position: relative;
   }
-  .how-enroll__image{
-    max-width: 100%;
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
-    margin-left: 10px;
+  .how-enroll__list:first-child{
+    width: 40%;
+
   }
+  .how-enroll__list:nth-child(2){
+    width: 40%;
+    margin-left: 15%;
+  }
+  .how-enroll__list:nth-child(3){
+    width: 40%;
+    margin-left: 30%;
+  }
+  .how-enroll__list:nth-child(4){
+    width: 40%;
+    margin-left: 45%;
+  }
+  .how-enroll__list:nth-child(5){
+    width: 40%;
+    margin-left: 60%;
+  }
+  .how-enroll__list::before{
+    display: none;
+  }
+  .how-enroll__list::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -25%;
+    width: 100px;
+    height: 50px;
+    // background-color: red;
+    background-image: url(/img/step.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .how-enroll__list:last-child::after{
+    display: none;
+  }
+
 
 //Cтили для SVG
 
