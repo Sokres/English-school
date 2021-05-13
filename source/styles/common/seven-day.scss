@@ -23,19 +23,22 @@ $red: #e00083;
   padding-top: 30px;
 }
 .daybox{
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 0 20px;
+ display: flex;
+ justify-content: center;
 }
 .seven-day__wrap{
   position: relative;
-  max-width: 380px;
+  max-width: 400px;
 }
 .seven-day__btn{
   position: relative;
-  display: block;
+  display: flex;
+  align-content: center;
+  align-items: center;
   width: 100%;
-  padding: .57em 2em;
+  padding: .57em 0;
+  padding-left: 1em;
+  padding-right: 0;
   border: none;
   border-radius: 10px;
   background-color: #b6006a;
@@ -54,34 +57,20 @@ $red: #e00083;
       background-color: #94115d;
     }
 }
-.seven-day__btn::after {
-  content: "";
-  width: 35px;
-  height: 35px;
-  background-image: url(/img/ico-teleg-btn.svg);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: right 7px;
-// .seven-day__btn::after{
-//   content: "";
-//   position: absolute;
-//   top: 50%;
-//   right: 8%;
-//   transform: translateY(-50%);
-//   width: 10px;
-//   height: 10px;
-//   border-top: solid 2px $white;
-//   border-left: solid 2px $white;
-//   border-radius: 2px;
-//   background-color: transparent;
-//   transition: 0.2s;
-// }
-
+.seven-day__btn--text{
+  line-height: normal;
+  padding-right: 14px;
+}
+.seven-day__inline-ico{
+  width: 45px;
+  height: 25px;
+  margin-right: 0.5em;
+}
 
 
 @media (min-width: 768px) {
   .btn-welcom{
+    padding-left: 60px;
     padding-bottom: 80px;
-    padding-left: 50px;
   }
 }
