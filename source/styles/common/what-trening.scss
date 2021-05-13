@@ -26,15 +26,12 @@ $red: #e00083;
   height: 150px;
   margin-top: 30px;
   border-radius: 10px;
+  background-image: url(/img/bg-tren-video.jpg);
   background-color: $top-color;
   background-size: cover;
 }
-.what-trening .what-trening__video--telegram{
-  background-image: url(/img/bg-tren-video2.jpg);
-}
-.what-trening .what-trening__video--anglofan{
-  background-image: url(/img/bg-tren-video2.jpg);
-}
+
+
 .what-trening__play{
   justify-self: center;
   margin-top: 30px;

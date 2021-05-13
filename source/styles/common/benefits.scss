@@ -13,8 +13,11 @@ $top-color__active:#4C95DE;
 
 
 .benefits{
-  margin: 0 auto;
+
   padding: 0 20px;
+  background-image: url(/img/benefits-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .benefits__title{
   text-align: center;
@@ -37,7 +40,7 @@ $top-color__active:#4C95DE;
   }
 }
 @media(min-width: 1200px){
-  .benefits{
+  .benefits__wrap{
     max-width: 1200px;
     margin: 0 auto;
   }
