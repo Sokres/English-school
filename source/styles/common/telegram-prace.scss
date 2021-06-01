@@ -35,9 +35,18 @@ $bg__price: #F3F3F3;
   background-color: $white;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
 }
+.telegram-price__subtitle{
+  margin-top: 35px;
+  font-size: 23px;
+  span{
+    display: block;
+    font-weight: 300;
+  }
+}
 .telegram-prace__time{
   position: relative;
   padding-bottom: 10px;
+  font-size: 22px;
 }
 .telegram-prace__time::after{
   content: "";
@@ -48,7 +57,7 @@ $bg__price: #F3F3F3;
   height: 2px;
   background-color: $gray;
   transform: translateX(-50%);
-  z-index: -1;
+  z-index: 1;
 }
 .telegram-prace__cash{
   position: relative;
@@ -82,6 +91,7 @@ $bg__price: #F3F3F3;
   // width: 100%;
   width: 200px;
   margin: 0 auto;
+  margin-top: 35px;
   padding: 0.5rem;
   border: none;
   border-radius: 100px;
@@ -120,7 +130,7 @@ $bg__price: #F3F3F3;
     position: absolute;
     // width: 250px;
     // height: 50px;
-    padding: 5px 50px;
+    padding: 5px 150px;
     color: $white;
     transform: rotate(35deg);
     }
@@ -130,17 +140,16 @@ $bg__price: #F3F3F3;
   &::before{
     content: "Выгодно";
     top: 10px;
-    right: -45px;
+    right: -145px;
     background-color: $top-color;
   }
 }
 .telegram-prace__block--hit{
-  transform: scale(1.05);
-  z-index: 2;
+  box-shadow: 0 0 0 2px $top-color__hover;
   &::before{
-    content: "ХИТ ПРОДАЖ";
-    top: 25px;
-    right: -55px;
+    content: "ХИТ";
+    top: 8px;
+    right: -125px;
     background-color: $top-color__hover;
   }
 }
@@ -215,4 +224,34 @@ $bg__price: #F3F3F3;
     max-width: 600px;
     width: 100%;
   }
+}
+
+.telegram-price__error{
+  display: none;
+  margin: 10px;
+  padding: 5px 5px;
+  border-top: solid 1px $red;
+  border-right: solid 1px $red;
+  border-left: solid 1px $red;
+  text-align: center;
+
+  a{
+    display: inline-block;
+    // width: auto;
+    margin: 10px;
+    padding: 0.1em 1em;
+    border-radius: 5px;
+    background-color: $red;
+    color: $white;
+    text-decoration: none;
+  }
+
+}
+.telegram-price__error--red-text,
+.telegram-price__error--why-text{
+  display: block;
+}
+
+.telegram-price__error--red-text{
+  color: $red;
 }

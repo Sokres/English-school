@@ -151,42 +151,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
    }
 
  });
-//Кнопка для оплаты
-(function(){
-  let btnPricePayS = document.getElementById("btnPricePayS");
-  let radioLen = document.Price_s.price_lvl_s.length;
 
-for (let i = 0; i < radioLen; i++) {
-document.Price_s.price_lvl_s[i].addEventListener('click',
-    function() {
-      btnPricePayS.dataset.modal = this.value;
-    }
-);
-}})();
 
-(function(){
-  let btnPricePayM = document.getElementById("btnPricePayM"),
-radioLen = document.Price_m.price_lvl_m.length;
-
-for (let i = 0; i < radioLen; i++) {
-document.Price_m.price_lvl_m[i].addEventListener('click',
-    function() {
-      btnPricePayM.dataset.modal = this.value;
-    }
-);
-}})();
-
-(function(){
-  let btnPricePayXL = document.getElementById("btnPricePayXL"),
-radioLen = document.Price_xl.price_lvl_xl.length;
-
-for (let i = 0; i < radioLen; i++) {
-document.Price_xl.price_lvl_xl[i].addEventListener('click',
-    function() {
-      btnPricePayXL.dataset.modal = this.value;
-    }
-);
-}})();
 
 //Модальное окно
 
@@ -243,4 +209,178 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 })();
 
+// Для формы телеграм клаба
+
+(function(){
+  let forms = document.getElementById("formprice4Bs");
+  let radio4bs = document.price4Bs.price4BsRadio.length;
+
+  for (var i = 0; i < radio4bs; i++) {
+    document.price4Bs.price4BsRadio[i].addEventListener('click',
+    function() {
+      forms.action = this.value;
+    }
+    )
+  }
+ // Проверка на пустоту
+
+  forms.onsubmit = function() {
+   let radioElems = document.getElementsByName('price4BsRadio'),
+           error = document.querySelector('#price4BsError');
+           submit = false;
+       [].forEach.call(radioElems, function(item) {
+         item.checked && (submit = true);
+       });
+
+       if (!submit) {
+         error.style.display = 'block';
+         return false;
+       }
+     }
+
+  })();
+
+   //Отбивка
+
+  (function(){
+    let forms = document.getElementById("formprice12Bs");
+    let radio12bs = document.price12Bs.price12BsRadio.length;
+
+    for (var i = 0; i < radio12bs; i++) {
+      document.price12Bs.price12BsRadio[i].addEventListener('click',
+      function() {
+        forms.action = this.value;
+      }
+      )
+    }
+   // Проверка на пустоту
+
+    forms.onsubmit = function() {
+     let radioElems = document.getElementsByName('price12BsRadio'),
+             error = document.querySelector('#price12BsError');
+             submit = false;
+         [].forEach.call(radioElems, function(item) {
+           item.checked && (submit = true);
+         });
+
+         if (!submit) {
+           error.style.display = 'block';
+           return false;
+         }
+       }
+  })();
+
+  (function(){
+    let forms = document.getElementById("formprice24Bs");
+    let radio24bs = document.price24Bs.price24BsRadio.length;
+
+    for (var i = 0; i < radio24bs; i++) {
+      document.price24Bs.price24BsRadio[i].addEventListener('click',
+      function() {
+        forms.action = this.value;
+      }
+      )
+    }
+   // Проверка на пустоту
+
+    forms.onsubmit = function() {
+     let radioElems = document.getElementsByName('price24BsRadio'),
+             error = document.querySelector('#price24BsError');
+             submit = false;
+         [].forEach.call(radioElems, function(item) {
+           item.checked && (submit = true);
+         });
+
+         if (!submit) {
+           error.style.display = 'block';
+           return false;
+         }
+       }
+  })();
+
+  (function(){
+    let forms = document.getElementById("formprice4Os");
+    let radio4Os = document.price4Os.price4OsRadio.length;
+
+    for (var i = 0; i < radio4Os; i++) {
+    document.price4Os.price4OsRadio[i].addEventListener('click',
+        function() {
+          forms.action = this.value;
+        }
+        )
+      }
+     // Проверка на пустоту
+
+      forms.onsubmit = function() {
+       let radioElems = document.getElementsByName('price4OsRadio'),
+               error = document.querySelector('#price4OsError');
+               submit = false;
+           [].forEach.call(radioElems, function(item) {
+             item.checked && (submit = true);
+           });
+
+           if (!submit) {
+             error.style.display = 'block';
+             return false;
+           }
+         }
+    })();
+
+
+  (function(){
+    let forms = document.getElementById("formprice12Os");
+    let radio12Os = document.price12Os.price12OsRadio.length;
+
+    for (var i = 0; i < radio12Os; i++) {
+    document.price12Os.price12OsRadio[i].addEventListener('click',
+        function() {
+          forms.action = this.value;
+        }
+        )
+      }
+     // Проверка на пустоту
+
+      forms.onsubmit = function() {
+       let radioElems = document.getElementsByName('price12OsRadio'),
+               error = document.querySelector('#price12OsError');
+               submit = false;
+           [].forEach.call(radioElems, function(item) {
+             item.checked && (submit = true);
+           });
+
+           if (!submit) {
+             error.style.display = 'block';
+             return false;
+           }
+         }
+    })();
+
+  (function(){
+    let forms = document.getElementById("formprice24Os");
+    let radio24Os = document.price24Os.price24OsRadio.length;
+
+
+    for (var i = 0; i < radio24Os; i++) {
+    document.price24Os.price24OsRadio[i].addEventListener('click',
+        function() {
+          forms.action = this.value;
+        }
+        )
+      }
+     // Проверка на пустоту
+
+      forms.onsubmit = function() {
+       let radioElems = document.getElementsByName('price24OsRadio'),
+               error = document.querySelector('#price24OsError');
+               submit = false;
+           [].forEach.call(radioElems, function(item) {
+             item.checked && (submit = true);
+           });
+
+           if (!submit) {
+             error.style.display = 'block';
+             return false;
+           }
+         }
+    })();
 

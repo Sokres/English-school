@@ -120,11 +120,10 @@ class Result
 
 const results =
 [
-	new Result("<div> от 0 до 5 баллов – у вас пока нет уровня, но все в ваших руках!Это примерные результаты. Обязательно посмотрите программу каждого уровня <a href='/telegram-club.html#program-telegram'>здесь</a>.Скорее всего вы никогда не учили английский или учили его всего несколько лет. Вам желательно начинать с самого начала – уровня Starter (если никогда не учили английский) или можно с Elementary (если учили английский раньше и можете на нем читать).</div>    <div class='your-choice'><h3>Вам подойдет </h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a></div></div>", 0),
-	new Result("от 6 до 22 баллов - вы находитесь на уровне Elementary Это примерные результаты. Обязательно посмотрите программу каждого уровня <a href='/anglofan.html#programmStarter'>здесь</a>. Наверное, вы учили английский в школе и знаете достаточно много слов, но не умеете говорить, не знаете, как правильно соединять их в предложения, не помните или не понимаете систему времен. Для обучения вам оптимально начать с уровня A1 Elementary или A2 Pre-Intermediate (ознакомьтесь с программой этих уровней).  <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 6),
-  new Result(" от 23 до 48 баллов - вы находитесь на уровне Pre-Intermediate Это примерные результаты. Обязательно посмотрите программу каждого уровня <a href='/anglofan.html#programmStarter'>здесь</a>.Самые базовые знания английского языка у вас уже есть, но их слишком мало, необходимо двигаться дальше. Для обучения вам подойдет уровень A2 Pre-Intermediate или B1 Intermediate (ознакомьтесь с программой этих уровней).   <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 23),
-  new Result("от 49 до 70 баллов – у вас уверенный уровень Pre-Intermediate Это примерные результаты. Обязательно посмотрите программу каждого уровня S<a href='/anglofan.html#programmStarter'>здесь</a>. У вас хорошая база, но для свободного общения этого недостаточно. Для обучения вам подойдет следующий уровень – B1 Intermediate.  <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 49),
-  new Result("70-77 баллов – у вас уровень Intermediate. Для обучения вам подойдет следующая ступень - уровень Upper-Intermediate.  <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 71)
+	new Result("<div> от 0 до 10 баллов – у вас пока нет уровня, но все в ваших руках! В тесте всегда есть вопросы, которые мы просто угадываем, за счет чего повышается ваш итоговый уровень. Будьте внимательны и прежде, чем выбрать уровень обучения посмотрите его программу <a href='/telegram-club.html#program-telegram'>здесь</a>.Скорее всего вы никогда не учили английский или учили его всего несколько лет в школе. Вам желательно начинать с самого начала – уровня Starter (если никогда не учили английский) или можно с Elementary (если учили английский раньше и можете на нем читать). Перед выбором уровня при оплате курса обязательно посмотрите его программу.</div>    <div class='your-choice'><h3>Вам подойдет </h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a></div></div>", 0),
+	new Result("от 11 до 37 баллов - вы находитесь на уровне Elementary В тесте всегда есть вопросы, которые мы просто угадываем, за счет чего повышается ваш итоговый уровень. Будьте внимательны и прежде, чем выбрать уровень обучения посмотрите его программу <a href='/anglofan.html#programmStarter'>здесь</a>. Наверное, вы учили английский в школе и знаете достаточно много слов, но не умеете говорить, не знаете, как правильно соединять их в предложения, не помните или не понимаете систему времен. Для обучения вам оптимально начать с уровня A1 Elementary или A2 Pre-Intermediate. Перед выбором уровня при оплате курса обязательно посмотрите его программу.<div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 10),
+  new Result("от 38 до 64 баллов - вы находитесь на уровне Pre-Intermediate В тесте всегда есть вопросы, которые мы просто угадываем, за счет чего повышается ваш итоговый уровень. Будьте внимательны и прежде, чем выбрать уровень обучения посмотрите его программу  <a href='/anglofan.html#programmStarter'>здесь</a>.Самые базовые знания английского языка у вас уже есть, но их мало для свободного общения, необходимо двигаться дальше. Для обучения вам подойдет уровень A2 Pre-Intermediate или B1 Intermediate. Перед выбором уровня при оплате курса обязательно посмотрите его программу.<div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 37),
+  new Result("от 65 до 77 баллов – у вас уверенный уровень Pre-Intermediate+ / Intermediate В тесте всегда есть вопросы, которые мы просто угадываем, за счет чего повышается ваш итоговый уровень. Будьте внимательны и прежде, чем выбрать уровень обучения посмотрите его программу  <a href='/anglofan.html#programmStarter'>здесь</a>. У вас хорошая база, но для свободного общения этого пока недостаточно. Для обучения вам подойдет уровень – B1 Intermediate. Перед выбором уровня при оплате курса обязательно посмотрите его программу.  <div class='your-choice'><h3>Выбери свой курс</h3><div class='your-choice__wrap'><a href='../telegram-club.html' class='your-choice__link button-link'>Telegram club</a><a href='../anglofan.html' class='your-choice__link button-link'>Anglofan</a></div></div>", 64)
 ];
 
 const questions =
@@ -135,7 +134,7 @@ const questions =
 		new Answer("are", 1),
 		new Answer("be", 0),
 		new Answer("is", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
 	new Question("2.__________ two sons. ",
@@ -144,7 +143,7 @@ const questions =
 		new Answer("she is", 0),
 		new Answer("she get", 0),
 		new Answer("she has got", 1),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
 	new Question("3.Mary _________ like basketball.",
@@ -153,7 +152,7 @@ const questions =
 		new Answer("not", 0),
 		new Answer("don't", 0),
 		new Answer("do not", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
 	new Question("4.They're reading. What __________ doing? ",
@@ -162,7 +161,7 @@ const questions =
 		new Answer("are they", 1),
 		new Answer("is they", 0),
 		new Answer("they are ", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
 	new Question("5.__________ he go for a walk every evening?",
@@ -171,14 +170,14 @@ const questions =
 		new Answer("has", 0),
 		new Answer("is", 0),
 		new Answer("do", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
   	new Question("6. There isn't __________ fruit in the shop.",
 	[
 		new Answer("some", 0),
 		new Answer("any", 1),
 		new Answer("the", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
   	new Question("7. They ________ go to the shop.",
@@ -187,7 +186,7 @@ const questions =
 		new Answer("can’t", 1),
 		new Answer("is can’t", 0),
 		new Answer("can’t is", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
   	new Question("8. Does she read a book every day? - ____________",
@@ -196,7 +195,7 @@ const questions =
 		new Answer("No, she not.", 0),
 		new Answer("Yes, she every day.", 0),
 		new Answer("No, she doesn’t. ", 1),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
   	new Question("9. ______ apples are really close!",
@@ -205,7 +204,7 @@ const questions =
 		new Answer("These", 1),
 		new Answer("That", 0),
 		new Answer("That", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
   new Question("10. Do you like __________ there?",
 	[
@@ -213,7 +212,7 @@ const questions =
 		new Answer("working", 1),
 		new Answer("worked", 0),
 		new Answer("work", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
   	new Question("11. __________ the letters?",
@@ -222,7 +221,7 @@ const questions =
 		new Answer("Where does she reading", 0),
 		new Answer("Where she is reading", 0),
 		new Answer("Where she reads", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
   	new Question("12.Why __________ yesterday?",
@@ -231,7 +230,7 @@ const questions =
 		new Answer("you lated", 0),
 		new Answer("were you late", 1),
 		new Answer("you was late", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
   	new Question("13.Kate and Leo  __________ to visit his parents on Sunday. ",
 	[
@@ -239,7 +238,7 @@ const questions =
 		new Answer("will", 0),
 		new Answer("are going", 1),
 		new Answer("must", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
 	new Question("14. Megan is fast, but Jack is __________. ",
@@ -248,7 +247,7 @@ const questions =
 		new Answer("fasty", 0),
 		new Answer("faster", 1),
 		new Answer("fastest", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("15. ___________ a new book last month?",
 	[
@@ -256,7 +255,7 @@ const questions =
 		new Answer("Did she write", 1),
 		new Answer("Did she wrote", 0),
 		new Answer("Did she writing", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 
 	new Question("16. ____________ around the world?",
@@ -265,7 +264,7 @@ const questions =
 		new Answer("Has she ever travelled   ", 2),
 		new Answer("Have ever she travelled", 0),
 		new Answer("Has ever she travel  ", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("17. Do you _________ to work?",
 	[
@@ -273,7 +272,7 @@ const questions =
 		new Answer("have to go", 2),
 		new Answer("can", 0),
 		new Answer("should", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("18. ___________ a car yesterday at 5 p.m.?",
 	[
@@ -281,7 +280,7 @@ const questions =
 		new Answer("Was they driving", 0),
 		new Answer("Were they drive", 0),
 		new Answer("Were they driving ", 2),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("19.  He ___________ to the gym 5 years ago.",
 	[
@@ -289,7 +288,7 @@ const questions =
 		new Answer("used to go", 2),
 		new Answer("did use to go", 0),
 		new Answer("use", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("20. ___________ him for ages.",
 	[
@@ -297,7 +296,7 @@ const questions =
 		new Answer("She hasn’t seen", 2),
 		new Answer("She isn’t seen", 0),
 		new Answer("She isn’t seeing", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("21. Is it ___________  for you?",
 	[
@@ -305,14 +304,14 @@ const questions =
 		new Answer("enough good", 0),
 		new Answer("too enough", 0),
 		new Answer("enough too", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("22. - Give me  ____ apple from the table. - Which one?",
 	[
 		new Answer("a", 0),
 		new Answer("an", 2),
 		new Answer("the", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("23. I need ________ furniture for my new apartment.",
 	[
@@ -320,7 +319,7 @@ const questions =
 		new Answer("some", 2),
 		new Answer("an", 0),
 		new Answer("the", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("24. We got here ______________.",
 	[
@@ -328,7 +327,7 @@ const questions =
 		new Answer("with train", 0),
 		new Answer("by train", 2),
 		new Answer("with a train", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("25. Who ___________ the truth?",
 	[
@@ -336,7 +335,7 @@ const questions =
 		new Answer("does know", 0),
 		new Answer("knows", 2),
 		new Answer("is know", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("26. Sally  __________ this film. ",
 	[
@@ -344,7 +343,7 @@ const questions =
 		new Answer("already seen", 0),
 		new Answer("has already seen", 2),
 		new Answer("have already seen", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("27. I _________ TV when she ________ into the room.",
 	[
@@ -352,7 +351,7 @@ const questions =
 		new Answer("watched_came", 0),
 		new Answer("was watching_comes", 0),
 		new Answer("was watching_came", 2),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("28. Nick said he ___________ to get a new job.",
 	[
@@ -360,7 +359,7 @@ const questions =
 		new Answer("wanted", 2),
 		new Answer("is wanting", 0),
 		new Answer("wanting", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("29. English __________ all over the world.",
 	[
@@ -368,7 +367,7 @@ const questions =
 		new Answer("is spoken", 3),
 		new Answer("is spoking", 0),
 		new Answer("is spoke", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("30. He ______ the car if he _________ the lottery.",
 	[
@@ -376,7 +375,7 @@ const questions =
 		new Answer("buy_ win", 0),
 		new Answer("buys_ wins", 0),
 		new Answer("have buy _ won", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("31. She _______ with him.",
 	[
@@ -384,7 +383,7 @@ const questions =
 		new Answer("always is arguing", 0),
 		new Answer("always does arguing", 0),
 		new Answer("is always arguing", 3),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("32. I bought this coat for _____ in the forest in winter. ",
 	[
@@ -392,7 +391,7 @@ const questions =
 		new Answer("walking", 3),
 		new Answer("to walk", 0),
 		new Answer("walked", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("33. By the time they went to the restaurant Jack _______  his supervisor.",
 	[
@@ -400,21 +399,21 @@ const questions =
 		new Answer("has called", 0),
 		new Answer("have called", 0),
 		new Answer("had called", 3),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question(('Thai street food is <b>34 ______</b> the best in the world, and for around $5 you can eat 35 ____ filling and delicious meal. Some food stands 36 ____ little plastic seats where you can sit and eat and they cook the same dish over and over, like fried chicken on rice or Pad Thai noodles. '),
 	[
 		new Answer("between", 0),
 		new Answer("among", 3),
 		new Answer("with", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("Thai street food is among the best in the world, and for around $5 you can eat <b>35 ______</b> filling and delicious meal. Some food stands 36 ______ little plastic seats where you can sit and eat and they cook the same dish over and over, like fried chicken on rice or Pad Thai noodles. ",
 	[
 		new Answer("a", 3),
 		new Answer("an", 0),
 		new Answer("the", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question("Thai street food is among the best in the world, and for around $5 you can eat a filling and delicious meal. Some food stands <b>36 ______</b> little plastic seats where you can sit and eat and they cook the same dish over and over, like fried chicken on rice or Pad Thai noodles. ",
 	[
@@ -422,31 +421,31 @@ const questions =
 		new Answer("have", 3),
 		new Answer("had", 0),
 		new Answer("are having", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question(('<div class="audio">37. AUDIO 1<br><p>Speaker goes there after the office workers have left.</p><audio controls> <source src="https://email.anglofan.ru/Happy-hungry-people_01.mp3" type="audio/mp3"> <source src="https://email.anglofan.ru/Happy-hungry-people_01.ogg"  type="audio/ogg"></audio></div>'),
 	[
 		new Answer("True", 0),
 		new Answer("False", 3),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question(('<div class="audio">38. AUDIO 2<br><p>Speaker says that you can buy both salad and pasta there.</p><audio controls> <source src="https://email.anglofan.ru/Happy-hungry-people_02.mp3" type="audio/mp3"> <source src="https://email.anglofan.ru/Happy-hungry-people_02.ogg"  type="audio/ogg"></audio></div>'),
 	[
 		new Answer("True", 3),
 		new Answer("False", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question(('<div class="audio">39. AUDIO 3<br><p>Speaker eats lunch there.</p><audio controls> <source src="https://email.anglofan.ru/Happy-hungry-people_03.mp3" type="audio/mp3"> <source src="https://email.anglofan.ru/Happy-hungry-people_03.ogg"  type="audio/ogg"></audio></div>'),
 	[
 		new Answer("True", 0),
 		new Answer("False", 3),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
 	new Question(('<div class="audio">40. AUDIO 4<br><p>Speaker says this place offers a variation on a traditional food.</p><audio controls> <source src="https://email.anglofan.ru/Happy-hungry-people_04.mp3" type="audio/mp3"> <source src="https://email.anglofan.ru/Happy-hungry-people_04.ogg"  type="audio/ogg"></audio></div>'),
 	[
 		new Answer("True", 3),
 		new Answer("False", 0),
-		new Answer("не знаешь, нажми", 0)
+		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	])
 ];
 

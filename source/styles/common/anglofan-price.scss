@@ -157,36 +157,41 @@ background-size: 50%;
 .anglofan-price__title-form{
   text-align: center;
 }
+.anglofan-price__form{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
 .anglofan-price__lvl{
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 
   label{
+    display: flex;
+    align-items: center;
     margin-left: 1.6em;
     font-size: 22px;
-    line-height: 12px;
     cursor: pointer;
   }
-  span{
-    position: absolute;
+  .anglofan-price__form--radio{
     width: 20px;
     height: 20px;
-    margin-left: -1.4em;
     // background-color: $top-color;
     border-radius: 100%;
     box-shadow: 0 0 0 2px $top-color;
     transition: box-shadow 0.2s ease-in-out;
   }
-  span:hover{
+  .anglofan-price__form--radio:hover{
     box-shadow: 0 0 4px 3px $top-color;
   }
-  span:hover::before{
+  .anglofan-price__form--radio:hover::before{
     content: "";
     transform: scale(0.4);
     transition: transform 0.2s ease-in-out;
   }
-  span::before{
+  .anglofan-price__form--radio::before{
     content: "";
     position: absolute;
     width: 20px;
@@ -196,11 +201,11 @@ background-size: 50%;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
   }
-  input:checked + span:hover{
+  input:checked + .anglofan-price__form--radio:hover{
     box-shadow: 0 0 0 2px $top-color;
   }
 
-  input:checked + span::before{
+  input:checked + .anglofan-price__form--radio::before{
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
   }
