@@ -35,9 +35,9 @@ $top-color__active:#4C95DE;
     // max-width: 60%;
     margin-bottom: 10px;
     line-height: 36px;
-
     // text-align: left;
   }
+
 
   &__subtitle {
     // max-width: 60%;
@@ -49,14 +49,16 @@ $top-color__active:#4C95DE;
   }
 
   &__indent {
-    max-width: 60%;
+    // max-width: 80%;
     margin-top: 25px;
     font-weight:300;
 
     // text-align: center;
   }
 }
-
+.welcome-info__title--cours{
+  font-size: 18px;
+}
 .welcom-info__image{
   position: absolute;
   right: -20px;
@@ -249,7 +251,7 @@ $top-color__active:#4C95DE;
 .welcome-info__submenu {
   display: flex;
   flex-wrap: wrap;
-  max-width: 90%;
+  // max-width: 90%;
   margin: 0;
   margin-top: 20px;
   padding: 0;
@@ -257,7 +259,8 @@ $top-color__active:#4C95DE;
 }
 
 .welcome-info__submenu-item {
-  margin-right: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 10px;
   z-index: 100;
 }
@@ -266,6 +269,7 @@ $top-color__active:#4C95DE;
   color: $top-color;
   z-index: 196;
   text-decoration: none;
+  text-align: center;
   &:hover{
     color: $top-color__hover;
   }
