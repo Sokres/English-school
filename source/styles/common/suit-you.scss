@@ -16,6 +16,13 @@ $top-color__active:#4C95DE;
   text-align: center;
   line-height: 1.2;
 }
+.suit-you__subtitle{
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.suit-you__article{
+  margin-top: 0;
+}
 .suit-you__lists{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -43,5 +50,8 @@ $top-color__active:#4C95DE;
   }
   .suit-you__lists{
     display: flex;
+  }
+  .suit-you__item{
+    width: 25%;
   }
 }

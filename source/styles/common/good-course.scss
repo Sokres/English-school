@@ -12,13 +12,14 @@ $top-color__active:#4C95DE;
 $red: #e00083;
 
 .good-course{
-  padding: 0 20px;
+  padding: 30px 20px;
   background-image: url(/img/benefits-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .good-course__title{
   text-align: center;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 .good-course__subtitle{
@@ -39,6 +40,10 @@ $red: #e00083;
   box-shadow: 0 0 0 2px $gray;
   text-align: center;
 }
+.good-course__text{
+  margin-left: 6px;
+  text-align: left;
+}
 
 @media(min-width: 768px){
   .good-course__wraper{
@@ -58,6 +63,16 @@ $red: #e00083;
     justify-content: space-between;
     box-shadow: none;
   }
+  .good-course__item:last-child{
+    grid-template-columns: 1fr;
+  }
+  .good-course__subtitletext{
+    margin-bottom: 0;
+  }
+  .good-course__text{
+    text-align: left;
+  }
+
   .good-course__image{
     justify-self: center;
   }
