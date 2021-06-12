@@ -39,6 +39,12 @@ background-size: 50%;
 .anglofan-price__title{
   text-align: center;
 }
+.anglofan-price__content--add{
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.8;
+}
 .anglofan-price__title::after{
   content: "";
   display: block;

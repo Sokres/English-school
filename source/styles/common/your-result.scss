@@ -43,6 +43,9 @@ $bg__price: #F3F3F3;
   .your-result{
     padding-left: 50px;
   }
+  .your-result__subtitle{
+    font-size: 16px;
+  }
   .your-result-conainer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
