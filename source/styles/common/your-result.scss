@@ -40,16 +40,17 @@ $bg__price: #F3F3F3;
   margin-left: 15px;
 }
 @media(min-width: 768px){
-  .your-result{
-    padding-left: 50px;
-  }
+  // .your-result{
+  //   padding-left: 50px;
+  // }
   .your-result__subtitle{
-    font-size: 16px;
+    font-size: 18px;
   }
   .your-result-conainer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .your-result__item{
     display: flex;
     align-items: center;
@@ -68,5 +69,9 @@ $bg__price: #F3F3F3;
   }
   .your-result-conainer{
     grid-template-columns: repeat(3, 1fr);
+  }
+  .your-result-conainer.your-result-conainer--telegram{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }

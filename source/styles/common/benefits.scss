@@ -13,14 +13,23 @@ $top-color__active:#4C95DE;
 
 
 .benefits{
-  padding: 0 20px;
+  padding: 40px 20px;
   padding-bottom: 30px;
   background-image: url(/img/benefits-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .benefits__title{
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
+}
+.benefits__subtitle{
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
 }
 .benefits__list{
   list-style: none;
@@ -40,7 +49,7 @@ $top-color__active:#4C95DE;
 }
 @media(min-width: 768px){
   .benefits{
-    padding: 0 50px;
+    padding: 40px 50px;
     padding-bottom: 30px;
   }
 }

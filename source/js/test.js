@@ -203,7 +203,7 @@ const questions =
 		new Answer("This", 0),
 		new Answer("These", 1),
 		new Answer("That", 0),
-		new Answer("That", 0),
+		new Answer("Those", 0),
 		new Answer("Если не знаешь ответ, но хочешь выбрать наугад, нажми сюда", 0)
 	]),
   new Question("10. Do you like __________ there?",

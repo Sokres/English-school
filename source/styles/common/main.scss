@@ -343,12 +343,15 @@ $top-color__active:#4C95DE;
     background-color: #ffffff;
   }
 
-  .welcome-telegramm {
-  }
 
   .welcome-info__submenu {
     max-width: 100%;
     margin-top: 50px;
+    text-align: left;
+  }
+  .welcome-info__submenu-item{
+    margin-left: 0;
+    margin-right: 25px;
   }
   .welcome-info__submenu--stick{
     margin: 0;
