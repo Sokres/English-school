@@ -72,6 +72,13 @@ $red: #e00083;
   .btn-welcom{
     padding-left: 50px;
     padding-bottom: 80px;
-
   }
+
+}
+@media (min-width: 1200px) {
+    .btn-welcom{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
 }

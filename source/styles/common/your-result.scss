@@ -33,16 +33,16 @@ $bg__price: #F3F3F3;
   padding: 0;
 }
 .your-result__item{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .your-result__text{
   margin: 0;
-  margin-left: 15px;
 }
 @media(min-width: 768px){
-  // .your-result{
-  //   padding-left: 50px;
-  // }
+  .your-result{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
   .your-result__subtitle{
     font-size: 18px;
   }
@@ -56,15 +56,17 @@ $bg__price: #F3F3F3;
     align-items: center;
   }
   .your-result__image{
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .your-result__text{
+    margin-left: 15px;
     text-align: left;
   }
 }
 @media(min-width: 1200px){
   .your-result{
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   }
   .your-result-conainer{
