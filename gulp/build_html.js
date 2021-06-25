@@ -15,6 +15,6 @@ module.exports = function minifyHTML() {
     .pipe(htmlmin({
         collapseWhitespace: true
       }))
-    .pipe(htmlValidator())
+    // .pipe(htmlValidator())
     .pipe(gulp.dest("build/"));
 }
