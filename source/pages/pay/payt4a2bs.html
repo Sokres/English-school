@@ -59,17 +59,20 @@
     </header>
     <include src="build/@_social1.html"> </include>
     <section class="pay">
-      <h2 class="pay__title">Оплата Telegram club уровень A0 доступ на 4 недели с обратной связью</h2>
+      <h2 class="pay__title">Оплата Telegram club уровень A2 доступ на 4 недели без обратной связи</h2>
       <include src="build/@_warningPay.html"> </include>
-      <br>
       <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css">
       <form class="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment" method="post"
         accept-charset="utf-8">
+
+
+
+
         <div class="ym-customer-info">
           <div class="ym-block-title"></div>
-          <input name="custName" class="ym-input" placeholder="Имя и фамилия" type="text" value="" required>
-          <input name="cps_email" class="ym-input" placeholder="Email" type="text" value="" required>
-          <input name="cps_phone" class="ym-input" placeholder="Телефон" type="text" value="" required>
+          <input name="custName" class="ym-input" placeholder="Имя и фамилия" type="text" value="">
+          <input name="cps_email" class="ym-input" placeholder="Email" type="text" value="">
+          <input name="cps_phone" class="ym-input" placeholder="Телефон" type="text" value="">
 
 
 
@@ -81,16 +84,15 @@
 
         </div>
 
-        <input name="customerNumber" type="hidden" value="Оплата 3760 р Telegram club уровень A0">
+        <input name="customerNumber" type="hidden" value="Оплата 760 р Telegram club уровень A2">
         <div class="ym-payment-btn-block ym-before-line ym-align-space-between">
           <div class="ym-input-icon-rub ym-display-none">
             <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input" type="number"
-              step="any" value="3760">
+              step="any" value="760">
           </div>
           <button data-text="Оплатить" class="ym-btn-pay ym-result-price"><span class="ym-text-crop">Оплатить</span>
-            <span class="ym-price-output"> 3&nbsp;760,00&nbsp;₽</span></button><svg class="ym-logo" width="114"
-            height="27" viewBox="0 0 114 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle"
-            role="img">
+            <span class="ym-price-output"> 760,00&nbsp;₽</span></button><svg class="ym-logo" width="114" height="27"
+            viewBox="0 0 114 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle" role="img">
             <path
               d="M59.3827 7.348H55.7087L53.0599 11.9619H51.6929V2.05054H48.1897V19.9081H51.6929V15.0379H53.0599L56.4777 19.9081H60.408L55.8796 13.4145L59.3827 7.348Z"
               fill="black" fill-opacity="0.4"></path>
@@ -127,8 +129,6 @@
         <input name="shopId" type="hidden" value="742609">
       </form>
       <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
-
-
 
 
     </section>

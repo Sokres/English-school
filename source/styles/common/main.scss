@@ -59,12 +59,17 @@ $top-color__active:#4C95DE;
 .welcome-info__title--cours{
   font-size: 18px;
 }
+.welcome-info__wraper{
+  position: relative;
+  z-index: 99;
+}
+
 .welcom-info__image{
   position: absolute;
   right: -20px;
   top: 100px;
   width: 170px;
-
+  z-index: 1;
 }
 .btn-bot {
   display: grid;
@@ -183,6 +188,7 @@ $top-color__active:#4C95DE;
   }
   .welcom-info__picture{
     display: grid;
+    z-index: 1;
   }
   .welcom-info__image{
     position: absolute;
@@ -194,6 +200,7 @@ $top-color__active:#4C95DE;
   .btn-bot {
     display: flex;
     justify-content: flex-start;
+    z-index: 99;
   }
 
 }

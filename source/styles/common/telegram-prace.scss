@@ -153,40 +153,46 @@ $bg__price: #F3F3F3;
     background-color: $top-color__hover;
   }
 }
+.telegram-price__form{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
 .telegram-price__lvl{
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 
   label{
-    margin-left: 1.6em;
+    display: flex;
+    align-items: center;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
     font-size: 22px;
-    line-height: 12px;
     cursor: pointer;
   }
-  span{
-    position: absolute;
+  .telegram-price__form--radio{
     width: 20px;
     height: 20px;
-    margin-left: -1.4em;
+    padding-right: 20px;
     // background-color: $top-color;
     border-radius: 100%;
     box-shadow: 0 0 0 2px $top-color;
     transition: box-shadow 0.2s ease-in-out;
   }
-  span:hover{
+  .telegram-price__form--radio:hover{
     box-shadow: 0 0 4px 3px $top-color;
   }
-  span:hover::before{
+  .telegram-price__form--radio:hover::before{
     content: "";
     transform: scale(0.4);
     transition: transform 0.2s ease-in-out;
   }
-  span::before{
+  .telegram-price__form--radio::before{
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -194,13 +200,16 @@ $bg__price: #F3F3F3;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
   }
-  input:checked + span:hover{
+  input:checked + .telegram-price__form--radio:hover{
     box-shadow: 0 0 0 2px $top-color;
   }
 
-  input:checked + span::before{
+  input:checked + .telegram-price__form--radio::before{
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
+  }
+  .telegram-price__form--lvl{
+    padding-left: 10px;
   }
 }
 @media(min-width: 964px){
