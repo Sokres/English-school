@@ -30,17 +30,14 @@ function setMode(isProduction = false) {
 
 const dev = gulp.parallel(htmlmin, styles, script, copy, images, webp,)
 
-const ceche = gulp.series(hash,replace)
+const ceche = gulp.series(hash, replace)
 
 const build = gulp.parallel(build_html, build_style, script, copy, images, webp,)
 
-// const buildfull = gulp.series(del,sprite, devfull, cache)
 
 const work = gulp.series(del,sprite, dev)
 
 
 module.exports.start = gulp.series(setMode(), work, server )
 module.exports.build = gulp.series(setMode(true), del, sprite, build, ceche, clean_old)
-// module.exports.build = gulp.series(setMode(), buildfull )
 
-// module.exports.linghthouse = gulp.series(linghthouse)
