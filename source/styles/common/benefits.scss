@@ -44,6 +44,38 @@ $top-color__active:#4C95DE;
     height: 50px;
   }
 }
+.benefits__item--list{
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+}
+.benefits__item--list .benefits__text{
+  margin-bottom: 0;
+}
+.benefits__item--sublist{
+  grid-column: 2 / 3;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.benefits__item--subitem{
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: 1em;
+  margin-bottom: 3px;
+}
+.benefits__item--subitem::before{
+  content: "";
+  margin-top: 10px;
+  // text-align: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: $top-color__hover;
+
+}
 .benefits__text{
   margin: 0;
   margin-bottom: 20px;

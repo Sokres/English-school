@@ -26,10 +26,6 @@ $top-color__active:#4C95DE;
   padding: 10px 20px 0 20px;
   position: relative;
   overflow: hidden;
-  // background-image: url(/img/bg_header-karina.png);
-  // background-position: right bottom;
-  // background-size: 65%;
-  // background-repeat: no-repeat;
 
   &__title {
     // max-width: 60%;
@@ -40,7 +36,8 @@ $top-color__active:#4C95DE;
 
 
   &__subtitle {
-    // max-width: 60%;
+    max-width: 80%;
+    margin-bottom: 0px;
     color: $top-color;
     // text-align: center;
     font-weight: 500;
@@ -49,7 +46,7 @@ $top-color__active:#4C95DE;
   }
 
   &__indent {
-    // max-width: 80%;
+    max-width: 80%;
     margin-top: 25px;
     font-weight:300;
 
@@ -236,6 +233,14 @@ $top-color__active:#4C95DE;
   background-position: top 30px right -130px;
   background-color: #ffffff;
   color: #182F52;
+
+
+  .welcome-info__title{
+    color: #b6006a;
+  }
+  .welcome-info__subtitle{
+    color: #b6006a;
+  }
 }
 
 //Дублирование стилей для англофана
