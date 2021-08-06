@@ -101,8 +101,9 @@ $red: #e00083;
 .what-trening__item{
   display: flex;
   img{
-    width: 100px;
-    height: 100px;
+    align-self: center;
+    width: 50px;
+    height: 50px;
   }
 }
 .what-trening__info{

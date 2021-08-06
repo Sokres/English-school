@@ -9,8 +9,8 @@
   <meta name="description" content="Оплата тарифа telegram club на 4 недели уровень Starter">
   <meta name="theme-color" content="#57ACFF">
   <link rel="icon" href="favicon.svg">
-  <link rel="mask-icon" href="mask-icon.svg" color="#57ACFF">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="mask-icon" href="../mask-icon.svg" color="#57ACFF">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
   <meta name="application-name" content="Anglofan">
   <meta name="apple-mobile-web-app-title" content="Anglofan">
@@ -21,7 +21,41 @@
 
 <body class=" bd close">
   <div class="wraper-for-footer">
-    <include src="build/@_header-other.html"> </include>
+    <header class="header header-test">
+      <div class="header-container">
+        <a href="../index.html" class="header__link-logo"> <img class="logo" src="../img/logo_fin_white.svg" height="30"
+            alt="Логотип Anglofan"></a>
+        <nav class="header__nav">
+          <button class="main-nav__btn">
+            <span class="main-nav__btn--line"></span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link " href="../index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--down site-list__item--down-open">
+              <a class="site-list__link site-list__link-subdmenu" tabindex="0">Курсы</a>
+              <ul class="site-list__item-podmenu">
+                <li class="site-list__item">
+                  <a class="site-list__link " href="..../telegram-club">Телеграмм-club</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="..../anglofan">Anglofan</a>
+                </li>
+
+              </ul>
+            <li class="site-list__item">
+              <a class="site-list__link" href="..../lvl_test">Тестирование</a>
+            </li>
+            <!-- <li class="site-list__item">
+                <a class="site-list__link" href="#">О нас</a>
+              </li> -->
+            </li>
+            <li class="site-list__mount"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <include src="build/@_social1.html"> </include>
     <section class="pay">
       <h2 class="pay__title">Оплата Telegram club уровень A1 доступ на 4 недели без обратной связи</h2>
@@ -38,9 +72,9 @@
 
         <div class="ym-customer-info">
           <div class="ym-block-title"></div>
-          <input name="custName" class="ym-input" placeholder="Имя и фамилия" type="text" value="" required>
-          <input name="cps_email" class="ym-input" placeholder="Email" type="text" value="" required>
-          <input name="cps_phone" class="ym-input" placeholder="Телефон" type="text" value="" required>
+          <input name="custName" class="ym-input" placeholder="Имя и фамилия" type="text" value="">
+          <input name="cps_email" class="ym-input" placeholder="Email" type="text" value="">
+          <input name="cps_phone" class="ym-input" placeholder="Телефон" type="text" value="">
 
 
 
@@ -52,14 +86,14 @@
 
         </div>
 
-        <input name="customerNumber" type="hidden" value="Оплата 990 р Telegram club уровень A1">
+        <input name="customerNumber" type="hidden" value="Оплата 860 р Telegram club уровень A1">
         <div class="ym-payment-btn-block ym-before-line ym-align-space-between">
           <div class="ym-input-icon-rub ym-display-none">
             <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input" type="number"
-              step="any" value="990">
+              step="any" value="860">
           </div>
           <button data-text="Оплатить" class="ym-btn-pay ym-result-price"><span class="ym-text-crop">Оплатить</span>
-            <span class="ym-price-output"> 990,00&nbsp;₽</span></button><svg class="ym-logo" width="114" height="27"
+            <span class="ym-price-output"> 860,00&nbsp;₽</span></button><svg class="ym-logo" width="114" height="27"
             viewBox="0 0 114 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle" role="img">
             <path
               d="M59.3827 7.348H55.7087L53.0599 11.9619H51.6929V2.05054H48.1897V19.9081H51.6929V15.0379H53.0599L56.4777 19.9081H60.408L55.8796 13.4145L59.3827 7.348Z"
@@ -113,7 +147,7 @@
     <include src="build/img/sprite.svg"> </include>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
