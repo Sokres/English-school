@@ -1,0 +1,47 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#c484ff;
+$top-color__active:#4C95DE;
+
+.speking-tick{
+  padding: 5px 40px 40px 40px;
+  background-image: url(../img/bg-speaking-tick.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.speking-tick__title{
+  text-align: center;
+}
+.speking-tick__text{
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+.speking-tick__container{
+  display: flex;
+  margin: 20px 0;
+}
+.speking-tick__iamge{
+  width: 40px;
+  height: 40px;
+}
+@media(min-width: 768px){
+  .speking-tick{
+    padding: 5px 80px 40px 80px;
+  }
+  .speking-tick__title{
+    text-align: center;
+  }
+  .speking-tick__wrap{
+
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

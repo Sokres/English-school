@@ -1,0 +1,47 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#c484ff;
+$top-color__active:#4C95DE;
+
+.your-fit{
+  margin-top: 40px;
+  padding: 0 20px;
+}
+.your-fit__title{
+  text-align: center;
+}
+.your-fit__wrap{
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+}
+.your-fit__container{
+  display: grid;
+  justify-items: center;
+}
+.your-fit__image{
+  width: 80px;
+  height: 80px;
+}
+.your-fit__text{
+  align-self: start;
+  text-align: center;
+}
+@media(min-width: 768px){
+  .your-fit{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .your-fit__wrap{
+    grid-template-columns:repeat(3, 1fr);
+  }
+
+}

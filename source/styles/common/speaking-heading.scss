@@ -1,0 +1,21 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#c484ff;
+$top-color__active:#4C95DE;
+
+.head-wraper-speaking{
+  background-image: url(../img/bg_header_page_speack.svg);
+  background-position: top 0 right 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-wraper-speaking .welcome-info__subtitle{
+  width: 70%;
+}

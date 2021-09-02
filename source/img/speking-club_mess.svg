@@ -1,0 +1,34 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+  <defs>
+    <linearGradient x1="99.36467" y1="75.45575" x2="183.84629" y2="217.93933" gradientUnits="userSpaceOnUse"
+      id="color-1">
+      <stop offset="0" stop-color="#0176d0"></stop>
+      <stop offset="1" stop-color="#16538c"></stop>
+    </linearGradient>
+    <radialGradient cx="87.16538" cy="77.34379" r="73.51121" gradientUnits="userSpaceOnUse" id="color-2">
+      <stop offset="0" stop-color="#000000"></stop>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient x1="76.03017" y1="91.08742" x2="107.86321" y2="128.50925" gradientUnits="userSpaceOnUse"
+      id="color-3">
+      <stop offset="0" stop-color="#33bef0"></stop>
+      <stop offset="1" stop-color="#22a5e2"></stop>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+    <path d="M0,226v-226h226v226z" fill="none"></path>
+    <g>
+      <path
+        d="M211.44654,205.89071l-17.21838,-39.17333c5.24979,-9.67092 8.23017,-20.75433 8.23017,-32.52987c0,-37.70433 -30.5665,-68.27083 -68.27083,-68.27083c-37.70433,0 -68.27083,30.5665 -68.27083,68.27083c0,37.70433 30.5665,68.27083 68.27083,68.27083c12.30288,0 23.81475,-3.30054 33.78229,-8.99292l36.79562,18.73446c4.08683,2.08108 8.52679,-2.11404 6.68113,-6.30917z"
+        fill="url(#color-1)"></path>
+      <path
+        d="M65.91667,134.1875c0,4.68479 0.47554,9.26129 1.37483,13.68242c6.30917,1.77975 12.93379,2.79675 19.81267,2.79675c40.30333,0 72.97917,-32.67583 72.97917,-72.97917c0,-2.28825 -0.13654,-4.54354 -0.34371,-6.78c-7.89587,-3.19225 -16.50742,-4.99083 -25.55212,-4.99083c-37.70433,0 -68.27083,30.5665 -68.27083,68.27083z"
+        fill="url(#color-2)"></path>
+      <path
+        d="M87.10417,14.125c-35.10533,0 -63.5625,28.45717 -63.5625,63.5625c0,9.69446 2.23175,18.84275 6.11612,27.0635c-0.06121,0.14125 -0.13654,0.25425 -0.18833,0.41433l-14.91129,33.92825c-1.84567,4.19983 2.59429,8.39496 6.68112,6.31387l29.98737,-15.26912c10.21238,7.00129 22.55763,11.11167 35.8775,11.11167c35.10533,0 63.5625,-28.45717 63.5625,-63.5625c0,-35.10533 -28.45717,-63.5625 -63.5625,-63.5625z"
+        fill="url(#color-3)"></path>
+    </g>
+  </g>
+</svg>

@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/styles.min.css">
+  <link rel="stylesheet" href="/css/speaking.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <title>Telegram club — Онлайн 💂 курсы английского Anglofan</title>
+  <title>Speaking club — Онлайн 💂 курсы английского Anglofan</title>
   <meta name="description"
     content="Курсы английского всегда твоем Telegram. ✅ Учи английский в любое время и в любом месте. Первая неделя бесплатно!">
   <meta name="keywords" content="">
@@ -31,11 +32,11 @@
   <!-- End Google Tag Manager -->
   <meta name="theme-color" content="#57ACFF">
   <meta property="og:type" content="business.business">
-  <meta property="og:title" content="Telegramm-club — Онлайн 💂 курсы английского Anglofan">
-  <meta property="og:url" content="https://anglofan.ru/telegram-club">
-  <meta property="og:image" content="https://email.anglofan.ru/telegram_OG.jpg">
+  <meta property="og:title" content="Speaking club — Онлайн 💂 курсы английского Anglofan">
+  <meta property="og:url" content="https://anglofan.ru/speaking-club/">
+  <meta property="og:image" content="https://email.anglofan.ru/Speking-club_OG.jpg">
   <meta property="og:description"
-    content="Курсы английского всегда твоем Telegram. ✅ Учи английский в любое время и в любом месте. Первая неделя бесплатно!">
+    content="Начни говорить свободно на английском! Наши курсы помогут тебе в этом. Записывайся в speaking club">
   <meta property="business:contact_data:locality" content="Moscow">
   <meta property="business:contact_data:country_name" content="Russia">
   <link rel="icon" href="../favicon.svg">
@@ -54,8 +55,8 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQLVQW" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div id="stick" class="head-wraper-telegramm">
-    <header id="home" class="header telegram-header">
+  <div id="stick" class="head-wraper-speaking">
+    <header id="home" class="header speaking-header">
       <div class="header-container">
         <a href="../index.html" class="header__link-logo"> <img class="logo" src="../img/Logo.svg" width="200" height="50"
             alt="Логотип Anglofan"></a>
@@ -72,14 +73,14 @@
                 <a class="site-list__link site-list__link-subdmenu site-list__link--active" tabindex="0">Курсы</a>
                 <ul class="site-list__item-podmenu">
                   <li class="site-list__item">
-                    <a class="site-list__link site-list__link--active">Телеграм club</a>
-                  </li>
-                  <li class="site-list__item">
                     <a class="site-list__link" href="../anglofan">Anglofan</a>
                   </li>
-                  <!-- <li class="site-list__item">
-                  <a class="site-list__link" href="#">Speaking-club</a>
-                </li> -->
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="../telegram-club">Telegram club</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link site-list__link--active">Speaking club</a>
+                  </li>
                 </ul>
               <li class="site-list__item">
                 <a class="site-list__link" href="../lvl-test">Тестирование</a>
@@ -91,27 +92,28 @@
       </div>
     </header>
 
-    <section class="welcome-info welcome-telegramm">
+    <section class="welcome-info">
       <div class="welcome-info__wraper">
-        <p class="welcome-info__cours">Онлайн курс английского языка</p>
-        <h1 class="welcome-info__title ">Telegram club</h1>
-        <p class="welcome-info__subtitle">Выучи английский всего за 15 минут в день</p>
+        <!-- <p class="welcome-info__cours">Онлайн курс английского языка</p> -->
+        <h1 class="welcome-info__title ">Speaking Club</h1>
+        <p class="welcome-info__subtitle">Говори, сколько хочешь, когда тебе удобно</p>
+
+        <!-- Подключение кнопок обратной связи -->
+        <include src="build/@_btn-bot.html"> </include>
+
         <div class="welcome-info__subtitle-open submenu-insurance">
           <ul id="stickSubmenu" class="welcome-info__submenu">
             <li class="welcome-info__submenu-item welcome-info__submenu--open">
               <a class="back_to_top welcome-info__link welcome-info__submenu--active" href="#">Вверх</a>
             </li>
             <li class="welcome-info__submenu-item">
-              <a class="welcome-info__link" href="#feadback">Отзывы</a>
+              <a class="welcome-info__link" href="#feadback">О курсе</a>
             </li>
             <li class="welcome-info__submenu-item">
-              <a class="welcome-info__link" href="#benefits">Преимущества</a>
+              <a class="welcome-info__link" href="#benefits">Вы можете</a>
             </li>
             <li class="welcome-info__submenu-item">
               <a class="welcome-info__link" href="#price">Стоимость</a>
-            </li>
-            <li class="welcome-info__submenu-item">
-              <a class="welcome-info__link" href="#time">Сроки</a>
             </li>
             <li class="welcome-info__submenu-item">
               <a class="welcome-info__link" href="#result">Результат</a>
@@ -121,275 +123,91 @@
         </div>
       </div>
     </section>
-
-    <section class="seven-day btn-welcom">
-      <div class="seven-day__wrap">
-        <a class="seven-day__btn" href="http://t.me/welcAnglofanbot/start PAYLOAD" target="_blank"
-          title="Бесплатная неделя телеграм">
-          <span class="seven-day__btn--text">ПОЛУЧИТЬ ДОСТУП К БЕСПЛАТНОЙ НЕДЕЛЕ</span>
-          <!-- <span class="seven-day__inline-ico">
-            <svg class="seven-day__inline-ico--svg" width="25" height="25">
-              <use xlink:href="#ico-telegram"></use>
-          </span> -->
-          </svg>
-        </a>
-      </div>
-      <!-- <div class="seven-day__info">
-        <h3 class="seven-day__title sale-free" >СКИДКА 20%</h3>
-        <img class="seven-day__img" src="../img/gif.svg" width="100" height="100" alt="Подарок">
-        <h3 class="seven-day__title" >ВСЕМ УЧАСТНИКАМ БЕСПЛАТНОЙ НЕДЕЛИ</h3>
-      </div> -->
-      </section>
-      <section class="start-course">
-        <h2 class="visually-hidden">Старт курса</h2>
-        <p class="start-course__text">Старт 13-го потока 16 августа <br>УСПЕЙ ПРОЙТИ БЕСПЛАТНУЮ НЕДЕЛЮ</p>
-      </section>
   </div>
   <!-- Подключение панели кнопок социальных сетей -->
   <include src="build/@_social1.html"> </include>
 
-  <section id="aboutCourse" class="what-trening">
-    <h2 class="what-trening__title">КАК ПРОХОДИТ ОБУЧЕНИЕ</h2>
-    <!-- <div class="what-trening__video">
-    <button id="playYoutube" data-modal="video-prel" class="btn-modal what-trening__play"></button>
-    <p class="what-trening__text">Весь процесс за 2 минуты</p>
-  </div> -->
-    <ul class="what-trening__list">
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="Картинка 3 раза в неделю "
-          class="what-trening__image">
-        <p class="what-trening__info">по ПН, СР и ПТ в 9:00 в закрытом Telegram-канале открывается 👍интересный урок</p>
-      </li>
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="видео" class="what-trening__image">
-        <p class="what-trening__info">урок рассчитан на 30-35 минут, то есть 15 минут в день</p>
-      </li>
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="без проверки" class="what-trening__image">
-        <p class="what-trening__info">урок состоит из видео объяснения на русском и заданий на говорение, понимание на слух, письмо, чтение, грамматику и лексику</p>
-      </li>
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="ответы" class="what-trening__image">
-        <p class="what-trening__info">вы выбираете тариф - с проверкой преподавателя или без</p>
 
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="закрытый канал" class="what-trening__image">
-        <p class="what-trening__info">тариф на самопроверке - в следующем уроке очень подробные ответы и пояснения к каждому заданию</p>
-      </li>
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="короткие уроки" class="what-trening__image">
-        <p class="what-trening__info">на тарифах с обратной связью можно сделать и отправить дз в любое время и в любом виде</p>
-      </li>
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="удобыне задания"
-          class="what-trening__image">
-        <p class="what-trening__info">делаете задания, когда и где вам удобно: в офисе, спортивном зале, пробке или даже в отпуске у моря</p>
-      </li>
-    </li>
-    <li class="what-trening__item">
-      <img src="../img/what-trening.svg" width="100" height="100" alt="выбор уровня" class="what-trening__image">
-      <p class="what-trening__info">уровень вы выбираете сами при оплате. Если не знаете свой уровень, пройдите наш
-        тест</p>
-    </li>
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="разные уровни" class="what-trening__image">
-        <p class="what-trening__info">4 уровня - от А0 Starter (с нуля) до В1 Intermediate (свободное говорение). У каждого уровня своя программа</p>
-      </li>
-
-      <li class="what-trening__item">
-        <img src="../img/what-trening.svg" width="100" height="100" alt="21 день хранения" class="what-trening__image">
-        <p class="what-trening__info">урок хранится в Telegram-канале 21 день, потом удаляется</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="feadback ">
-    <div class="feadback__wraper">
-      <p class="feadback__pretitle">97 из 100 студентов рекомендуют наши онлайн курсы своим знакомым</p>
-      <h2 id="feadback" class="feadback__title section-menu">ОТЗЫВЫ</h2>
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_telegram_5.webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_telegram_5.jpg" alt="Отзывы о нас">
-              </picture>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="  feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_general_1.webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_general_1.jpg" alt="Отзывы о нас">
-              </picture>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_telegram_2.webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_telegram_2.jpg" alt="Отзывы о нас">
-              </picture>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_telegram_3.webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_telegram_3.jpg" alt="Отзывы о нас">
-              </picture>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="  feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_telegram_4.webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_telegram_4.jpg" alt="Отзывы о нас">
-              </picture>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="  feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_telegram_6.webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_telegram_6.jpg" alt="Отзывы о нас">
-              </picture>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="  feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_telegram_8.webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_telegram_8.jpg" alt="Отзывы о нас">
-              </picture>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="  feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_telegram_9(1).webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_telegram_9(1).jpg" alt="Отзывы о нас">
-              </picture>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="feadback__container">
-              <picture class="  feadback__image">
-                <source type="image/webp" width="390" srcset="../img/webp/feadback/feadbck_telegram_9(2).webp">
-                <img class="feadback__image--pic" width="390" src="../img/feadback/feadbck_telegram_9(2).jpg" alt="Отзывы о нас">
-              </picture>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
+<section class="your-fit">
+  <h2 class="your-fit__title">Вам  подойдет Speaking Club, если</h2>
+  <div class="your-fit__wrap">
+    <div class="your-fit__container">
+      <img src="../img/micro-speking.svg" width="100" height="100" alt="Мало времени" class="your-fit__image">
+      <p class="your-fit__text">Вы очень хотите говорить на английском, но стесняетесь</p>
     </div>
-  </section>
-  <section class=" seven-day daybox">
-    <div class="seven-day__wrap ">
-      <a class="seven-day__btn" href="http://t.me/welcAnglofanbot/start PAYLOAD" target="_blank"
-        title="Бесплатная неделя телеграм">
-        <span class="seven-day__btn--text">ПОЛУЧИТЬ ДОСТУП К  БЕСПЛАТНОЙ НЕДЕЛЕ</span>
-        <svg class="seven-day__inline-ico" width="45" height="25">
-          <use xlink:href="#ico-telegram"></use>
-        </svg>
-      </a>
+    <div class="your-fit__container">
+      <img src="../img/time-speking.svg" width="100" height="100" alt="Не трать время" class="your-fit__image">
+      <p class="your-fit__text">У вас есть только 10-20  минут в день</p>
     </div>
-  </section>
-  <section id="benefits" class="benefits section-menu">
-    <h2 class="benefits__title">ПРЕИМУЩЕСТВА КУРСА</h2>
-    <!-- <h3 class="benefits__subtitle">Telegram Club - системный и комплексный курс, разработанный в соответствии с высочайшими международными стандартами</h3> -->
-    <div class="benefits__wrap">
-      <ul class="benefits__list">
-        <li class="benefits__item">
-          <img src="../img/tick-benefits.svg" width="50" height="50" alt="галочка" class="benefits-image">
-          <p class="benefits__text">реально ВСЕГО 15 минут в день!</p>
-        </li>
-        <li class="benefits__item">
-          <img src="../img/tick-benefits.svg" width="50" height="50" alt="галочка" class="benefits-image">
-          <p class="benefits__text"> грамматика ➕ словарный запас</p>
-        </li>
-        <li class="benefits__item">
-          <img src="../img/tick-benefits.svg" width="50" height="50" alt="галочка" class="benefits-image">
-          <p class="benefits__text">ЗАМОРОЗКА ОБУЧЕНИЯ есть только у нас. <br>Если вы заморозили обучение на 30 уроке, то можете присоединиться с 30 урока к любому следующему потоку</p>
-        </li>
-        <li class="benefits__item">
-          <img src="../img/tick-benefits.svg" width="50" height="50" alt="галочка" class="benefits-image">
-          <p class="benefits__text">можно перевестись на уровень выше или ниже в течение первых 14 дней</p>
-        </li>
-        <li class="benefits__item benefits__item--list">
-          <img src="../img/tick-benefits.svg" width="50" height="50" alt="галочка" class="benefits-image">
-          <p class="benefits__text">На курсе отрабатываем все 4 навыка</p>
-          <ul class="benefits__item--sublist">
-            <li class="benefits__item--subitem">говорение (много speaking заданий)</li>
-            <li class="benefits__item--subitem">понимание на слух (YouTube, песни, сериалы, аудио носителей)</li>
-            <li class="benefits__item--subitem">письмо (учимся излагать свои мысли в письменном виде)</li>
-            <li class="benefits__item--subitem">чтение (читаем актуальные статьи, книги, соц сети носителей)</li>
-          </ul>
-        </li>
-      </ul>
+    <div class="your-fit__container">
+      <img src="../img/sun-speaking.svg" width="100" height="100" alt="" class="your-fit__image">
+      <p class="your-fit__text">Вам не хватает живого общения на английском</p>
     </div>
-  </section>
-  <section class="for-whom">
-    <h2 class="for-whom__title">ДЛЯ КОГО КУРС</h2>
-    <h3 class="for-whom__heading">для каждого,
-      у кого есть всего 15 минут в день на английский!</h3>
-    <ul class="for-whom__lists">
-      <li class="for-whom__item">
-        <img src="../img/alt_who-course_spec.svg" alt="Специалист" width="100" height="100" class="for-whom__image">
-        <h4 class="for-whom__subtitle">для специалиста</h4>
-        <p class="for-whom__article">Кто ты?
-          менеджер, IT-специалист, врач, инженер - повысь уровень английского и зарабатывай на 35-70% больше!</p>
-      </li>
-      <li class="for-whom__item">
-        <img src="../img/alt_who-course_stud.svg" alt="Студент" width="100" height="100"
-          class="for-whom__image">
-        <h4 class="for-whom__subtitle">для студента</h4>
-        <p class="for-whom__article">Добавь конкурентное преимущество в свое резюме и устройся на престижную работу</p>
-      </li>
-      <li class="for-whom__item">
-        <img src="../img/alt_who-course_tur.svg" alt="Турист" width="100" height="100"
-          class="for-whom__image">
-        <h4 class="for-whom__subtitle">для путешественника</h4>
-        <p class="for-whom__article">Больше не веришь в "английский за месяц"? Хочешь говорить и уверенно понимать, а не произносить заученные фразы? Тогда этот курс для тебя!</p>
-      </li>
-      <li class="for-whom__item">
-        <img src="../img/alt_who-course_evolve.svg" alt="Развитие" width="100" height="100"
-          class="for-whom__image">
-        <h4 class="for-whom__subtitle">для того, кто хочет развиваться</h4>
-        <p class="for-whom__article">Открой для себя чтение книг и блогов, просмотр фильмов и YouTube, прослушивание музыки на языке оригинала!</p>
-      </li>
-      <li class="for-whom__item">
-        <img src="../img/alt_who-course_mom.svg" alt="Молодые" width="100" height="100"
-          class="for-whom__image">
-        <h4 class="for-whom__subtitle">для молодой мамы/ молодого папы</h4>
-        <p class="for-whom__article">Общайся с ребенком на одном языке, помогай ему с уроками и вдохновляй на изучение английского!</p>
-      </li>
-      <!-- <li class="for-whom__item">
-        <img src="../img/suits-you__sun-old.svg" alt="Пенсионеры" width="100" height="100"
-          class="for-whom__image">
-        <p class="for-whom__subtitle">для тех, кто скучает на пенсии</p>
-      </li> -->
-    </ul>
-  </section>
+  </div>
+</section>
+
+<section class="speking-tick">
+  <h2 class="speking-tick__title">О курсе Anglofan</h2>
+  <div class="speking-tick__wrap">
+    <div class="speking-tick__container">
+      <img src="../img/tick-speaking.svg" width="80" height="80" alt="Галочка" class="speking-tick__iamge">
+      <p class="speking-tick__text">закрытый чат в Telegram, где мы общаемся аудио сообщениями . Я
+        дублирую свои аудио сообщения текстом для уровня А1</p>
+    </div>
+    <div class="speking-tick__container">
+      <img src="../img/tick-speaking.svg" width="80" height="80" alt="Галочка" class="speking-tick__iamge">
+      <p class="speking-tick__text">Интересные темы для обсуждений 3 раза в неделю по пн, ср и пт</p>
+    </div>
+    <div class="speking-tick__container">
+      <img src="../img/tick-speaking.svg" width="80" height="80" alt="Галочка" class="speking-tick__iamge">
+      <p class="speking-tick__text">Каждую субботу обратная связь по вашим ошибкам (в личной переписке) </p>
+    </div>
+    <div class="speking-tick__container">
+      <img src="../img/tick-speaking.svg" width="80" height="80" alt="Галочка" class="speking-tick__iamge">
+      <p class="speking-tick__text">Рекомендации по работе с произношением и грамматикой</p>
+    </div>
+    <div class="speking-tick__container">
+      <img src="../img/tick-speaking.svg" width="80" height="80" alt="Галочка" class="speking-tick__iamge">
+      <p class="speking-tick__text">Не больше 10-15 минут в день</p>
+    </div>
+    <div class="speking-tick__container">
+      <img src="../img/tick-speaking.svg" width="80" height="80" alt="Галочка" class="speking-tick__iamge">
+      <p class="speking-tick__text">В одном канале не более 10 человек</p>
+    </div>
+    <div class="speking-tick__container">
+      <img src="../img/tick-speaking.svg" width="80" height="80" alt="Галочка" class="speking-tick__iamge">
+      <p class="speking-tick__text">Можно присоединиться с любого понедельника</p>
+    </div>
+    <div class="speking-tick__container">
+      <img src="../img/tick-speaking.svg" width="80" height="80" alt="Галочка" class="speking-tick__iamge">
+      <p class="speking-tick__text">У разных уровней - разные каналы</p>
+    </div>
+  </div>
+</section>
+<section class="speking-sound">
+  <div class="speking-sound__wrap">
+    <div class="speking-sound__image">
+      <span class="speking-sound__image--srip speking-sound__image--srip1"></span>
+      <span class="speking-sound__image--srip speking-sound__image--srip2"></span>
+      <span class="speking-sound__image--srip speking-sound__image--srip3"></span>
+      <span class="speking-sound__image--srip speking-sound__image--srip4"></span>
+      <span class="speking-sound__image--srip speking-sound__image--srip5"></span>
+      <span class="speking-sound__image--srip speking-sound__image--srip6"></span>
+      <span class="speking-sound__image--srip speking-sound__image--srip7"></span>
+      <span class="speking-sound__image--srip speking-sound__image--srip8"></span>
+    </div>
+    <p class="speking-sound__text">ИДЕАЛЕН ДЛЯ СОВМЕЩЕНИЯ с Telegram club</p>
+  </div>
+</section>
 
   <section id="price" class="telegram-prace section-menu">
     <div class="telegram-price__wraper">
       <h2 class="telegram-prace__title">СУПЕРЦЕНА</h2>
       <div class="telegram-prace__containers">
         <div class="telegram-prace__block">
-          <h3 class="telegram-price__subtitle">Без обратной связи <span>самопроверка по ответам</span></h3>
-          <h4 class="telegram-prace__time">4 недели</h4>
-          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">1290 ₽</span>990 ₽</div>
+          <!-- <h3 class="telegram-price__subtitle">Без обратной связи <span>самопроверка по ответам</span></h3> -->
+          <h3 class="telegram-prace__time">1 неделя </h3>
+          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">800 ₽</span>500 ₽</div>
           <h4 class="telegram-price__title-form">Выбери свой уровень </h4>
           <div id="price4BsError" class="telegram-price__error"><span class="telegram-price__error--red-text">Вы не
               выбрали уровень</span>
@@ -422,9 +240,9 @@
           </div>
         </div>
         <div class="telegram-prace__block telegram-prace__block--hit">
-          <h3 class="telegram-price__subtitle">Без обратной связи <span>самопроверка по ответам</span></h3>
-          <h4 class="telegram-prace__time">12 недель</h4>
-          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">3 390 ₽</span>2 590 ₽</div>
+          <!-- <h3 class="telegram-price__subtitle">Без обратной связи <span>самопроверка по ответам</span></h3> -->
+          <h3 class="telegram-prace__time">4 недели</h3>
+          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">2 200 ₽</span>1 600 ₽</div>
           <h4 class="telegram-price__title-form">Выбери свой уровень </h4>
           <div id="price12BsError" class="telegram-price__error"><span class="telegram-price__error--red-text">Вы не
               выбрали уровень</span>
@@ -456,9 +274,9 @@
           </div>
         </div>
         <div class="telegram-prace__block telegram-prace__block--top">
-          <h3 class="telegram-price__subtitle">Без обратной связи <span>самопроверка по ответам</span></h3>
-          <h4 class="telegram-prace__time">24 недели</h4>
-          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">5 940 ₽</span>4 490 ₽</div>
+          <!-- <h3 class="telegram-price__subtitle">Без обратной связи <span>самопроверка по ответам</span></h3> -->
+          <h3 class="telegram-prace__time">12 недель</h3>
+          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">5 500 ₽</span>4 400 ₽</div>
           <h4 class="telegram-price__title-form">Выбери свой уровень </h4>
           <div id="price24BsError" class="telegram-price__error"><span class="telegram-price__error--red-text">Вы не
               выбрали уровень</span>
@@ -490,134 +308,16 @@
           </div>
         </div>
       </div>
-      <div class="telegram-prace__containers telegram-prace__containers-dark">
-        <div class="telegram-prace__block">
-          <h3 class="telegram-price__subtitle">C обратной связью <span>с проверкой дз Кариной</span></h3>
-          <h4 class="telegram-prace__time">4 недели</h4>
-          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">4 080 ₽</span>3 260 ₽</div>
-          <h4 class="telegram-price__title-form">Выбери свой уровень </h4>
-          <div id="price4OsError" class="telegram-price__error"><span class="telegram-price__error--red-text">Вы не
-              выбрали уровень</span>
-            <span class="telegram-price__error--why-text">если не знаете свой уровень</span>
-            <a href="../lvl-test">пройдите тест</a>
-          </div>
-          <div class="telegram-price__lvl">
-            <form action="" id="formprice4Os" name="price4Os">
-              <div class="telegram-price__form">
-                <label for="lvl_a0_os_4">
-                  <input class="visually-hidden" type="radio" name="price4OsRadio" id="lvl_a0_os_4" value="../payt4a0os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A0</span>
-                  </label>
-                <label for="lvl_a1_os_4">
-                  <input class="visually-hidden" type="radio" name="price4OsRadio" id="lvl_a1_os_4" value="../payt4a1os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A1</span>
-                  </label>
-                <label for="lvl_a2_os_4">
-                  <input class="visually-hidden" type="radio" name="price4OsRadio" id="lvl_a2_os_4" value="../payt4a2os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A2</span>
-                  </label>
-                <label for="lvl_b1_os_4">
-                  <input class="visually-hidden" type="radio" name="price4OsRadio" id="lvl_b1_os_4" value="../payt4b1os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">B2</span></label>
-              </div>
-                <button type="submit" id="telegramPriceFourOS" class=" telegram-prace__btn">Оплатить</button>
-            </form>
-          </div>
-        </div>
-        <div class="telegram-prace__block telegram-prace__block--hit">
-          <h3 class="telegram-price__subtitle">C обратной связью <span>с проверкой дз Кариной</span></h3>
-          <h4 class="telegram-prace__time">12 недель</h4>
-          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">10 500 ₽</span>8 400 ₽</div>
-          <h4 class="telegram-price__title-form">Выбери свой уровень </h4>
-          <div id="price12OsError" class="telegram-price__error"><span class="telegram-price__error--red-text">Вы не
-              выбрали уровень</span>
-            <span class="telegram-price__error--why-text">если не знаете свой уровень</span>
-            <a href="../lvl-test">пройдите тест</a>
-          </div>
-          <div class="telegram-price__lvl">
-            <form action="" id="formprice12Os" name="price12Os" >
-              <div class="telegram-price__form">
-                <label for="lvl_a0_os_12">
-                  <input class="visually-hidden" type="radio" name="price12OsRadio" id="lvl_a0_os_12" value="../payt12a0os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A0</span></label></label>
-                <label for="lvl_a1_os_12">
-                  <input class="visually-hidden" type="radio" name="price12OsRadio" id="lvl_a1_os_12" value="../payt12a1os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A1</span></label>
-                <label for="lvl_a2_os_12">
-                  <input class="visually-hidden" type="radio" name="price12OsRadio" id="lvl_a2_os_12" value="../payt12a2os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A2</span></label>
-                <label for="lvl_b1_os_12">
-                  <input class="visually-hidden" type="radio" name="price12OsRadio" id="lvl_b1_os_12" value="../payt12b1os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">B1</span></label>
-              </div>
-                <button type="submit" id="telegramPriceTwelveOS" class="telegram-prace__btn">Оплатить</button>
-            </form>
-          </div>
-        </div>
-        <div class="telegram-prace__block">
-          <h3 class="telegram-price__subtitle">C обратной связью <span>с проверкой дз Кариной</span></h3>
-          <h4 class="telegram-prace__time">24 недели</h4>
-          <div class="telegram-prace__cash"><span class="telegram-prace__cash--old">19 250 ₽</span>15 400 ₽</div>
-          <h4 class="telegram-price__title-form">Выбери свой уровень </h4>
-          <div id="price24OsError" class="telegram-price__error"><span class="telegram-price__error--red-text">Вы не
-              выбрали уровень</span>
-            <span class="telegram-price__error--why-text">если не знаете свой уровень</span>
-            <a href="../lvl-test">пройдите тест</a>
-          </div>
-          <div class="telegram-price__lvl">
-            <form id="formprice24Os" name="price24Os">
-              <div class="telegram-price__form">
-                <label for="lvl_a0_os_24">
-                  <input class="visually-hidden" type="radio" name="price24OsRadio" id="lvl_a0_os_24" value="../payt24a0os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A0</span></label>
-                <label for="lvl_a1_os_24">
-                  <input class="visually-hidden" type="radio" name="price24OsRadio" id="lvl_a1_os_24" value="../payt24a1os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A1</span></label>
-                <label for="lvl_a2_os_24">
-                  <input class="visually-hidden" type="radio" name="price24OsRadio" id="lvl_a2_os_24" value="../payt24a2os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">A2</span></label>
-                <label for="lvl_b1_os_24">
-                  <input class="visually-hidden" type="radio" name="price24OsRadio" id="lvl_b1_os_24" value="../payt24b1os.html">
-                    <span class="telegram-price__form--radio"></span>
-                    <span class="telegram-price__form--lvl">B1</span></label>
-              </div>
 
-                <button type="submit" id="telegramPriceTwoneOS" class="telegram-prace__btn">Оплатить</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <p class="telegrm-prace__info">
+      <!-- <p class="telegrm-prace__info">
         * Удаление и подключение к каналу происходит по воскресеньям. Поэтому вносить оплату необходимо до субботы
         включительно.
         Если вы не оплатили вовремя, то вы сможете продолжить со следующим потоком через месяц
 
-      </p>
+      </p> -->
     </div>
   </section>
 
-  <section class="seven-day daybox">
-    <div class="seven-day__wrap ">
-      <a class="seven-day__btn" href="http://t.me/welcAnglofanbot/start PAYLOAD" target="_blank"
-        title="Бесплатная неделя телеграм">
-        <span class="seven-day__btn--text">ПОЛУЧИТЬ ДОСТУП К  БЕСПЛАТНОЙ НЕДЕЛЕ</span>
-        <svg class="seven-day__inline-ico" width="45" height="25">
-          <use xlink:href="#ico-telegram"></use>
-        </svg>
-      </a>
-    </div>
-  </section>
 
   <section id="time" class="time-trening section-menu">
     <h2 class="time-traning__title">СРОКИ ОБУЧЕНИЯ</h2>
@@ -970,17 +670,7 @@
     <a class="button-link why-lvl__btn" href="../lvl-test">ОПРЕДЕЛИ СВОЙ УРОВЕНЬ ЗА 7 МИНУТ</a>
   </section>
 
-  <section class="seven-day daybox">
-    <div class="seven-day__wrap">
-      <a class="seven-day__btn" href="http://t.me/welcAnglofanbot/start PAYLOAD" target="_blank"
-        title="Бесплатная неделя телеграм">
-        <span class="seven-day__btn--text">ПОЛУЧИТЬ ДОСТУП К  БЕСПЛАТНОЙ НЕДЕЛЕ</span>
-        <svg class="seven-day__inline-ico" width="45" height="25">
-          <use xlink:href="#ico-telegram"></use>
-        </svg>
-      </a>
-    </div>
-  </section>
+
 
 
 

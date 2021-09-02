@@ -1,0 +1,69 @@
+$top-color:#57ACFF;
+$text-color:#182F52;
+$text-add:#646F87;
+$gren:#00C1A4;
+$gren__hover:#18c26d;
+$gren__active:#06c100;
+$gray:#CFCFCF;
+$gray__hover:#acacac;
+$white:#FFFFFF;
+$top-color__hover:#18c26d;
+$top-color__active:#4C95DE;
+$red: #e00083;
+
+.speking-sound{
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.speking-sound__wrap{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.speking-sound__image{
+  display: flex;
+}
+.speking-sound__image--srip{
+  width: 10px;
+  height: 100px;
+  margin: 0 5px;
+  border-radius: 50px;
+  background-color: $top-color;
+  animation: speking-sound 0ms -600ms linear infinite alternate;
+}
+.speking-sound__image--srip1{transform: scaleY(0.1); animation-duration: 474ms;}
+.speking-sound__image--srip2{transform: scaleY(0.2); animation-duration: 474ms;}
+.speking-sound__image--srip3{transform: scaleY(0.3); animation-duration: 433ms;}
+.speking-sound__image--srip4{transform: scaleY(0.4); animation-duration: 407ms;}
+.speking-sound__image--srip5{transform: scaleY(0.5); animation-duration: 458ms;}
+.speking-sound__image--srip6{transform: scaleY(0.6); animation-duration: 400ms;}
+.speking-sound__image--srip7{transform: scaleY(0.7); animation-duration: 427ms;}
+.speking-sound__image--srip8{transform: scaleY(0.8); animation-duration: 441ms;}
+
+.speking-sound__text{
+  color: $red;
+  font-size: 20px;
+  text-align: center;
+}
+@media(min-width: 768px){
+  .speking-sound__wrap{
+   display: flex;
+   justify-content: center;
+  }
+  .speking-sound__text{
+    margin-left: 30px;
+  }
+}
+@keyframes speking-sound{
+  0% {
+    opacity: .35;
+    transform: scaleY(0.1);
+ }
+ 100% {
+     opacity: 1;
+     transform: scaleY(0.8);
+ }
+}

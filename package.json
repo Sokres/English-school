@@ -1,5 +1,5 @@
 {
-  "name": "Online_curse",
+  "name": "Online_course",
   "version": "1.0.0",
   "private": true,
   "description": "Проект онлайн курса английского языка",
@@ -38,17 +38,17 @@
     "posthtml-include": "^1.7.0",
     "stylelint": "^10.1.0",
     "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint-config-standard": "^22.0.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"source/styles/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "webpack-dev-server --mode development --open",
     "start": "gulp start",
-    "eslint-fix": "eslint ./src/js/** --fix",
-    "prod_build": "webpack --mode production"
+    "build": "gulp build",
+    "eslint-fix": "eslint ./src/js/** --fix"
   },
   "browserslist": [
     "last 2 versions",
@@ -61,7 +61,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
+    "source/styles/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.16"
@@ -80,8 +80,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "normalize.css": "^8.0.1",
     "postcss-uncss": "^0.17.0",
+    "stylelint-order": "^4.1.0",
     "uncss": "^0.17.3",
-    "vinyl-paths": "^3.0.1",
-    "webpack-stream": "^6.1.2"
+    "vinyl-paths": "^3.0.1"
   }
 }
